@@ -89,12 +89,16 @@ img { display: block; max-width: 100%; }
 }
 
 .nav-logo {
-  font-family: 'Roboto Slab', serif;
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: #fff;
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  letter-spacing: -0.5px;
+}
+
+.nav-logo-img {
+  height: 22px;
+  width: auto;
+  display: block;
+  filter: brightness(0) invert(1);
 }
 
 .nav-links {
