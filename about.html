@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About — mikemoral.es</title>
+  <meta property="og:image" content="https://preview.mikemoral.es/og-image.png">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="/favicon.png">
@@ -22,17 +23,21 @@
 
 
 <!-- ── ABOUT HERO ─────────────────────────── -->
-<section class="about-hero">
-  <div class="container">
+<section class="hero hero-page">
+  <div class="container hero-inner">
     <h1>Brooklyn Made.</h1>
-    <p class="sub">Born in Caracas. Raised in Queens. Vibing in LA.</p>
+    <p class="hero-sub" data-hero-fade>Born in Caracas. Raised in Queens. Vibing in LA.</p>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="hero-scroll-label">Scroll</span>
+    <span class="hero-scroll-line"></span>
   </div>
 </section>
 
 
 <!-- ── ABOUT BODY ─────────────────────────── -->
 <section class="about-body-section">
-  <div class="container">
+  <div class="container" data-reveal>
     <div class="about-grid">
 
       <div class="about-text">
@@ -82,7 +87,7 @@
 
 <!-- ── HOW I LEAD ─────────────────────────── -->
 <section class="how-i-section">
-  <div class="container">
+  <div class="container" data-reveal>
     <p class="section-label">How I lead</p>
     <div class="principle-list">
       <div class="principle">
@@ -113,7 +118,7 @@
 
 <!-- ── HOW I WORK ─────────────────────────── -->
 <section class="how-i-section">
-  <div class="container">
+  <div class="container" data-reveal>
     <p class="section-label">How I work</p>
     <div class="principle-list">
       <div class="principle">
@@ -151,7 +156,7 @@
 
 <!-- ── CAREER TIMELINE ────────────────────── -->
 <section class="career-section">
-  <div class="container">
+  <div class="container" data-reveal>
     <p class="section-label">This is the way</p>
 
     <div class="tl-era-label">Craft &nbsp;·&nbsp; 2003–2014</div>
@@ -249,6 +254,8 @@
   </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

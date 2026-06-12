@@ -9,6 +9,7 @@
   <meta property="og:description" content="VP of UX at Disney+ and Hulu. Focused on making better calls, learning faster, and building organizations where strong people do the best work of their careers.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://preview.mikemoral.es">
+  <meta property="og:image" content="https://preview.mikemoral.es/og-image.png">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="/favicon.png">
@@ -27,21 +28,25 @@
 
 
 <!-- HERO -->
-<section class="home-hero">
-  <div class="container">
+<section class="hero hero-home">
+  <div class="container hero-inner">
     <h1>I build things.</h1>
-    <p class="hero-sub">Products. Organizations. Teams. Sometimes actual physical objects.</p>
-    <p class="hero-body">VP of UX at Disney+ and Hulu. Focused on making better calls, learning faster, and building organizations where strong people do the best work of their careers.</p>
-    <div class="hero-cta">
+    <p class="hero-sub" data-hero-fade>Products. Organizations. Teams. Sometimes actual physical objects.</p>
+    <p class="hero-body" data-hero-fade>VP of UX at Disney+ and Hulu. Focused on making better calls, learning faster, and building organizations where strong people do the best work of their careers.</p>
+    <div class="hero-cta" data-hero-fade>
       <a class="btn btn-outline" href="about.html">More about me →</a>
     </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="hero-scroll-label">Scroll</span>
+    <span class="hero-scroll-line"></span>
   </div>
 </section>
 
 
 <!-- START HERE - FEATURED PAIRING -->
 <section class="featured-pairing-section">
-  <div class="container">
+  <div class="container" data-reveal>
     <p class="section-label">Start here</p>
     <div class="featured-pairing-grid">
 
@@ -70,9 +75,9 @@
 
 <!-- BUILDING -->
 <section class="building-section">
-  <div class="container">
+  <div class="container" data-reveal>
     <p class="section-label">Building</p>
-    <p style="font-size:15px;color:#3c3c5a;margin-bottom:8px;">Live things, built by hand.</p>
+    <p class="building-intro">Live things, built by hand.</p>
     <div class="building-list">
 
       <div class="building-entry">
@@ -90,7 +95,7 @@
 
 <!-- INDEX LINKS -->
 <section class="index-links-section">
-  <div class="container">
+  <div class="container" data-reveal>
     <div class="index-links-grid">
 
       <div class="index-link-block">
@@ -129,6 +134,8 @@
   </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

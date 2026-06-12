@@ -9,6 +9,7 @@
   <meta property="og:description" content="When the leader of an eighty-engineer program left, I was asked to hold the wheel while they found a real replacement. Eight weeks later they stopped looking. What followed was the pattern that has defined my career.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://preview.mikemoral.es/notes/they-stopped-looking.html">
+  <meta property="og:image" content="https://preview.mikemoral.es/og-image.png">
   <link rel="stylesheet" href="../css/fonts.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/png" href="/favicon.png">
@@ -27,11 +28,15 @@
 
 
 <!-- NOTE HERO -->
-<section class="note-hero-section">
-  <div class="container">
-    <a class="cs-back" href="../notes.html">← Back to notes</a>
+<section class="hero hero-article">
+  <div class="container hero-inner">
+    <a class="cs-back" data-hero-fade href="../notes.html">← Back to notes</a>
     <h1>They stopped looking.</h1>
-    <p class="note-sub">When the leader of an eighty-engineer program left, I was asked to hold the wheel while they found a real replacement. Eight weeks later they stopped looking.</p>
+    <p class="note-sub" data-hero-fade>When the leader of an eighty-engineer program left, I was asked to hold the wheel while they found a real replacement. Eight weeks later they stopped looking.</p>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="hero-scroll-label">Scroll</span>
+    <span class="hero-scroll-line"></span>
   </div>
 </section>
 
@@ -122,6 +127,8 @@
   </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>

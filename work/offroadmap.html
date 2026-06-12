@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Off-Roadmap Innovation System — mikemoral.es</title>
+  <meta property="og:image" content="https://preview.mikemoral.es/og-image.png">
   <link rel="stylesheet" href="../css/fonts.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/png" href="/favicon.png">
@@ -21,13 +22,15 @@
 </nav>
 
 
-<section class="cs-hero-section">
-  <div class="container">
-  <div class="cs-hero">
-    <a class="cs-back" href="../work.html">← Back to work</a>
+<section class="hero hero-article">
+  <div class="container hero-inner">
+    <a class="cs-back" data-hero-fade href="../work.html">← Back to work</a>
     <h1>Off-Roadmap Innovation System</h1>
-    <p class="cs-sub">The organization was great at delivering roadmaps. It had no consistent mechanism for exploring what should come next.</p>
+    <p class="cs-sub" data-hero-fade>The organization was great at delivering roadmaps. It had no consistent mechanism for exploring what should come next.</p>
   </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="hero-scroll-label">Scroll</span>
+    <span class="hero-scroll-line"></span>
   </div>
 </section>
 
@@ -100,6 +103,8 @@
   </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>
