@@ -63,10 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroIntro = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
     if (document.querySelector('.hero-home')) {
-      /* Broken grid canvas: corners slide in, labels fade */
+      /* Stacked headline rises in, scattered metadata fades after */
       heroIntro
-        .from('.hc-build', { x: -60, autoAlpha: 0, duration: 0.9 }, 0.1)
-        .from('.hc-things', { x: 60, autoAlpha: 0, duration: 0.9 }, 0.25)
+        .from('.hc-build, .hc-things', { y: 40, autoAlpha: 0, duration: 0.8, stagger: 0.12 }, 0.1)
         .from('.hc-id, .hc-sub, .hc-label-city, .hc-cta', { autoAlpha: 0, duration: 0.6, stagger: 0.12 }, 0.6);
     } else {
       const wordEls = document.querySelectorAll('.hero h1 .w');
