@@ -1873,11 +1873,11 @@ img { display: block; max-width: 100%; }
   fill: rgba(225, 0, 135, 0.45);
 }
 
-/* ── Work hero: node-and-line system ─────── */
+/* ── Hero constellations (work / notes / about) ── */
 .hero-system {
   position: absolute;
   top: 50%;
-  right: 4vw;
+  right: 14vw;
   transform: translateY(-50%);
   width: min(40vw, 540px);
   height: auto;
@@ -1885,22 +1885,69 @@ img { display: block; max-width: 100%; }
   z-index: 0;
 }
 .hero-system line {
-  stroke: rgba(255, 255, 255, 0.1);
+  stroke: rgba(255, 255, 255, 0.08);
   stroke-width: 1;
 }
-.hero-system rect {
+.hero-system circle {
   fill: rgba(255, 255, 255, 0.22);
 }
-.hero-system rect.node-accent {
-  fill: rgba(225, 0, 135, 0.5);
+.hero-system circle.node-accent {
+  fill: rgba(225, 0, 135, 0.55);
+}
+.hero-system .sys-route {
+  fill: none;
+  stroke: rgba(225, 0, 135, 0.4);
+  stroke-width: 1.5;
+}
+.hero-system .sys-path {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.14);
+  stroke-width: 1;
 }
 
 @media (max-width: 900px) {
   .hero-system { display: none; }
 }
 
+/* ── Arrows: consistent nudge on hover ───── */
+.arr {
+  display: inline-block;
+  transition: transform .25s ease;
+}
+a:hover .arr,
+.btn:hover .arr {
+  transform: translateX(4px);
+}
+a:hover .arr-left,
+.btn:hover .arr-left {
+  transform: translateX(-4px);
+}
+
+/* ── Entry titles: underline fades in ────── */
+.featured-card h3,
+.work-entry-meta h3,
+.note-entry h3,
+.work-card h3 {
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: transparent;
+  text-underline-offset: 5px;
+  transition: text-decoration-color .3s ease;
+}
+.featured-card:hover h3,
+.work-entry:hover h3,
+.note-entry:hover h3,
+.work-card:hover h3 {
+  text-decoration-color: var(--pink);
+}
+
+/* ── Hero text: no I-beam cursor ─────────── */
+.hero, .hero * { cursor: default; }
+.hero a, .hero a * { cursor: pointer; }
+
 @media (prefers-reduced-motion: reduce) {
   .work-entry .img-ph,
   .note-entry,
-  .fc-arrow { transition: none; }
+  .fc-arrow,
+  .arr { transition: none; }
 }
