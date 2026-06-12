@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
       heroIntro
         .from('.hc-build', { x: -60, autoAlpha: 0, duration: 0.9 }, 0.1)
         .from('.hc-things', { x: 60, autoAlpha: 0, duration: 0.9 }, 0.25)
-        .from('.hc-sub, .hc-label, .hc-cta', { autoAlpha: 0, duration: 0.6, stagger: 0.12 }, 0.6);
+        .from('.hc-id, .hc-sub, .hc-label-city, .hc-cta', { autoAlpha: 0, duration: 0.6, stagger: 0.12 }, 0.6);
     } else {
       const wordEls = document.querySelectorAll('.hero h1 .w');
       if (wordEls.length) {

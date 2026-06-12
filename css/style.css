@@ -1682,9 +1682,25 @@ img { display: block; max-width: 100%; }
   letter-spacing: 0.14em;
   color: rgba(255, 255, 255, 0.35);
 }
-.hc-label-role   { top: 42vh; left: 5vw; }
-.hc-label-city   { top: 36vh; right: 5vw; }
-.hc-label-coords { bottom: 38vh; left: 5vw; }
+.hc-label-city { top: 36vh; right: 5vw; }
+
+/* Name block: name + role, anchored mid-left */
+.hc-id {
+  position: absolute;
+  top: 42vh;
+  left: 5vw;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+.hc-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.125rem, 1.6vw, 1.5rem);
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+.hc-id .hc-label { position: static; }
 
 .hc-cta {
   position: absolute;
@@ -1693,21 +1709,27 @@ img { display: block; max-width: 100%; }
 }
 
 @media (max-width: 768px) {
-  .hero-home { align-items: flex-start; }
+  .hero-home { align-items: stretch; }
   .hero-canvas {
     position: relative;
     inset: auto;
+    flex: 1;
     padding: 0 24px;
     display: flex;
     flex-direction: column;
-    gap: var(--s-5);
+    justify-content: center;
+    gap: var(--s-6);
   }
-  .hc-build, .hc-things, .hc-sub, .hc-label, .hc-cta {
+  .hc-id, .hc-build, .hc-things, .hc-sub, .hc-label, .hc-cta {
     position: static;
     text-align: left;
   }
-  .hc-build, .hc-things { font-size: clamp(3.5rem, 17vw, 5rem); }
-  .hc-title { display: flex; flex-direction: column; gap: var(--s-2); }
+  .hc-build, .hc-things { font-size: clamp(4rem, 21vw, 6rem); }
+  .hc-title { display: flex; flex-direction: column; gap: var(--s-3); }
+  .hc-name { font-size: 1.375rem; }
+  .hc-sub { font-size: var(--step-2); max-width: 26ch; }
+  .hc-label { font-size: 11px; }
+  .hc-cta .btn { width: 100%; }
 }
 
 /* ── Discipline ticker ───────────────────── */
