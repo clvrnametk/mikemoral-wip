@@ -143,7 +143,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const r = heroEl.getBoundingClientRect();
       const dx = (e.clientX - r.left) / r.width - 0.5;
       const dy = (e.clientY - r.top) / r.height - 0.5;
-      movers.forEach(m => { m.x(dx * 30); m.y(dy * 22); });
+      /* Inverted and small: the field shifts gently around the cursor */
+      movers.forEach(m => { m.x(dx * -10); m.y(dy * -8); });
     });
     heroEl.addEventListener('mouseleave', () => {
       movers.forEach(m => { m.x(0); m.y(0); });

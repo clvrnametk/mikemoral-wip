@@ -1905,6 +1905,12 @@ img { display: block; max-width: 100%; }
   stroke-width: 1;
 }
 
+/* Wide variant: spreads across most of the hero (notes) */
+.hero-system-wide {
+  width: min(62vw, 880px);
+  right: 6vw;
+}
+
 @media (max-width: 900px) {
   .hero-system { display: none; }
 }
