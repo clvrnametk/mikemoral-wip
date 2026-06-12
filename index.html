@@ -16,6 +16,10 @@
 </head>
 <body>
 
+<div id="preloader" aria-hidden="true">
+  <span id="preloader-count">0</span><span class="preloader-pct">%</span>
+</div>
+
 <nav class="site-nav">
   <a class="nav-logo" href="index.html"><img src="img/MM_icon_block.svg" alt="MM" class="nav-logo-img"></a>
   <ul class="nav-links">
@@ -29,17 +33,55 @@
 
 <!-- HERO -->
 <section class="hero hero-home">
-  <div class="container hero-inner">
-    <h1>I build things.</h1>
-    <p class="hero-sub" data-hero-fade>Products. Organizations. Teams. Sometimes actual physical objects.</p>
-    <p class="hero-body" data-hero-fade>VP of UX at Disney+ and Hulu. Focused on making better calls, learning faster, and building organizations where strong people do the best work of their careers.</p>
-    <div class="hero-cta" data-hero-fade>
+  <svg class="hero-topo" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+    <path d="M-100,200 C200,150 400,300 700,220 S1100,100 1540,180"/>
+    <path d="M-100,340 C150,280 350,420 650,360 S1050,240 1540,310"/>
+    <path d="M-100,460 C250,400 500,520 780,470 S1200,380 1540,440"/>
+    <path d="M-100,560 C300,510 550,610 850,570 S1250,490 1540,550"/>
+    <path d="M-100,650 C200,610 480,700 760,660 S1150,590 1540,640"/>
+    <path d="M-100,740 C350,700 600,780 900,750 S1300,680 1540,730"/>
+    <path d="M100,80  C350,40  600,160 900,100 S1300,20  1540,90"/>
+    <path d="M-100,140 C100,100 300,200 580,150 S950,60  1300,130"/>
+  </svg>
+
+  <div class="hero-canvas">
+    <h1 class="hc-title"><span class="hc-build">I build</span> <span class="hc-things">things.</span></h1>
+    <p class="hc-sub">Products. Organizations. Teams. Sometimes actual physical objects.</p>
+    <span class="hc-label hc-label-role">VP of UX · Disney+ and Hulu</span>
+    <span class="hc-label hc-label-city">Brooklyn, NY</span>
+    <span class="hc-label hc-label-coords">40.6782° N / 73.9442° W</span>
+    <div class="hc-cta">
       <a class="btn btn-outline" href="about.html">More about me →</a>
     </div>
   </div>
+
   <div class="hero-scroll" aria-hidden="true">
     <span class="hero-scroll-label">Scroll</span>
     <span class="hero-scroll-line"></span>
+  </div>
+</section>
+
+<div class="discipline-ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Product strategy</span><span class="ticker-dot">·</span>
+    <span>Design leadership</span><span class="ticker-dot">·</span>
+    <span>AI-native building</span><span class="ticker-dot">·</span>
+    <span>Consumer product</span><span class="ticker-dot">·</span>
+    <span>UX systems</span><span class="ticker-dot">·</span>
+    <span>Org design</span><span class="ticker-dot">·</span>
+    <span>Product strategy</span><span class="ticker-dot">·</span>
+    <span>Design leadership</span><span class="ticker-dot">·</span>
+    <span>AI-native building</span><span class="ticker-dot">·</span>
+    <span>Consumer product</span><span class="ticker-dot">·</span>
+    <span>UX systems</span><span class="ticker-dot">·</span>
+    <span>Org design</span><span class="ticker-dot">·</span>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="home-intro">
+  <div class="container" data-reveal>
+    <p>VP of UX at Disney+ and Hulu. Focused on making better calls, learning faster, and building organizations where strong people do the best work of their careers.</p>
   </div>
 </section>
 

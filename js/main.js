@@ -9,6 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const hasGsap = typeof window.gsap !== 'undefined';
 
+  /* ── Preloader (index only, first visit per session) ────── */
+  const preloader = document.getElementById('preloader');
+  const runPreloader = preloader && hasGsap && !reduceMotion && !sessionStorage.getItem('mm_preloaded');
+  if (preloader && !runPreloader) preloader.remove();
+
   /* ── Nav background: scroll-driven, 0–60px range ────────── */
   const nav = document.querySelector('.site-nav');
   if (nav) {
@@ -36,9 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!hasGsap || reduceMotion) return;
 
-  /* ── Hero headline: split into words, stagger reveal ────── */
+  /* ── Hero headline: split into words for stagger ────────── */
+  /* Skipped when the h1 contains markup (home canvas, about
+     accent span) — those are pre-split or animated whole. */
   const heroTitle = document.querySelector('.hero h1');
-  if (heroTitle && !heroTitle.dataset.split) {
+  if (heroTitle && !heroTitle.dataset.split && heroTitle.children.length === 0) {
     const words = heroTitle.textContent.trim().split(/\s+/);
     heroTitle.textContent = '';
     words.forEach((word, i) => {
@@ -51,31 +58,78 @@ document.addEventListener('DOMContentLoaded', () => {
     heroTitle.dataset.split = 'true';
   }
 
-  const heroIntro = gsap.timeline({ defaults: { ease: 'power3.out' } });
+  /* ── Hero entrance ───────────────────────────────────────── */
+  const runHeroIntro = () => {
+    const heroIntro = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
-  if (heroTitle) {
-    heroIntro.from('.hero h1 .w', {
-      y: 40,
-      autoAlpha: 0,
-      duration: 0.8,
-      stagger: 0.08
+    if (document.querySelector('.hero-home')) {
+      /* Broken grid canvas: corners slide in, labels fade */
+      heroIntro
+        .from('.hc-build', { x: -60, autoAlpha: 0, duration: 0.9 }, 0.1)
+        .from('.hc-things', { x: 60, autoAlpha: 0, duration: 0.9 }, 0.25)
+        .from('.hc-sub, .hc-label, .hc-cta', { autoAlpha: 0, duration: 0.6, stagger: 0.12 }, 0.6);
+    } else {
+      const wordEls = document.querySelectorAll('.hero h1 .w');
+      if (wordEls.length) {
+        heroIntro.from(wordEls, {
+          y: 40,
+          autoAlpha: 0,
+          duration: 0.8,
+          stagger: 0.08
+        });
+      }
+
+      const heroFades = document.querySelectorAll('.hero [data-hero-fade]');
+      if (heroFades.length) {
+        heroIntro.from(heroFades, {
+          y: 24,
+          autoAlpha: 0,
+          duration: 0.7,
+          stagger: 0.1
+        }, wordEls.length ? '-=0.45' : 0);
+      }
+    }
+
+    const heroScroll = document.querySelector('.hero-scroll');
+    if (heroScroll) {
+      heroIntro.from(heroScroll, { autoAlpha: 0, duration: 0.9 }, '-=0.2');
+    }
+  };
+
+  if (runPreloader) {
+    const counter = document.getElementById('preloader-count');
+    const count = { val: 0 };
+    gsap.to(count, {
+      val: 100,
+      duration: 1.4,
+      ease: 'power2.in',
+      onUpdate() { counter.textContent = Math.round(count.val); },
+      onComplete() {
+        sessionStorage.setItem('mm_preloaded', '1');
+        gsap.to(preloader, {
+          autoAlpha: 0,
+          duration: 0.5,
+          onComplete() { preloader.remove(); }
+        });
+        runHeroIntro();
+      }
     });
+  } else {
+    runHeroIntro();
   }
 
-  const heroFades = document.querySelectorAll('.hero [data-hero-fade]');
-  if (heroFades.length) {
-    heroIntro.from(heroFades, {
-      y: 24,
-      autoAlpha: 0,
-      duration: 0.7,
-      stagger: 0.1
-    }, heroTitle ? '-=0.45' : 0);
-  }
-
-  const heroScroll = document.querySelector('.hero-scroll');
-  if (heroScroll) {
-    heroIntro.from(heroScroll, { autoAlpha: 0, duration: 0.9 }, '-=0.2');
-  }
+  /* ── Topo contour drift: slow ambient movement ───────────── */
+  document.querySelectorAll('.hero-topo path').forEach((path, i) => {
+    gsap.to(path, {
+      x: (i % 2 === 0 ? 1 : -1) * (12 + i * 3),
+      y: (i % 3 === 0 ? 1 : -1) * (8 + i * 2),
+      duration: 10 + i * 1.5,
+      repeat: -1,
+      yoyo: true,
+      ease: 'sine.inOut',
+      delay: i * 0.7
+    });
+  });
 
   /* ── Section content: fade up on scroll-enter ───────────── */
   if (typeof window.ScrollTrigger === 'undefined') return;

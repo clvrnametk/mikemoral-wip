@@ -338,14 +338,15 @@ img { display: block; max-width: 100%; }
 .cs-back {
   display: inline-block;
   font-family: var(--font-body);
-  font-size: 0.8125rem;
-  font-weight: 400;
-  color: var(--white-55);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--pink);
   text-decoration: none;
   margin-bottom: var(--s-6);
-  transition: color .15s;
 }
-.cs-back:hover { color: #fff; }
+.cs-back:hover { opacity: 0.7; }
 
 /* ── Scroll indicator ────────────────────── */
 .hero-scroll {
@@ -681,10 +682,10 @@ img { display: block; max-width: 100%; }
    IMAGE PLACEHOLDER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .img-ph {
+  position: relative;
   width: 100%;
   height: 100%;
-  background: #e8e8e8;
-  border: 2px dashed #ccc;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -693,7 +694,30 @@ img { display: block; max-width: 100%; }
   font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #bbb;
+}
+
+.img-ph-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #1c1c5c 0%, #0a0a2a 60%, #150f3c 100%);
+}
+
+.img-ph-label {
+  position: relative;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.18);
+  padding: 0 24px;
+  text-align: center;
+}
+
+.img-ph-icon {
+  position: absolute;
+  z-index: 1;
+  bottom: 16px;
+  right: 20px;
+  width: 18px;
+  height: 18px;
+  color: rgba(255, 255, 255, 0.13);
 }
 
 /* Aspect ratio wrappers */
@@ -1536,3 +1560,237 @@ img { display: block; max-width: 100%; }
   .pillar-filters { gap: 6px; }
   .filter-btn { font-size: 0.75rem; padding: 5px 12px; }
 }
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   REVISION — dynamic pass
+   Broken grid hero, topo lines, compact
+   article heroes, preloader, ticker.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+/* ── Hero layering for decorative layers ─── */
+.hero-inner { position: relative; z-index: 1; }
+.hero-scroll { z-index: 1; }
+
+/* ── Topographic contour lines ───────────── */
+.hero-topo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+.hero-topo path {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.055);
+  stroke-width: 1;
+}
+
+/* ── Article heroes: compact, bottom-anchored ── */
+.hero-article {
+  min-height: clamp(280px, 48vh, 520px);
+  align-items: flex-end;
+  padding-bottom: var(--s-9);
+}
+.hero-article .hero-scroll { display: none; }
+
+/* Work detail: pink vertical bar at the content gutter */
+.hero-article .hero-inner {
+  padding-left: calc(24px + var(--s-5) + 3px);
+}
+.hero-article .hero-inner::before {
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--pink);
+}
+
+/* Note detail: reading page, no bar, pillar pill */
+.hero-note .hero-inner { padding-left: 24px; }
+.hero-note .hero-inner::before { display: none; }
+
+.note-pillar-tag {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 3px 10px;
+  margin-bottom: var(--s-5);
+}
+
+.note-back {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--pink);
+  text-decoration: none;
+  margin-bottom: var(--s-5);
+}
+.note-back:hover { opacity: 0.7; }
+
+/* ── Home hero: broken grid canvas ───────── */
+.hero-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.hc-title { margin: 0; }
+
+.hc-build,
+.hc-things {
+  position: absolute;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(5rem, 13vw, 12rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+.hc-build { top: 14vh; left: 5vw; }
+.hc-things { bottom: 18vh; right: 5vw; text-align: right; }
+
+.hc-sub {
+  position: absolute;
+  bottom: 28vh;
+  left: 5vw;
+  max-width: 340px;
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: var(--step-0);
+  line-height: 1.5;
+  color: var(--white-75);
+}
+
+.hc-label {
+  position: absolute;
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: rgba(255, 255, 255, 0.35);
+}
+.hc-label-role   { top: 42vh; left: 5vw; }
+.hc-label-city   { top: 36vh; right: 5vw; }
+.hc-label-coords { bottom: 38vh; left: 5vw; }
+
+.hc-cta {
+  position: absolute;
+  bottom: 18vh;
+  left: 5vw;
+}
+
+@media (max-width: 768px) {
+  .hero-home { align-items: flex-start; }
+  .hero-canvas {
+    position: relative;
+    inset: auto;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-5);
+  }
+  .hc-build, .hc-things, .hc-sub, .hc-label, .hc-cta {
+    position: static;
+    text-align: left;
+  }
+  .hc-build, .hc-things { font-size: clamp(3.5rem, 17vw, 5rem); }
+  .hc-title { display: flex; flex-direction: column; gap: var(--s-2); }
+}
+
+/* ── Discipline ticker ───────────────────── */
+.discipline-ticker {
+  background: var(--navy);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  padding: 14px 0;
+}
+.ticker-track {
+  display: flex;
+  gap: 32px;
+  width: max-content;
+  animation: ticker-scroll 30s linear infinite;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.45);
+}
+.ticker-dot { color: var(--pink); }
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track { animation: none; }
+}
+
+/* ── Home intro (relocated hero bio line) ── */
+.home-intro {
+  background: var(--white);
+  padding: var(--s-8) 0;
+  border-bottom: 1px solid var(--divider);
+}
+.home-intro p {
+  font-size: var(--step-1);
+  line-height: 1.75;
+  color: var(--navy);
+  max-width: var(--reading-width);
+}
+
+/* ── Preloader (index only) ──────────────── */
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: var(--navy);
+  z-index: 9000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10vh;
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 14vw, 10rem);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.04em;
+  pointer-events: none;
+}
+.preloader-pct {
+  font-size: 0.35em;
+  color: var(--pink);
+  align-self: flex-end;
+  margin-bottom: 0.5em;
+}
+
+/* ── About hero: watermark + pink accent ── */
+.hero-about { overflow: hidden; }
+.hero-watermark {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  pointer-events: none;
+}
+.hero-wm-img {
+  width: 75vw;
+  max-width: 900px;
+  opacity: 0.04;
+  filter: brightness(0) invert(1);
+}
+.hero-about-accent { color: var(--pink); }
