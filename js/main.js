@@ -118,7 +118,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ── Topo contour drift: slow ambient movement ───────────── */
-  document.querySelectorAll('.hero-topo path').forEach((path, i) => {
+  /* Direct children only: the route map group stays anchored. */
+  document.querySelectorAll('.hero-topo > path').forEach((path, i) => {
     gsap.to(path, {
       x: (i % 2 === 0 ? 1 : -1) * (12 + i * 3),
       y: (i % 3 === 0 ? 1 : -1) * (8 + i * 2),

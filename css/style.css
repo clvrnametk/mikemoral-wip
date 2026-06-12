@@ -1822,3 +1822,85 @@ img { display: block; max-width: 100%; }
   filter: brightness(0) invert(1);
 }
 .hero-about-accent { color: var(--pink); }
+
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   REVISION 2 — hover motion, route map,
+   system illustration, featured arrows
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+/* ── Hover: work thumbs zoom inside their frame ── */
+.work-entry .img-ph {
+  transition: transform .5s cubic-bezier(.25, .46, .45, .94);
+}
+.work-entry:hover .img-ph {
+  transform: scale(1.04);
+}
+
+/* ── Hover: notes rows slide right ───────── */
+.note-entry {
+  transition: transform .35s ease;
+}
+.note-entry:hover {
+  transform: translateX(6px);
+}
+
+/* ── Featured cards: pink corner arrow ───── */
+.featured-card {
+  position: relative;
+}
+.fc-arrow {
+  position: absolute;
+  top: 24px;
+  right: 0;
+  color: var(--pink);
+  font-size: 1.125rem;
+  line-height: 1;
+  transition: transform .25s ease;
+}
+.featured-card:hover .fc-arrow {
+  transform: translateX(4px);
+}
+
+/* ── Home hero: abstract route (connections) ── */
+.hero-topo .route-line {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.16);
+  stroke-width: 1;
+  stroke-dasharray: 2 7;
+}
+.hero-topo .route-node {
+  fill: rgba(225, 0, 135, 0.45);
+}
+
+/* ── Work hero: node-and-line system ─────── */
+.hero-system {
+  position: absolute;
+  top: 50%;
+  right: 4vw;
+  transform: translateY(-50%);
+  width: min(40vw, 540px);
+  height: auto;
+  pointer-events: none;
+  z-index: 0;
+}
+.hero-system line {
+  stroke: rgba(255, 255, 255, 0.1);
+  stroke-width: 1;
+}
+.hero-system rect {
+  fill: rgba(255, 255, 255, 0.22);
+}
+.hero-system rect.node-accent {
+  fill: rgba(225, 0, 135, 0.5);
+}
+
+@media (max-width: 900px) {
+  .hero-system { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .work-entry .img-ph,
+  .note-entry,
+  .fc-arrow { transition: none; }
+}
