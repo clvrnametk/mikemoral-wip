@@ -131,26 +131,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ── Constellation parallax: drifts with the cursor ─────── */
-  const heroEl = document.querySelector('.hero');
-  const parallaxEls = heroEl ? heroEl.querySelectorAll('.hero-system, .topo-route') : [];
-  if (heroEl && parallaxEls.length && window.matchMedia('(pointer: fine)').matches) {
-    const movers = Array.from(parallaxEls).map(el => ({
-      x: gsap.quickTo(el, 'x', { duration: 0.8, ease: 'power3.out' }),
-      y: gsap.quickTo(el, 'y', { duration: 0.8, ease: 'power3.out' })
-    }));
-    heroEl.addEventListener('mousemove', e => {
-      const r = heroEl.getBoundingClientRect();
-      const dx = (e.clientX - r.left) / r.width - 0.5;
-      const dy = (e.clientY - r.top) / r.height - 0.5;
-      /* Inverted and small: the field shifts gently around the cursor */
-      movers.forEach(m => { m.x(dx * -10); m.y(dy * -8); });
-    });
-    heroEl.addEventListener('mouseleave', () => {
-      movers.forEach(m => { m.x(0); m.y(0); });
-    });
-  }
-
   /* ── Section content: fade up on scroll-enter ───────────── */
   if (typeof window.ScrollTrigger === 'undefined') return;
   gsap.registerPlugin(ScrollTrigger);

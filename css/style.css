@@ -1873,47 +1873,6 @@ img { display: block; max-width: 100%; }
   fill: rgba(225, 0, 135, 0.45);
 }
 
-/* ── Hero constellations (work / notes / about) ── */
-.hero-system {
-  position: absolute;
-  top: 50%;
-  right: 14vw;
-  transform: translateY(-50%);
-  width: min(40vw, 540px);
-  height: auto;
-  pointer-events: none;
-  z-index: 0;
-}
-.hero-system line {
-  stroke: rgba(255, 255, 255, 0.08);
-  stroke-width: 1;
-}
-.hero-system circle {
-  fill: rgba(255, 255, 255, 0.22);
-}
-.hero-system circle.node-accent {
-  fill: rgba(225, 0, 135, 0.55);
-}
-.hero-system .sys-route {
-  fill: none;
-  stroke: rgba(225, 0, 135, 0.4);
-  stroke-width: 1.5;
-}
-.hero-system .sys-path {
-  fill: none;
-  stroke: rgba(255, 255, 255, 0.14);
-  stroke-width: 1;
-}
-
-/* Wide variant: spreads across most of the hero (notes) */
-.hero-system-wide {
-  width: min(62vw, 880px);
-  right: 6vw;
-}
-
-@media (max-width: 900px) {
-  .hero-system { display: none; }
-}
 
 /* ── Arrows: consistent nudge on hover ───── */
 .arr {
