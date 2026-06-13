@@ -100,14 +100,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const count = { val: 0 };
     gsap.to(count, {
       val: 100,
-      duration: 1.4,
+      duration: 0.7,
       ease: 'power2.in',
       onUpdate() { counter.textContent = Math.round(count.val); },
       onComplete() {
         sessionStorage.setItem('mm_preloaded', '1');
         gsap.to(preloader, {
           autoAlpha: 0,
-          duration: 0.5,
+          duration: 0.25,
           onComplete() { preloader.remove(); }
         });
         runHeroIntro();

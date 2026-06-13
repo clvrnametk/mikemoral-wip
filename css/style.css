@@ -972,7 +972,7 @@ img { display: block; max-width: 100%; }
 }
 
 .about-text p {
-  font-size: var(--step-1);
+  font-size: var(--step-0);
   line-height: 1.75;
   color: var(--navy);
   margin-bottom: var(--s-5);
@@ -1545,8 +1545,12 @@ img { display: block; max-width: 100%; }
   .note-entry { grid-template-columns: 1fr; gap: var(--s-3); padding: 28px 0; }
   .note-date { padding-top: 0; }
 
-  .footer-grid { flex-direction: column; gap: var(--s-6); }
+  .footer-grid { flex-direction: column; align-items: flex-start; gap: var(--s-6); }
   .footer-contact { align-items: flex-start; }
+
+  .about-text p { font-size: var(--step-1); }
+
+  .hc-id { gap: var(--s-2); }
 }
 
 @media (max-width: 640px) {
@@ -1666,7 +1670,7 @@ img { display: block; max-width: 100%; }
 
 .hc-sub {
   position: absolute;
-  bottom: 28vh;
+  bottom: 32vh;
   left: 5vw;
   max-width: 340px;
   font-family: var(--font-body);
@@ -1695,7 +1699,7 @@ img { display: block; max-width: 100%; }
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: var(--s-2);
+  gap: var(--s-1);
   text-align: right;
 }
 .hc-name {
@@ -1719,7 +1723,7 @@ img { display: block; max-width: 100%; }
     position: relative;
     inset: auto;
     flex: 1;
-    padding: 0 24px;
+    padding: 0 24px 96px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1734,6 +1738,7 @@ img { display: block; max-width: 100%; }
   .hc-title { display: flex; flex-direction: column; gap: var(--s-3); }
   .hc-name { font-size: 1.375rem; }
   .hc-sub { font-size: var(--step-2); max-width: 26ch; }
+  .hc-label-city { display: none; }
   .hc-label { font-size: 11px; }
   .hc-cta .btn { width: 100%; }
 }
@@ -1804,23 +1809,8 @@ img { display: block; max-width: 100%; }
   margin-bottom: 0.5em;
 }
 
-/* ── About hero: watermark + pink accent ── */
+/* ── About hero: pink accent ── */
 .hero-about { overflow: hidden; }
-.hero-watermark {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 0;
-  pointer-events: none;
-}
-.hero-wm-img {
-  width: 75vw;
-  max-width: 900px;
-  opacity: 0.04;
-  filter: brightness(0) invert(1);
-}
 .hero-about-accent { color: var(--pink); }
 
 
