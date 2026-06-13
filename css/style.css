@@ -1729,7 +1729,7 @@ img { display: block; max-width: 100%; }
     justify-content: center;
     gap: var(--s-6);
   }
-  .hero-scroll { display: none; }
+  .hero-home .hero-scroll { display: none; }
   .hc-title, .hc-id, .hc-build, .hc-things, .hc-sub, .hc-label, .hc-cta {
     position: static;
     text-align: left;
