@@ -1723,12 +1723,13 @@ img { display: block; max-width: 100%; }
     position: relative;
     inset: auto;
     flex: 1;
-    padding: 0 24px 96px;
+    padding: 0 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: var(--s-6);
   }
+  .hero-scroll { display: none; }
   .hc-title, .hc-id, .hc-build, .hc-things, .hc-sub, .hc-label, .hc-cta {
     position: static;
     text-align: left;
