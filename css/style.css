@@ -1580,6 +1580,23 @@ img { display: block; max-width: 100%; }
 .hero-inner { position: relative; z-index: 1; }
 .hero-scroll { z-index: 1; }
 
+/* ── Hero photo (work / notes / about) ───── */
+.hero-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
 /* ── Topographic contour lines ───────────── */
 .hero-topo {
   position: absolute;
