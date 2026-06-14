@@ -68,6 +68,11 @@ document.addEventListener('DOMContentLoaded', () => {
         .from('.hc-build, .hc-things', { y: 40, autoAlpha: 0, duration: 0.8, stagger: 0.12 }, 0.1)
         .from('.hc-id, .hc-sub, .hc-label-city, .hc-cta', { autoAlpha: 0, duration: 0.6, stagger: 0.12 }, 0.6);
     } else {
+      const heroPhoto = document.querySelector('.hero-photo');
+      if (heroPhoto) {
+        heroIntro.fromTo(heroPhoto, { autoAlpha: 0 }, { autoAlpha: 1, duration: 1.1, ease: 'power2.out' }, 0);
+      }
+
       const wordEls = document.querySelectorAll('.hero h1 .w');
       if (wordEls.length) {
         heroIntro.from(wordEls, {
