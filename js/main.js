@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
           autoAlpha: 0,
           duration: 0.8,
           stagger: 0.08
-        });
+        }, 0);
       }
 
       const heroFades = document.querySelectorAll('.hero [data-hero-fade]');
