@@ -1555,6 +1555,12 @@ img { display: block; max-width: 100%; }
   .hc-id { gap: var(--s-2); }
 
   .mob-br { display: block; }
+
+  .hero-photo { overflow: hidden; }
+  .hero-photo img {
+    transform: scale(1.8);
+    transform-origin: 64% 6%;
+  }
 }
 
 @media (max-width: 640px) {
