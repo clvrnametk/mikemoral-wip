@@ -2261,6 +2261,8 @@ a:hover .arr-left,
 
 /* SummerQuest: full-width meta bar; body copy centered + at 1rem */
 .sq-content .container { max-width: var(--page-width); }
+/* Tighten the gap between the navy hero and the Year bar */
+.sq-content:not(.sq-body-section) { padding-top: var(--s-4); }
 .sq-body-section .cs-body { max-width: var(--reading-width); margin: 0 auto; }
 .sq-body-section .cs-body > * { max-width: none; }
 .sq-body-section .cs-body p { font-size: 1rem; line-height: 1.7; }
