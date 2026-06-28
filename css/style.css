@@ -2295,9 +2295,9 @@ a:hover .arr-left,
 
 /* SummerQuest: TV strip sits after the outcome, inside the white body section.
    The body container is pulled up (transparent) so the strip's lower glow sits behind the text. */
-.sq-tvstrip { padding: var(--s-7) 0 0; }
+.sq-tvstrip { padding: 0; margin-top: clamp(-90px, -5vw, -36px); }
 .sq-body-section > .container {
-  margin-top: clamp(-170px, -9.5vw, -64px);
+  margin-top: clamp(-110px, -6vw, -44px);
   position: relative;
   z-index: 1;
 }
