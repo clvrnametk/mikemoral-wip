@@ -636,7 +636,7 @@ img { display: block; max-width: 100%; }
   background: var(--bg);
   border-left: 3px solid var(--pink);
   padding: var(--s-5) var(--s-5);
-  margin: var(--s-6) 0 0;
+  margin: 0;
   max-width: var(--reading-width);
 }
 
@@ -1327,6 +1327,7 @@ img { display: block; max-width: 100%; }
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .cs-content {
   background: var(--white);
+  padding-top: var(--s-7);
   padding-bottom: 0;
 }
 
@@ -1366,9 +1367,9 @@ img { display: block; max-width: 100%; }
   max-width: var(--reading-width);
 }
 
-/* Editorial breakout: images span the full container */
+/* Images align to the reading column (one-column layout) */
 .cs-body > .cs-img-wrap {
-  max-width: none;
+  max-width: var(--reading-width);
 }
 
 .cs-body h2,
@@ -1516,6 +1517,10 @@ img { display: block; max-width: 100%; }
   padding-bottom: var(--s-7);
   border-bottom: 1px solid var(--white-12);
 }
+
+.footer-site-name,
+.footer-tagline,
+.footer-bottom { cursor: default; }
 
 .footer-site-name {
   font-family: var(--font-body);
@@ -2033,3 +2038,267 @@ a:hover .arr-left,
   .arr { transition: none; }
   .hero-photo { opacity: 1; }
 }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   PIECES TO COME (Work index — WIP teaser)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.pieces-section {
+  background: var(--bg);
+  border-top: 1px solid var(--divider);
+  padding-top: var(--s-7);
+  padding-bottom: var(--s-7);
+}
+.pieces-title {
+  margin: 0 0 var(--s-6);
+  max-width: 24ch;
+}
+.pieces-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--s-5) var(--s-6);
+}
+.piece {
+  border-top: 2px solid var(--navy);
+  padding-top: var(--s-4);
+}
+.piece h3 {
+  margin: 0 0 var(--s-3);
+  display: flex;
+  align-items: baseline;
+  gap: .5rem;
+}
+.piece h3::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  flex: 0 0 auto;
+  background: var(--pink);
+  transform: translateY(-1px);
+}
+.piece p {
+  margin: 0;
+  color: var(--text);
+}
+@media (max-width: 700px) {
+  .pieces-list { grid-template-columns: 1fr; gap: var(--s-5); }
+}
+
+/* ── Case-study body lists + coverage ────── */
+.cs-body ul {
+  list-style: none;
+  margin: 0 0 var(--s-4);
+  padding: 0;
+}
+.cs-body ul li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: var(--s-3);
+  font-size: var(--step-1);
+  line-height: 1.7;
+  color: var(--navy);
+}
+.cs-body ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .7em;
+  width: 7px;
+  height: 7px;
+  background: var(--pink);
+}
+.cs-coverage {
+  margin-top: var(--s-5);
+  padding-top: var(--s-4);
+  border-top: 1px solid var(--divider);
+  font-size: var(--label-size);
+  letter-spacing: .2px;
+  color: var(--text);
+}
+.cs-coverage .cs-coverage-label {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: var(--label-tracking);
+  color: var(--pink);
+  margin-right: .5rem;
+}
+.cs-coverage a {
+  color: var(--navy);
+  text-decoration: underline;
+  text-decoration-color: var(--divider);
+  text-underline-offset: 3px;
+  transition: text-decoration-color .25s;
+}
+.cs-coverage a:hover { text-decoration-color: var(--pink); }
+.cs-coverage .sep { color: var(--divider); margin: 0 .5rem; }
+
+/* ── Case-study real images + captions ───── */
+.cs-img-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.cs-img-wrap.cs-img-frame img {
+  border: 1px solid var(--divider);
+}
+.cs-caption {
+  display: block;
+  margin-top: var(--s-3);
+  font-size: var(--label-size);
+  letter-spacing: .2px;
+  text-transform: uppercase;
+  color: var(--text);
+  letter-spacing: var(--label-tracking);
+  font-weight: 700;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   SUMMERQUEST case study — bespoke sections
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* Full-bleed TV strip (three TVs, bleeds off both edges) */
+.sq-tvstrip {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: var(--white);
+  padding: var(--s-7) 0;
+}
+.sq-tvstrip img {
+  height: clamp(320px, 46vw, 820px);
+  width: auto;
+  max-width: none;
+}
+
+/* Quote band over the (duotone) photo of the kids — mirrors the home intro band */
+.cs-quoteband {
+  position: relative;
+  overflow: hidden;
+  background: var(--navy);
+  min-height: clamp(360px, 52vh, 560px);
+  display: flex;
+  align-items: center;
+}
+.cqb-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -16%;
+  height: 132%;
+  background: url('../img/summerquest/summerquest-band.webp') center/cover no-repeat;
+  will-change: transform;
+}
+.cqb-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(15,15,60,.92) 0%, rgba(15,15,60,.66) 42%, rgba(15,15,60,.22) 100%);
+}
+.cqb-inner {
+  position: relative;
+  z-index: 1;
+  padding-top: var(--s-8);
+  padding-bottom: var(--s-8);
+}
+.cqb-rule {
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: var(--pink);
+  margin: 0 0 1.5rem;
+}
+.cqb-quote {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 1rem + 2.4vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1.22;
+  color: #fff;
+  max-width: 40rem;
+  margin: 0;
+}
+.cqb-attr {
+  display: block;
+  margin-top: var(--s-4);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  font-weight: 400;
+  color: var(--white-65);
+}
+
+/* The eight cities grid (rounded tiles, titles, in order) */
+.sq-cities {
+  background: var(--white);
+  padding: var(--s-8) 0 var(--s-9);
+}
+.sq-cities-head {
+  max-width: var(--reading-width);
+  margin-bottom: var(--s-6);
+}
+.sq-cities-head h2 {
+  font-size: var(--step-2);
+  color: var(--navy);
+  margin-bottom: var(--s-3);
+}
+.sq-cities-head p { color: var(--text); margin: 0; }
+.sq-city-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--s-5);
+}
+.sq-city img { width: 100%; height: auto; }
+.sq-city-name {
+  display: block;
+  margin-top: var(--s-3);
+  font-family: var(--font-body);
+  font-size: var(--step--1);
+  font-weight: 700;
+  color: var(--navy);
+}
+.sq-city-name .n { color: var(--pink); margin-right: .45rem; }
+@media (max-width: 760px) {
+  .sq-city-grid { grid-template-columns: repeat(2, 1fr); gap: var(--s-4); }
+}
+
+/* SummerQuest: full-width meta bar; body copy centered + at 1rem */
+.sq-content .container { max-width: var(--page-width); }
+.sq-body-section .cs-body { max-width: var(--reading-width); margin: 0 auto; }
+.sq-body-section .cs-body > * { max-width: none; }
+.sq-body-section .cs-body p { font-size: 1rem; line-height: 1.7; }
+
+/* SummerQuest: hero copy aligned to the container left (same edge as the meta bar) */
+.sq-hero .hero-inner { padding-left: 24px; }
+.sq-hero .hero-inner::before { display: none; }
+
+/* SummerQuest: outcome as its own unit, directly under the meta bar */
+.sq-outcome {
+  padding: var(--s-6) 0 var(--s-7);
+  border-bottom: 1px solid var(--divider);
+}
+.sq-outcome-label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--label-size);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--label-tracking);
+  color: var(--pink);
+  margin-bottom: var(--s-3);
+}
+.sq-outcome p {
+  margin: 0;
+  max-width: var(--reading-width);
+  font-family: var(--font-body);
+  font-size: var(--step-1);
+  line-height: 1.55;
+  color: var(--navy);
+}
+
+/* SummerQuest: TV strip sits after the outcome, inside the white body section.
+   The body container is pulled up (transparent) so the strip's lower glow sits behind the text. */
+.sq-tvstrip { padding: var(--s-7) 0 0; }
+.sq-body-section > .container {
+  margin-top: clamp(-170px, -9.5vw, -64px);
+  position: relative;
+  z-index: 1;
+}
+.sq-body-section .cs-body { padding-top: 0; }

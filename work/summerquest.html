@@ -27,11 +27,11 @@
 </nav>
 
 
-<section class="hero hero-article">
+<section class="hero hero-article sq-hero">
   <div class="container hero-inner">
     <a class="cs-back" data-hero-fade href="../work.html"><span class="arr arr-left">←</span> Work</a>
     <h1>SummerQuest</h1>
-    <p class="cs-sub" data-hero-fade>A cooperative family reward system built for Apple TV. First build to TestFlight in one day. Full featured product in five. The test of a thesis.</p>
+    <p class="cs-sub" data-hero-fade>A cooperative family reward system for Apple TV. First build to TestFlight in one day. Full featured product in five.</p>
   </div>
   <div class="hero-scroll" aria-hidden="true">
     <span class="hero-scroll-label">Scroll</span>
@@ -39,7 +39,7 @@
   </div>
 </section>
 
-<section class="cs-content">
+<section class="cs-content sq-content">
   <div class="container">
 
   <!-- ── META ─────────────────────────────── -->
@@ -58,16 +58,31 @@
     </div>
     <div class="cs-meta-item">
       <label>Status</label>
-      <span>Live on TestFlight</span>
+      <span>Live on TestFlight · in daily use</span>
     </div>
   </div>
 
+  <!-- ── OUTCOME (its own unit, directly under the meta bar) ─── -->
+  <div class="sq-outcome">
+    <span class="sq-outcome-label">Outcome</span>
+    <p>Weeks in, two kids still check their stars every morning - on their own, without me prompting them. The build was never the test. Coming back the next day was.</p>
+  </div>
+
+  </div>
+</section>
+
+<section class="cs-content sq-content sq-body-section">
+
+  <!-- THREE TVs — full-bleed inside the white body section so the glow sits behind the text -->
+  <!-- VIDEO SPOT (optional, capture later): a 5-10s loop of the animated map background could replace this strip. -->
+  <div class="sq-tvstrip" role="img" aria-label="SummerQuest running on the living-room TV">
+    <img src="../img/summerquest/tv-long.webp" alt="SummerQuest shown across three TV screens - the home map, team progress, and the summer calendar" loading="eager">
+  </div>
+
+  <div class="container">
+
   <!-- ── BODY ─────────────────────────────── -->
   <div class="cs-body">
-
-    <div class="cs-img-wrap">
-      <div class="img-ph" style="height:420px;"><div class="img-ph-bg"></div><span class="img-ph-label">[ SummerQuest map background ]</span><svg class="img-ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>
-    </div>
 
     <h2>The need</h2>
     <p>My kids needed a reason to stay in their own beds this summer. I needed to know what it actually takes to ship a tvOS app. This project solved both problems at once.</p>
@@ -77,10 +92,6 @@
     <p>The experience runs on a single TV in the living room and an Apple Remote. No phones. No parent facilitation on a good morning. The system runs itself.</p>
 
     <div class="pullquote">Eight milestone cities. Ten weeks. One remote. The system runs itself.</div>
-
-    <div class="cs-img-wrap">
-      <div class="img-ph" style="height:380px;"><div class="img-ph-bg"></div><span class="img-ph-label">[ App icon + character avatars ]</span><svg class="img-ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>
-    </div>
 
     <h2>Why this exists on my work page</h2>
     <p>I have been making the case inside my organization that AI compresses the distance between an idea and a working product. I wanted to know if that was true from the inside.</p>
@@ -94,10 +105,6 @@
 
     <p>The design system was documented in a single source-of-truth file that every session read before making visual changes. Frosted glass panels over a full-bleed animated map background — the same panel architecture Disney+ uses on tvOS. Isometric city assets generated in Midjourney. Eight milestone platforms — Base Camp through Dream Park — each with its own color world.</p>
 
-    <div class="cs-img-wrap">
-      <div class="img-ph" style="height:380px;"><div class="img-ph-bg"></div><span class="img-ph-label">[ Milestone cities — Base Camp, Sweet Village, Dream Park ]</span><svg class="img-ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>
-    </div>
-
     <h2>What the first test session dismantled</h2>
     <p>The first build went to the couch. Two kids, one remote, and about four minutes of feedback from my eight-year-old dismantled two of the most load-bearing decisions from the brief.</p>
 
@@ -107,10 +114,6 @@
 
     <p>Both changes were obvious in retrospect. Neither showed up in planning.</p>
 
-    <div class="cs-img-wrap">
-      <div class="img-ph" style="height:420px;"><div class="img-ph-bg"></div><span class="img-ph-label">[ App on TV — live screenshot ]</span><svg class="img-ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>
-    </div>
-
     <h2>What I learned</h2>
     <p>Documenting decisions before building is more valuable than documenting after. The context files written before touching code did more to keep the project coherent than any single technical choice.</p>
 
@@ -119,6 +122,64 @@
     <div class="pullquote">A working build in one day. A reliable, fully featured product in five. That ratio is the argument.</div>
 
   </div>
+  </div>
+</section>
+
+
+<!-- QUOTE BAND — the kids using it (duotone, like the home sprint image) -->
+<!-- VIDEO SPOT (optional, capture later): a quiet 5-10s muted clip of a kid checking in / a star landing could replace this still. -->
+<section class="cs-quoteband" aria-label="The kids using SummerQuest">
+  <div class="cqb-bg" aria-hidden="true"></div>
+  <div class="cqb-scrim" aria-hidden="true"></div>
+  <div class="container cqb-inner">
+    <span class="cqb-rule" aria-hidden="true"></span>
+    <p class="cqb-quote">The test was never shipping it. It was whether they would come back the next morning. Weeks later, they still do.</p>
+    <span class="cqb-attr">SummerQuest, every morning, running itself.</span>
+  </div>
+</section>
+
+
+<!-- THE EIGHT CITIES -->
+<section class="sq-cities">
+  <div class="container">
+    <div class="sq-cities-head">
+      <h2>The eight cities</h2>
+      <p>Each milestone is its own world, in order from the first reward to the last. Every city forces its dominant color through the whole scene so it reads from across the room.</p>
+    </div>
+    <div class="sq-city-grid">
+      <div class="sq-city">
+        <img src="../img/summerquest/city-01-sweet-village.webp" alt="Sweet Village - pastel ice-cream world" loading="lazy">
+        <span class="sq-city-name"><span class="n">1</span>Sweet Village</span>
+      </div>
+      <div class="sq-city">
+        <img src="../img/summerquest/city-02-toy-town.webp" alt="Toy Town - bright primary-color toy shops" loading="lazy">
+        <span class="sq-city-name"><span class="n">2</span>Toy Town</span>
+      </div>
+      <div class="sq-city">
+        <img src="../img/summerquest/city-03-cinema-city.webp" alt="Cinema City - movie marquees and lights" loading="lazy">
+        <span class="sq-city-name"><span class="n">3</span>Cinema City</span>
+      </div>
+      <div class="sq-city">
+        <img src="../img/summerquest/city-04-arcade-alley.webp" alt="Arcade Alley - neon arcade world" loading="lazy">
+        <span class="sq-city-name"><span class="n">4</span>Arcade Alley</span>
+      </div>
+      <div class="sq-city">
+        <img src="../img/summerquest/city-05-splash-kingdom.webp" alt="Splash Kingdom - water park world" loading="lazy">
+        <span class="sq-city-name"><span class="n">5</span>Splash Kingdom</span>
+      </div>
+      <div class="sq-city">
+        <img src="../img/summerquest/city-06-discovery-lab.webp" alt="Discovery Lab - science and invention world" loading="lazy">
+        <span class="sq-city-name"><span class="n">6</span>Discovery Lab</span>
+      </div>
+      <div class="sq-city">
+        <img src="../img/summerquest/city-07-castle-heights.webp" alt="Castle Heights - towers and treasure" loading="lazy">
+        <span class="sq-city-name"><span class="n">7</span>Castle Heights</span>
+      </div>
+      <div class="sq-city">
+        <img src="../img/summerquest/city-08-dream-park.webp" alt="Dream Park - theme park finale with fireworks" loading="lazy">
+        <span class="sq-city-name"><span class="n">8</span>Dream Park</span>
+      </div>
+    </div>
   </div>
 </section>
 

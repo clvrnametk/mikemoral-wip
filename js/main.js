@@ -158,6 +158,38 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ── SummerQuest: TV strip rises in at the top ──────────── */
+  const sqStrip = document.querySelector('.sq-tvstrip img');
+  if (sqStrip) {
+    gsap.from(sqStrip, {
+      y: 64, autoAlpha: 0, scale: 0.965, duration: 1.0, ease: 'power3.out',
+      scrollTrigger: { trigger: '.sq-tvstrip', start: 'top 92%', once: true }
+    });
+  }
+
+  /* ── SummerQuest: parallax on the kids quote band ───────── */
+  const cqbBg = document.querySelector('.cs-quoteband .cqb-bg');
+  if (cqbBg) {
+    gsap.fromTo(cqbBg, { yPercent: -10 }, {
+      yPercent: 10, ease: 'none',
+      scrollTrigger: {
+        trigger: '.cs-quoteband',
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: true
+      }
+    });
+  }
+
+  /* ── SummerQuest: cities stagger up into view ───────────── */
+  const sqCities = gsap.utils.toArray('.sq-city');
+  if (sqCities.length) {
+    gsap.from(sqCities, {
+      y: 30, autoAlpha: 0, duration: 0.6, ease: 'power2.out', stagger: 0.08,
+      scrollTrigger: { trigger: '.sq-city-grid', start: 'top 82%', once: true }
+    });
+  }
+
   const revealTargets = document.querySelectorAll([
     '[data-reveal]',
     '.cs-outcome',
