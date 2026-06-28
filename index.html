@@ -32,7 +32,8 @@
 
 
 <!-- HERO -->
-<section class="hero hero-home">
+<section class="hero hero-home hero-home--bgtest">
+  <div class="hero-bg-layer" aria-hidden="true"></div>
   <svg class="hero-topo" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
     <path d="M-100,200 C200,150 400,300 700,220 S1100,100 1540,180"/>
     <path d="M-100,340 C150,280 350,420 650,360 S1050,240 1540,310"/>
@@ -56,7 +57,7 @@
       <span class="hc-name">Mike Morales</span>
       <span class="hc-label hc-label-role">VP of UX · Disney+ and Hulu</span>
     </div>
-    <h1 class="hc-title"><span class="hc-build">I build</span> <span class="hc-things">things.</span></h1>
+    <h1 class="hc-title"><span class="hc-build">I <span class="hc-accent">build</span></span> <span class="hc-things">things<span class="hc-period">.</span></span></h1>
     <p class="hc-sub">Products. Organizations. Teams. Sometimes actual physical objects.</p>
     <span class="hc-label hc-label-city">Caracas · Brooklyn · LA</span>
     <div class="hc-cta">
@@ -84,12 +85,27 @@
     <span>Consumer product</span><span class="ticker-dot">·</span>
     <span>UX systems</span><span class="ticker-dot">·</span>
     <span>Org design</span><span class="ticker-dot">·</span>
+    <span>Product strategy</span><span class="ticker-dot">·</span>
+    <span>Design leadership</span><span class="ticker-dot">·</span>
+    <span>AI-native building</span><span class="ticker-dot">·</span>
+    <span>Consumer product</span><span class="ticker-dot">·</span>
+    <span>UX systems</span><span class="ticker-dot">·</span>
+    <span>Org design</span><span class="ticker-dot">·</span>
+    <span>Product strategy</span><span class="ticker-dot">·</span>
+    <span>Design leadership</span><span class="ticker-dot">·</span>
+    <span>AI-native building</span><span class="ticker-dot">·</span>
+    <span>Consumer product</span><span class="ticker-dot">·</span>
+    <span>UX systems</span><span class="ticker-dot">·</span>
+    <span>Org design</span><span class="ticker-dot">·</span>
   </div>
 </div>
 
 <!-- INTRO -->
-<section class="home-intro">
-  <div class="container" data-reveal>
+<section class="home-intro home-intro--bg">
+  <div class="hi-bg" aria-hidden="true"></div>
+  <div class="hi-scrim" aria-hidden="true"></div>
+  <div class="container hi-inner" data-reveal>
+    <span class="hi-rule" aria-hidden="true"></span>
     <p class="home-intro-kicker">VP of UX at Disney+ and Hulu</p>
     <p class="home-intro-statement">Focused on making better calls, learning faster, and building organizations where strong people do the best work of their careers.</p>
   </div>
@@ -104,14 +120,14 @@
 
       <a class="featured-card" href="notes/two-opposite-pushes.html">
         <span class="fc-arrow" aria-hidden="true">→</span>
-        <p class="fc-pillar">Leadership · AI · 2026</p>
+        <p class="fc-pillar">Note · Leadership · AI · 2026</p>
         <h3>Two opposite pushes</h3>
         <p class="fc-deck">On transforming a design organization into AI-native builders, and why the coaching runs in both directions at once.</p>
       </a>
 
       <a class="featured-card" href="notes/not-a-stroke-expert.html">
         <span class="fc-arrow" aria-hidden="true">→</span>
-        <p class="fc-pillar">Leadership · AI · 2026</p>
+        <p class="fc-pillar">Note · Leadership · AI · 2026</p>
         <h3>I'm not a stroke expert</h3>
         <p class="fc-deck">Building a clinical research tool in a weekend, in a field I'd never worked in, and why problem-solving travels further than expertise.</p>
       </a>
@@ -119,8 +135,9 @@
     </div>
 
     <div class="featured-third">
-      <span class="ft-label">Or see the thing itself:</span>
-      <a href="https://stroke-access-score.vercel.app" target="_blank" rel="noopener">Stroke Access Score <span class="arr">→</span></a>
+      <div class="ft-inner">
+        <a href="https://stroke-access-score.vercel.app" target="_blank" rel="noopener">See it live <span class="arr">→</span></a>
+      </div>
     </div>
 
   </div>
@@ -130,25 +147,26 @@
 <!-- BUILDING -->
 <section class="building-section">
   <div class="container" data-reveal>
-    <p class="section-label">Building</p>
-    <p class="building-intro">Live things, built by hand.</p>
+    <p class="section-label">Live things, built by hand</p>
     <div class="building-list">
 
-      <div class="building-entry">
-        <div>
+      <a class="building-entry" href="https://stroke-access-score.vercel.app" target="_blank" rel="noopener">
+        <div class="be-main">
+          <p class="be-pillar">Live · Web</p>
           <div class="building-entry-name">Stroke Access Score</div>
           <div class="building-entry-desc">A research tool scoring all 1,802 California ZIP codes on proximity to certified stroke care. Built with James Beavis RN BSN SCRN, Cedars-Sinai. Methods paper in progress.</div>
         </div>
-        <a class="building-entry-link" href="https://stroke-access-score.vercel.app" target="_blank" rel="noopener">stroke-access-score.vercel.app <span class="arr">→</span></a>
-      </div>
+        <span class="building-entry-link">See it live <span class="arr">→</span></span>
+      </a>
 
-      <div class="building-entry">
-        <div>
+      <a class="building-entry" href="work/summerquest.html">
+        <div class="be-main">
+          <p class="be-pillar">Work · Apple TV</p>
           <div class="building-entry-name">SummerQuest</div>
           <div class="building-entry-desc">A cooperative family reward system built for Apple TV. tvOS · SwiftUI · Firebase · Claude Code. First build to TestFlight in one day. Full featured product in five. The test of a thesis about AI and the distance between idea and product.</div>
         </div>
-        <a class="building-entry-link" href="work/summerquest.html">Read the build <span class="arr">→</span></a>
-      </div>
+        <span class="building-entry-link">Read the build <span class="arr">→</span></span>
+      </a>
 
     </div>
   </div>

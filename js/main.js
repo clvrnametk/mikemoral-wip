@@ -63,6 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroIntro = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
     if (document.querySelector('.hero-home')) {
+      /* Background image fades in to its resting opacity (like hero photos elsewhere) */
+      const heroBg = document.querySelector('.hero-home--bgtest .hero-bg-layer');
+      if (heroBg) heroIntro.from(heroBg, { opacity: 0, duration: 1.1, ease: 'power2.out' }, 0);
       /* Stacked headline rises in, scattered metadata fades after */
       heroIntro
         .from('.hc-build, .hc-things', { y: 40, autoAlpha: 0, duration: 0.8, stagger: 0.12 }, 0.1)
@@ -139,6 +142,21 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ── Section content: fade up on scroll-enter ───────────── */
   if (typeof window.ScrollTrigger === 'undefined') return;
   gsap.registerPlugin(ScrollTrigger);
+
+  /* ── Home intro: drift parallax on the sprint-scene bg ──── */
+  const hiBg = document.querySelector('.home-intro--bg .hi-bg');
+  if (hiBg) {
+    gsap.fromTo(hiBg, { yPercent: -10 }, {
+      yPercent: 10,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.home-intro--bg',
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: true
+      }
+    });
+  }
 
   const revealTargets = document.querySelectorAll([
     '[data-reveal]',
