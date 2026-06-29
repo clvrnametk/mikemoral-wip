@@ -2175,11 +2175,6 @@ a:hover .arr-left,
   }
 }
 
-/* Note-detail hero: portrait illustration on mobile (falls back to the landscape var) */
-@media (max-width: 768px) {
-  .hero-note--art::before { background-image: var(--cs-hero-bg-m, var(--cs-hero-bg)); background-position: center; }
-  .hero-note--art .cs-hero-color { background-image: var(--cs-hero-color-bg-m, var(--cs-hero-color-bg)); background-position: center; }
-}
 
 /* Notes intro — mirrors .work-intro (style, spacing, divider) */
 .notes-intro-text {
@@ -3132,6 +3127,12 @@ html.cs-reveal.cs-scrolled .cs-content .cs-meta { border-bottom-color: var(--div
   opacity: 0; transition: opacity 0.4s ease; pointer-events: none;
   -webkit-mask-image: radial-gradient(ellipse var(--glow-rx, 440px) var(--glow-ry, 440px) at var(--mx, 50%) var(--my, 50%), #000 0%, rgba(0,0,0,0.5) 28%, transparent 100%);
   mask-image: radial-gradient(ellipse var(--glow-rx, 440px) var(--glow-ry, 440px) at var(--mx, 50%) var(--my, 50%), #000 0%, rgba(0,0,0,0.5) 28%, transparent 100%);
+}
+
+/* Note-detail hero: portrait illustration on mobile (must follow the base ::before to win on source order) */
+@media (max-width: 768px) {
+  .hero-note--art::before { background-image: var(--cs-hero-bg-m, var(--cs-hero-bg)); background-position: center; }
+  .hero-note--art .cs-hero-color { background-image: var(--cs-hero-color-bg-m, var(--cs-hero-color-bg)); background-position: center; }
 }
 
 
