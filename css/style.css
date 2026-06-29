@@ -2175,11 +2175,17 @@ a:hover .arr-left,
   }
 }
 
+/* Note-detail hero: portrait illustration on mobile (falls back to the landscape var) */
+@media (max-width: 768px) {
+  .hero-note--art::before { background-image: var(--cs-hero-bg-m, var(--cs-hero-bg)); background-position: center; }
+  .hero-note--art .cs-hero-color { background-image: var(--cs-hero-color-bg-m, var(--cs-hero-color-bg)); background-position: center; }
+}
+
 /* Notes intro — mirrors .work-intro (style, spacing, divider) */
 .notes-intro-text {
   max-width: none;
   margin: 0;
-  padding: var(--s-9) 0 var(--s-9);
+  padding: var(--s-7) 0 var(--s-6);
   border-bottom: 1px solid var(--divider);
   font-size: var(--step-2);
   line-height: 1.55;
@@ -2969,9 +2975,9 @@ html.cs-reveal.cs-scrolled .cs-content .cs-meta { border-bottom-color: var(--div
   display: block;
   font-size: 24px;
   color: var(--navy);
-  justify-self: center;
+  justify-self: start;
   transition: color .25s ease, transform .25s ease;
-  transform-origin: center;
+  transform-origin: left center;
 }
 .principle:hover .principle-icon { color: var(--pink); transform: scale(1.15); }
 @media (prefers-reduced-motion: reduce) {
@@ -3054,8 +3060,8 @@ html.cs-reveal.cs-scrolled .cs-content .cs-meta { border-bottom-color: var(--div
 .how-i-more a:hover { color: var(--pink); }
 
 /* Work intro: framing block above the project list */
-.work-intro { background: var(--white); padding: var(--s-9) 0 0; }
-.work-intro .container { border-bottom: 1px solid var(--divider); padding-bottom: var(--s-9); }
+.work-intro { background: var(--white); padding: var(--s-7) 0 0; }
+.work-intro .container { border-bottom: 1px solid var(--divider); padding-bottom: var(--s-7); }
 .work-intro-text {
   max-width: none;
   font-size: var(--step-2);
