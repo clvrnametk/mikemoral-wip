@@ -76,6 +76,34 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!sqImg.complete) sqImg.addEventListener('load', centerSq);
   }
 
+  const navToggle = document.querySelector('.nav-toggle');
+  const siteNav = document.querySelector('.site-nav');
+  if (navToggle && siteNav) {
+    navToggle.addEventListener('click', () => {
+      const open = siteNav.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    siteNav.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => {
+      siteNav.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }));
+  }
+
+  const noteHero = document.querySelector('.hero-note');
+  if (noteHero) {
+    const nextLink = document.querySelector('.note-nav--next');
+    const prevLink = document.querySelector('.note-nav--prev');
+    let sx = 0, sy = 0;
+    noteHero.addEventListener('touchstart', e => { sx = e.touches[0].clientX; sy = e.touches[0].clientY; }, { passive: true });
+    noteHero.addEventListener('touchend', e => {
+      const dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy;
+      if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+        if (dx < 0 && nextLink) window.location.href = nextLink.href;
+        else if (dx > 0 && prevLink) window.location.href = prevLink.href;
+      }
+    }, { passive: true });
+  }
+
   const csCue = document.querySelector('.cs-scrollcue');
   if (csCue) {
     const toggleCue = () => {
@@ -415,6 +443,7 @@ document.addEventListener('DOMContentLoaded', () => {
       autoAlpha: 0,
       duration: 0.7,
       ease: 'power2.out',
+      clearProps: 'transform,opacity,visibility',
       scrollTrigger: {
         trigger: el,
         start: 'top 85%',

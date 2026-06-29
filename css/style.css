@@ -628,6 +628,28 @@ img { display: block; max-width: 100%; }
   margin-bottom: var(--s-5);
 }
 
+/* "Keep exploring" cross-link row on the section index pages (no dead ends) */
+.more-links-section { background: var(--bg); padding: var(--s-8) 0 var(--s-9); }
+.more-links-section .section-label { margin-bottom: var(--s-5); }
+.more-links { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-5); }
+.more-link {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: var(--s-4);
+  padding: var(--s-5);
+  background: var(--white);
+  border-top: 3px solid var(--navy);
+  text-decoration: none;
+  color: var(--navy);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.more-link:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(15,15,60,0.10); }
+.more-link-title { grid-column: 1; grid-row: 1; font-family: var(--font-display); font-size: var(--step-1); color: var(--navy); }
+.more-link-desc { grid-column: 1; grid-row: 2; font-size: 0.875rem; color: var(--text); line-height: 1.5; margin-top: var(--s-2); }
+.more-link .arr { grid-column: 2; grid-row: 1 / span 2; align-self: center; color: var(--pink); font-size: 1.125rem; transition: transform .25s ease; }
+.more-link:hover .arr { transform: translateX(4px); }
+@media (max-width: 768px) { .more-links { grid-template-columns: 1fr; gap: var(--s-4); } }
+
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    CASE STUDY — OUTCOME SLOT
@@ -1269,7 +1291,7 @@ img { display: block; max-width: 100%; }
 
 .work-entry {
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 320px 1fr;
   gap: 56px;
   padding: 52px 0;
   border-bottom: 1px solid var(--divider);
@@ -1906,7 +1928,7 @@ img { display: block; max-width: 100%; }
   max-width: 40rem;
   margin: 0;
 }
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .home-intro { min-height: 70vh; }
   .hi-scrim { background: linear-gradient(90deg, rgba(15,15,60,.82) 0%, rgba(15,15,60,.5) 100%); }
 }
@@ -2035,6 +2057,182 @@ a:hover .arr-left,
   .hero-photo { opacity: 1; }
 }
 
+/* ── Notes index: card grid (white cards on the light surface) ── */
+.notes-content-section { background: var(--bg); }
+.notes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+  padding: var(--s-7) 0 var(--s-9);
+}
+.note-entry {
+  display: flex;
+  flex-direction: column;
+  background: #fdfbf6;   /* faint warm-paper tint (post-it nod) */
+  border: 1px solid var(--divider);
+  border-radius: 8px !important;    /* matches work thumbnails (override global radius:0 reset) */
+  padding: 26px 26px 0;
+  transform: none;
+  transition: transform .4s cubic-bezier(.2,.6,.2,1), box-shadow .4s ease;
+}
+.note-entry:last-child { border: 1px solid var(--divider); }
+.note-entry:hover { transform: translateY(-5px) rotate(-1.5deg); box-shadow: 0 16px 34px rgba(15,15,60,0.14); }
+.note-entry:nth-child(even):hover { transform: translateY(-5px) rotate(1.5deg); }
+@media (prefers-reduced-motion: reduce) {
+  .note-entry,
+  .note-entry:nth-child(even),
+  .note-entry:hover,
+  .note-entry:nth-child(even):hover { transform: none; }
+}
+.note-entry .note-pillar { margin-bottom: 14px; }
+.note-entry h3 { font-family: var(--font-display); font-size: 1.4rem; line-height: 1.25; margin: 0 0 10px; }
+.note-entry:hover h3 { text-decoration-color: transparent; }
+.note-entry p { font-size: 0.875rem; margin: 0 0 22px; max-width: none; }
+.note-foot {
+  margin-top: auto;
+  border-top: 1px solid var(--divider);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+.note-year { font-family: var(--font-body); font-size: 0.8rem; color: #9a9ab0; }
+.note-read { display: flex; align-items: center; gap: 8px; font-size: 0.78rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--pink); }
+.note-meta { display: flex; align-items: center; gap: 14px; color: #9a9ab0; font-size: 0.8rem; }
+.note-sep { color: #c9c9d6; }
+.note-time { display: inline-flex; align-items: center; gap: 6px; }
+.note-time i { font-size: 1em; }
+
+/* Note body: tokenized rule + disclaimer (replaces inline styles) */
+.note-rule { border: none; border-top: 1px solid var(--divider); margin: var(--s-7) 0 var(--s-5); }
+.note-disclaimer { font-size: 0.875rem; color: #8a8aa0; font-style: italic; line-height: 1.6; }
+.note-disclaimer a { color: var(--navy); text-decoration: none; border-bottom: 1px solid var(--pink); padding-bottom: 1px; }
+
+/* ── Mobile nav menu (hamburger) ── */
+.nav-toggle { display: none; }
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: flex; flex-direction: column; justify-content: center; gap: 5px;
+    width: 44px; height: 44px; padding: 11px; background: none; border: 0; cursor: pointer; z-index: 2;
+  }
+  .nav-toggle span { display: block; width: 100%; height: 2px; background: #fff; border-radius: 2px; transition: transform .25s ease, opacity .25s ease; }
+  .site-nav.open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .site-nav.open .nav-toggle span:nth-child(2) { opacity: 0; }
+  .site-nav.open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .site-nav .nav-links {
+    position: absolute; top: var(--nav-h); left: 0; right: 0;
+    flex-direction: column; align-items: stretch; gap: 0;
+    background: var(--navy); padding: var(--s-3) 24px var(--s-5);
+    border-top: 1px solid var(--white-12);
+    display: none;
+  }
+  .site-nav.open .nav-links { display: flex; }
+  .site-nav .nav-links a { display: block; width: 100%; padding: 12px 0; font-size: 1.0625rem; }
+}
+
+/* SummerQuest TV strip: shorter + scrollable on phones */
+@media (max-width: 768px) {
+  .sq-tvstrip-img, .sq-tvtrack img { height: clamp(200px, 55vw, 340px); }
+}
+
+/* Scroll cue: hide on short/phone screens (avoids overlapping content) */
+@media (max-width: 640px) {
+  .cs-scrollcue { display: none; }
+}
+
+/* ── 2026-06-29 mobile-review fixes ── */
+
+/* #1 Featured "See it live" underline hugs the text, not the full column */
+.featured-third a { display: inline-block; align-self: flex-start; }
+
+/* #4 Bottom "next project" nav on work case studies (no dead end at the bottom) */
+.cs-nextnav { background: var(--bg); }
+.cs-nextnav .container { border-top: 1px solid var(--divider); padding-top: var(--s-6); padding-bottom: var(--s-8); }
+.cs-nextnav-link { display: inline-flex; flex-direction: column; gap: 4px; text-decoration: none; }
+.cs-nextnav-link .cs-next-label { font-family: var(--font-body); font-size: 10px; font-weight: 700; letter-spacing: var(--label-tracking); text-transform: uppercase; color: #9a9ab0; }
+.cs-nextnav-link .cs-next-title { font-family: var(--font-display); font-size: var(--step-2); color: var(--navy); display: inline-flex; align-items: center; gap: 0.4em; transition: color .25s ease; }
+.cs-nextnav-link:hover .cs-next-title { color: var(--pink); }
+.cs-nextnav-link .arr { transition: transform .25s ease; }
+.cs-nextnav-link:hover .arr { transform: translateX(4px); }
+
+@media (max-width: 768px) {
+  /* #3 SummerQuest TV strip: smaller screens + clear horizontal-scroll peek */
+  .sq-tvstrip { padding-left: 16px; padding-right: 16px; }
+  .sq-tvstrip-img, .sq-tvtrack img { height: clamp(150px, 40vw, 240px); }
+
+  /* #9 About photos: stack full-width (not tiny); right-rail pair becomes a swipe carousel */
+  .about-photos-row { grid-template-columns: 1fr; gap: var(--s-4); }
+  .about-photo-stack {
+    display: flex; position: static; top: auto;
+    gap: var(--s-3); margin-top: var(--s-5);
+    overflow-x: auto; scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; scrollbar-width: none;
+  }
+  .about-photo-stack::-webkit-scrollbar { display: none; }
+  .about-photo-stack .portrait-wrap,
+  .about-photo-stack .secondary-ph {
+    flex: 0 0 86%; scroll-snap-align: center; margin: 0; aspect-ratio: 3/2;
+  }
+}
+
+/* Notes intro — mirrors .work-intro (style, spacing, divider) */
+.notes-intro-text {
+  max-width: none;
+  margin: 0;
+  padding: var(--s-9) 0 var(--s-9);
+  border-bottom: 1px solid var(--divider);
+  font-size: var(--step-2);
+  line-height: 1.55;
+  color: var(--navy);
+}
+.notes-intro-text a { color: var(--navy); text-decoration: underline; text-decoration-color: #c9c9da; text-underline-offset: 3px; }
+.notes-intro-text a:hover { text-decoration-color: var(--pink); }
+
+/* Work case-study hero: "Next" cue, lower-right, baseline-anchored to the last line; cycles */
+.cs-hero-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2.5rem;
+}
+.cs-hero-foot .cs-sub { margin-bottom: 0; }
+.cs-next {
+  flex: 0 0 auto;
+  text-decoration: none;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  line-height: 1.15;
+}
+.cs-next .cs-next-label {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: var(--label-tracking);
+  text-transform: uppercase;
+  color: var(--white-55);
+}
+.cs-next .cs-next-title {
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  font-weight: 700;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  white-space: nowrap;
+  transition: color .25s ease;
+}
+.cs-next:hover .cs-next-title { color: var(--pink); }
+.cs-next .arr { transition: transform .25s ease; }
+.cs-next:hover .arr { transform: translateX(4px); }
+@media (max-width: 768px) {
+  .cs-hero-foot { flex-direction: column; align-items: flex-start; gap: var(--s-4); }
+  .cs-next { align-items: flex-start; }
+  .cs-next .cs-next-title { white-space: normal; }
+}
+
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    PIECES TO COME (Work index — WIP teaser)
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
@@ -2078,7 +2276,7 @@ a:hover .arr-left,
   border-left: 1px solid var(--divider);
   padding-left: var(--s-5);
 }
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .piece { grid-template-columns: 1.6rem 1fr; column-gap: var(--s-3); }
   .piece p {
     grid-column: 1 / -1;
@@ -2112,29 +2310,16 @@ a:hover .arr-left,
   background: var(--pink);
 }
 .cs-coverage {
-  margin-top: var(--s-5);
-  padding-top: var(--s-4);
-  border-top: 1px solid var(--divider);
-  font-size: var(--label-size);
-  letter-spacing: .2px;
+  margin-top: var(--s-6);
+  font-size: 0.9375rem;
+  line-height: 1.6;
   color: var(--text);
 }
-.cs-coverage .cs-coverage-label {
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: var(--label-tracking);
-  color: var(--pink);
-  margin-right: .5rem;
-}
-.cs-coverage a {
-  color: var(--navy);
-  text-decoration: underline;
-  text-decoration-color: var(--divider);
-  text-underline-offset: 3px;
-  transition: text-decoration-color .25s;
-}
-.cs-coverage a:hover { text-decoration-color: var(--pink); }
-.cs-coverage .sep { color: var(--divider); margin: 0 .5rem; }
+.cs-coverage .cs-coverage-label { color: var(--text); }
+.cs-coverage a { color: var(--navy); text-decoration: underline; text-underline-offset: 2px; transition: color .25s; }
+.cs-coverage a:hover { color: var(--pink); }
+.cs-coverage .hil-sep { color: #b6b6cc; margin: 0 0.7em; }
+.cs-coverage .hil-dot { color: #c4c4d6; margin: 0 0.7em; }
 
 /* ── Case-study real images + captions ───── */
 .cs-img-wrap img {
@@ -2257,7 +2442,7 @@ a:hover .arr-left,
   color: var(--navy);
 }
 .sq-city-name .n { color: var(--pink); margin-right: .45rem; }
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .sq-city-grid { grid-template-columns: repeat(2, 1fr); gap: var(--s-4); }
 }
 
@@ -2343,7 +2528,7 @@ a:hover .arr-left,
   font-weight: 500;
   color: var(--white-65);
 }
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .strm-stat-grid { grid-template-columns: repeat(2, 1fr); gap: var(--s-6) var(--s-4); }
 }
 
@@ -2379,7 +2564,7 @@ a:hover .arr-left,
   font-weight: 700;
   color: var(--navy);
 }
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .strm-brands { grid-template-columns: repeat(2, 1fr); gap: var(--s-4); }
 }
 
@@ -2776,9 +2961,27 @@ html.cs-reveal.cs-scrolled .cs-content .cs-meta { border-bottom-color: var(--div
 .building-section .building-entry:first-child { padding-top: var(--s-3); }  /* close: line hugs first entry */
 
 /* ── About "How I X": top-align the heading with the paragraph's first line ── */
-.principle { align-items: start; }
-.principle-num { margin-bottom: var(--s-1); }
 .principle h3 { margin-top: 0; }
+.principle > div { display: contents; }   /* dissolve the old icon+heading wrapper into the grid */
+
+/* About "How I X": Font Awesome Light icons; navy → magenta bloom on hover */
+.principle-icon {
+  display: block;
+  font-size: 24px;
+  color: var(--navy);
+  justify-self: center;
+  transition: color .25s ease, transform .25s ease;
+  transform-origin: center;
+}
+.principle:hover .principle-icon { color: var(--pink); transform: scale(1.15); }
+@media (prefers-reduced-motion: reduce) {
+  .principle:hover .principle-icon { transform: none; }
+}
+
+/* Desktop: three columns — icon | heading | description, vertically centered */
+@media (min-width: 769px) {
+  .principle { grid-template-columns: 64px 240px 1fr; gap: 12px 32px; align-items: center; }
+}
 
 /* Building entries: divider drawn inset so it aligns with the label rule; hover box still
    extends past it, with a longer animation. */
@@ -2902,6 +3105,28 @@ html.cs-reveal.cs-scrolled .cs-content .cs-meta { border-bottom-color: var(--div
   mask-image: radial-gradient(ellipse var(--glow-rx, 440px) var(--glow-ry, 440px) at var(--mx, 50%) var(--my, 50%), #000 0%, rgba(0,0,0,0.5) 28%, transparent 100%);
 }
 .hero-article.cs-glow-active .cs-hero-color { opacity: 1; }
+
+/* ── Note detail hero with art: work-style duotone + cursor-spotlight reveal ── */
+.hero-note--art { position: relative; overflow: hidden; min-height: calc(100svh - 7rem); }
+.hero-note--art .hero-inner { position: relative; z-index: 1; }
+.hero-note--art::before {
+  content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background-image: var(--cs-hero-bg); background-size: cover; background-position: center right; background-repeat: no-repeat;
+  opacity: 0.85;
+}
+.hero-note--art::after {
+  content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    linear-gradient(to top, rgba(15,15,60,0.72) 0%, rgba(15,15,60,0.22) 60%, rgba(15,15,60,0) 100%),
+    linear-gradient(to right, rgba(15,15,60,0.55) 0%, rgba(15,15,60,0.08) 65%, rgba(15,15,60,0) 100%);
+}
+.hero-note--art .cs-hero-color {
+  position: absolute; inset: 0; z-index: 0;
+  background-image: var(--cs-hero-color-bg); background-size: cover; background-position: center right; background-repeat: no-repeat;
+  opacity: 0; transition: opacity 0.4s ease; pointer-events: none;
+  -webkit-mask-image: radial-gradient(ellipse var(--glow-rx, 440px) var(--glow-ry, 440px) at var(--mx, 50%) var(--my, 50%), #000 0%, rgba(0,0,0,0.5) 28%, transparent 100%);
+  mask-image: radial-gradient(ellipse var(--glow-rx, 440px) var(--glow-ry, 440px) at var(--mx, 50%) var(--my, 50%), #000 0%, rgba(0,0,0,0.5) 28%, transparent 100%);
+}
 
 
 /* ── Streamer filmstrip: continuous right-drifting marquee (replaces scroll parallax) ── */
