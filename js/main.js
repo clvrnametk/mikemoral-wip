@@ -155,13 +155,15 @@ document.addEventListener('DOMContentLoaded', () => {
         'varying vec2 v;',
         'uniform sampler2D uTex;',
         'uniform vec2 uMouse;',
-        'uniform float uCA, uTA, uR, uStr, uBright;',
+        'uniform vec2 uVel;',
+        'uniform float uCA, uTA, uR, uStr, uBright, uMode;',
         'vec2 cover(vec2 p){ vec2 uv=p; if(uCA>uTA) uv.y=(p.y-0.5)*(uTA/uCA)+0.5; else uv.x=(p.x-0.5)*(uCA/uTA)+0.5; return uv; }',
         'void main(){',
         '  vec2 p = vec2(v.x, 1.0 - v.y);',
         '  vec2 d = p - uMouse; d.x *= uCA;',
         '  float f = smoothstep(uR, 0.0, length(d));',
-        '  vec2 warped = p - (p - uMouse) * f * uStr;',
+        '  vec2 disp = mix((p - uMouse), uVel * 9.0, uMode) * f * uStr;',
+        '  vec2 warped = p - disp;',
         '  vec3 col = texture2D(uTex, cover(warped)).rgb;',
         '  col += col * f * uBright;',
         '  gl_FragColor = vec4(col, 1.0);',
@@ -177,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
       gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 3,-1, -1,3]), gl.STATIC_DRAW);
       const la = gl.getAttribLocation(prog, 'a'); gl.enableVertexAttribArray(la); gl.vertexAttribPointer(la, 2, gl.FLOAT, false, 0, 0);
       const U = n => gl.getUniformLocation(prog, n);
-      const uMouse = U('uMouse'), uCA = U('uCA'), uTA = U('uTA'), uR = U('uR'), uStr = U('uStr'), uBright = U('uBright');
+      const uMouse = U('uMouse'), uVel = U('uVel'), uMode = U('uMode'), uCA = U('uCA'), uTA = U('uTA'), uR = U('uR'), uStr = U('uStr'), uBright = U('uBright');
       const tex = gl.createTexture(); gl.bindTexture(gl.TEXTURE_2D, tex);
       gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, 1, 1, 0, gl.RGBA, gl.UNSIGNED_BYTE, new Uint8Array([15,15,60,255]));
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
@@ -198,14 +200,17 @@ document.addEventListener('DOMContentLoaded', () => {
       }, { passive: true });
       const render = () => {
         time += 0.016;
-        mx += (tmx - mx) * 0.10; my += (tmy - my) * 0.10;
+        const pmx = mx, pmy = my;
+        mx += (tmx - mx) * 0.08; my += (tmy - my) * 0.08;
         act += (actT - act) * 0.08;
         const ca = canvas.width / canvas.height;
-        const R = 0.18 + Math.sin(time * 0.7) * 0.02;
+        const R = 0.44 + Math.sin(time * 0.95) * 0.065;
         gl.useProgram(prog);
         gl.uniform2f(uMouse, mx, my);
+        gl.uniform2f(uVel, mx - pmx, my - pmy);
+        gl.uniform1f(uMode, 1.0);
         gl.uniform1f(uCA, ca); gl.uniform1f(uTA, texAspect);
-        gl.uniform1f(uR, R); gl.uniform1f(uStr, 0.11 * act); gl.uniform1f(uBright, 0.32 * act);
+        gl.uniform1f(uR, R); gl.uniform1f(uStr, 0.13 * act); gl.uniform1f(uBright, 0.14 * act);
         gl.drawArrays(gl.TRIANGLES, 0, 3);
         rafId = requestAnimationFrame(render);
       };
