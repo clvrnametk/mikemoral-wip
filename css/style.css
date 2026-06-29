@@ -648,17 +648,17 @@ img { display: block; max-width: 100%; }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: var(--label-tracking);
-  color: var(--pink);
+  color: #8080b8;
   margin-bottom: var(--s-3);
 }
 
 .cs-outcome p {
   font-family: var(--font-body);
-  font-size: var(--step-1);
+  font-size: 1rem;
   color: var(--navy);
   line-height: 1.55;
   margin: 0;
-  max-width: var(--reading-width);
+  max-width: none;
 }
 
 
@@ -1060,7 +1060,7 @@ img { display: block; max-width: 100%; }
 .about-photo-stack .portrait-wrap {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 2/3;
+  aspect-ratio: 4/5;
   margin-bottom: var(--s-4);
 }
 .about-photo-stack .portrait-wrap .img-ph {
@@ -1071,7 +1071,7 @@ img { display: block; max-width: 100%; }
 .about-photo-stack .secondary-ph {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 3/2;
+  aspect-ratio: 3/4;
 }
 .about-photo-stack .secondary-ph .img-ph {
   position: absolute;
@@ -1139,11 +1139,11 @@ img { display: block; max-width: 100%; }
 
 .tl-era-label {
   font-family: var(--font-body);
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: var(--label-tracking);
   text-transform: uppercase;
-  color: #ccc;
+  color: #8080b8;
   margin-bottom: 20px;
   margin-top: var(--s-2);
 }
@@ -1212,19 +1212,19 @@ img { display: block; max-width: 100%; }
 
 .tl-name {
   font-family: var(--font-body);
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #aaa;
+  color: #8080b8;
   text-align: center;
   line-height: 1.3;
 }
 
 .tl-year {
   font-family: var(--font-body);
-  font-size: 9px;
-  color: #ccc;
+  font-size: 10px;
+  color: #8a8aa2;
   text-align: center;
 }
 
@@ -1686,18 +1686,12 @@ img { display: block; max-width: 100%; }
 }
 .hero-article .hero-scroll { display: none; }
 
-/* Work detail: pink vertical bar at the content gutter */
+/* Work/Notes detail heroes: left-aligned, no pink gutter bar (consistent across both) */
 .hero-article .hero-inner {
-  padding-left: calc(24px + var(--s-5) + 3px);
+  padding-left: 24px;
 }
 .hero-article .hero-inner::before {
-  content: '';
-  position: absolute;
-  left: 24px;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: var(--pink);
+  display: none;
 }
 
 /* Note detail: reading page, no bar, pillar pill */
@@ -2052,40 +2046,46 @@ a:hover .arr-left,
 }
 .pieces-title {
   margin: 0 0 var(--s-6);
-  max-width: 24ch;
+  max-width: 40ch;
+  text-wrap: balance;
 }
 .pieces-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--s-5) var(--s-6);
+  counter-reset: piece;
 }
 .piece {
-  border-top: 2px solid var(--navy);
-  padding-top: var(--s-4);
-}
-.piece h3 {
-  margin: 0 0 var(--s-3);
-  display: flex;
+  display: grid;
+  grid-template-columns: 2rem minmax(9rem, 18rem) 1fr;
   align-items: baseline;
-  gap: .5rem;
+  column-gap: var(--s-5);
+  border-top: 1px solid var(--divider);
+  padding: var(--s-5) 0;
+  counter-increment: piece;
 }
-.piece h3::before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  flex: 0 0 auto;
-  background: var(--pink);
-  transform: translateY(-1px);
+.piece::before {
+  content: counter(piece, decimal-leading-zero);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--step--1);
+  color: var(--pink);
 }
+.piece h3 { margin: 0; }
 .piece p {
   margin: 0;
   color: var(--text);
+  border-left: 1px solid var(--divider);
+  padding-left: var(--s-5);
 }
 @media (max-width: 700px) {
-  .pieces-list { grid-template-columns: 1fr; gap: var(--s-5); }
+  .piece { grid-template-columns: 1.6rem 1fr; column-gap: var(--s-3); }
+  .piece p {
+    grid-column: 1 / -1;
+    border-left: none;
+    padding-left: 0;
+    margin-top: var(--s-3);
+  }
 }
 
 /* ── Case-study body lists + coverage ────── */
@@ -2285,23 +2285,23 @@ a:hover .arr-left,
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: var(--label-tracking);
-  color: var(--pink);
+  color: #8080b8;
   margin-bottom: var(--s-3);
 }
 .sq-outcome p {
   margin: 0;
   max-width: var(--reading-width);
   font-family: var(--font-body);
-  font-size: var(--step-1);
+  font-size: 1rem;
   line-height: 1.55;
   color: var(--navy);
 }
 
 /* SummerQuest: TV strip sits after the outcome, inside the white body section.
    The body container is pulled up (transparent) so the strip's lower glow sits behind the text. */
-.sq-tvstrip { padding: 0; margin-top: clamp(-90px, -5vw, -36px); }
+.sq-tvstrip { padding: 0; margin-top: clamp(-80px, -4vw, -32px); }
 .sq-body-section > .container {
-  margin-top: clamp(-110px, -6vw, -44px);
+  margin-top: clamp(-120px, -6vw, -48px);
   position: relative;
   z-index: 1;
 }
@@ -2311,3 +2311,638 @@ a:hover .arr-left,
 .cs-body { max-width: var(--reading-width); margin-left: auto; margin-right: auto; }
 .cs-body > * { max-width: none; }
 .cs-body p { font-size: 1rem; line-height: 1.7; }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   STREAMER case study — bespoke sections
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* By the numbers — navy stat band with count-up */
+.strm-stats {
+  background: var(--navy);
+  color: #fff;
+  padding: var(--s-9) 0;
+}
+.strm-stats .section-label { color: var(--pink); }
+.strm-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--s-7) var(--s-5);
+}
+.strm-stat { display: flex; flex-direction: column; }
+.strm-stat-num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.5rem, 1.6rem + 3.6vw, 4.5rem);
+  line-height: 1;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+.strm-stat-label {
+  margin-top: var(--s-3);
+  font-family: var(--font-body);
+  font-size: var(--step--1);
+  font-weight: 500;
+  color: var(--white-65);
+}
+@media (max-width: 760px) {
+  .strm-stat-grid { grid-template-columns: repeat(2, 1fr); gap: var(--s-6) var(--s-4); }
+}
+
+/* The printer video — contained, centered */
+.strm-video {
+  background: var(--white);
+  padding: var(--s-6) 24px var(--s-7);
+}
+.strm-video video {
+  display: block;
+  width: 100%;
+  max-width: var(--content-width);
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Six brands grid (rounded landscape tiles) */
+.strm-brands-section { background: var(--white); padding: var(--s-7) 0 var(--s-9); }
+.strm-brands-head { max-width: var(--reading-width); margin-bottom: var(--s-6); }
+.strm-brands-head h2 { font-size: var(--step-2); color: var(--navy); margin-bottom: var(--s-3); }
+.strm-brands-head p { color: var(--text); margin: 0; }
+.strm-brands {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s-5);
+}
+.strm-brand img { width: 100%; height: auto; }
+.strm-brand-name {
+  display: block;
+  margin-top: var(--s-3);
+  font-family: var(--font-body);
+  font-size: var(--step--1);
+  font-weight: 700;
+  color: var(--navy);
+}
+@media (max-width: 760px) {
+  .strm-brands { grid-template-columns: repeat(2, 1fr); gap: var(--s-4); }
+}
+
+/* Streamer: top carousel of combined process grids */
+.strm-carousel { background: var(--white); padding: var(--s-6) 24px var(--s-5); }
+.strm-carousel-frame {
+  position: relative;
+  width: 100%;
+  max-width: var(--page-width);
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+.strm-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity .8s ease;
+}
+.strm-slide.is-active { opacity: 1; }
+.strm-slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.strm-dots { display: flex; justify-content: center; gap: 10px; margin-top: var(--s-4); }
+.strm-dot {
+  width: 9px; height: 9px; padding: 0;
+  background: var(--divider); border: none; cursor: pointer;
+  transition: background .25s ease;
+}
+.strm-dot.is-active { background: var(--pink); }
+
+/* Streamer: video behind the quote band */
+.cs-quoteband--video .cqb-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.cs-quoteband--video .cqb-scrim { z-index: 1; }
+.cs-quoteband--video .cqb-inner { z-index: 2; }
+
+/* Streamer: top block (meta + full-width outcome + numbers) tightened under the hero */
+.strm-top { padding-top: var(--s-5); }
+.cs-outcome--wide p { max-width: none; }
+.strm-top .cs-outcome { border-bottom: none; padding-bottom: var(--s-5); }
+.strm-numbers { padding-top: var(--s-4); }
+.strm-numbers .strm-stat-num { color: var(--navy); }
+.strm-numbers .strm-stat-label { color: var(--text); }
+
+/* Streamer: horizontal filmstrip (parallax on scroll; scrollable fallback) */
+/* Scroll cue at the end of the top section */
+.strm-scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-3);
+  margin-top: var(--s-9);
+}
+.strm-scroll-label {
+  font-family: var(--font-body);
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--label-tracking);
+  color: var(--text);
+}
+.strm-scroll-line {
+  width: 1px;
+  height: 44px;
+  background: var(--divider);
+  position: relative;
+  overflow: hidden;
+}
+.strm-scroll-line::after {
+  content: "";
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: var(--pink);
+  transform: translateY(-100%);
+  animation: strmScrollCue 1.8s ease-in-out infinite;
+}
+@keyframes strmScrollCue {
+  0% { transform: translateY(-100%); }
+  55%, 100% { transform: translateY(100%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .strm-scroll-line::after { animation: none; }
+}
+
+.strm-film {
+  overflow-x: auto;
+  overflow-y: hidden;
+  background: var(--white);
+  padding: var(--s-8) 0 var(--s-8);
+  -webkit-overflow-scrolling: touch;
+}
+.strm-film-track {
+  display: flex;
+  gap: 4px;
+  width: max-content;
+  padding: 0 24px;
+  will-change: transform;
+}
+.strm-film-track img {
+  height: clamp(280px, 52vh, 620px);
+  width: auto;
+  display: block;
+}
+
+/* ── Notes body: match the case-study treatment (centered reading column, 1rem) ── */
+.note-body { max-width: var(--reading-width); margin-left: auto; margin-right: auto; }
+.note-body > * { max-width: none; }
+.note-body p { font-size: 1rem; line-height: 1.7; }
+
+/* Case study: "what shipped" — clean labeled list in the reading column */
+.cs-shipped { margin: var(--s-5) 0; }
+.ship-item { border-top: 1px solid var(--divider); padding: var(--s-4) 0; }
+.ship-item:last-child { border-bottom: 1px solid var(--divider); }
+.ship-item h3 {
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  color: var(--navy);
+  margin: 0 0 var(--s-2);
+}
+.ship-item p { font-size: 1rem; color: var(--text); margin: 0; }
+
+/* Notes: year + read time live in the navy header (no meta bar) */
+.note-hero-meta {
+  margin-top: var(--s-5);
+  font-family: var(--font-body);
+  font-size: var(--step--1);
+  font-weight: 500;
+  letter-spacing: .04em;
+  color: var(--white-55);
+}
+/* With the meta bar gone, match the navy→content gap to the work pages */
+.note-body { padding-top: var(--s-6); }
+
+/* Notes: pillar + year/read on one line, as matching tag boxes */
+.note-tags { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-3); margin-bottom: var(--s-5); }
+.note-tags .note-pillar-tag { margin-bottom: 0; }
+.note-meta-tag {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 3px 10px;
+}
+
+/* Avoid orphaned words in detail-page headlines and sublines */
+.hero-article h1 { text-wrap: balance; }
+.hero-article .note-sub,
+.hero-article .cs-sub { text-wrap: pretty; }
+
+/* ── Notes detail: hero column matches the body column (distinct from work) ── */
+.hero-note .hero-inner { max-width: var(--reading-width); margin-left: auto; margin-right: auto; }
+.cs-content:has(.note-body) > .container { max-width: var(--reading-width); }
+
+/* ── Notes: prev/next note nav, edge arrows in the hero ── */
+/* Full-height edge targets, bare chevrons (no box), subtle hover */
+.note-nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: max(72px, calc((100% - var(--reading-width)) / 2));
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: var(--s-4);
+  text-decoration: none;
+  color: var(--white-55);
+  transition: color .25s ease, background .3s ease;
+}
+.note-nav--prev { left: 0; padding-left: clamp(16px, 2.4vw, 44px); justify-content: flex-start; }
+.note-nav--next { right: 0; padding-right: clamp(16px, 2.4vw, 44px); justify-content: flex-start; flex-direction: row-reverse; }
+.note-nav:hover { color: #fff; }
+.note-nav--prev:hover { background: linear-gradient(90deg, rgba(255,255,255,0.06), transparent 72%); }
+.note-nav--next:hover { background: linear-gradient(270deg, rgba(255,255,255,0.06), transparent 72%); }
+.note-nav-arrow {
+  flex: 0 0 auto;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: inherit;
+  transition: transform .25s ease;
+}
+.note-nav--prev:hover .note-nav-arrow { transform: translateX(-5px); }
+.note-nav--next:hover .note-nav-arrow { transform: translateX(5px); }
+.note-nav-label {
+  display: flex;
+  flex-direction: column;
+  max-width: 0;
+  overflow: hidden;
+  opacity: 0;
+  white-space: nowrap;
+  transition: max-width .4s ease, opacity .3s ease;
+}
+.note-nav--next .note-nav-label { align-items: flex-end; }
+.note-nav:hover .note-nav-label { max-width: 15rem; opacity: 1; }
+.note-nav-kicker {
+  font-family: var(--font-body);
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--label-tracking);
+  color: var(--white-40);
+}
+.note-nav-title { font-family: var(--font-display); font-size: 0.95rem; color: #fff; margin-top: 2px; }
+@media (max-width: 1040px) { .note-nav-label { display: none; } }
+@media (max-width: 640px) { .note-nav { display: none; } }
+
+/* Notes: position indicator dots (tvOS-style), bottom of the hero */
+.hero-note .hero-scroll { display: none; }
+.note-dots {
+  position: absolute;
+  bottom: var(--s-6);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 5;
+}
+.note-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--white-25);
+  transition: width .3s ease, background-color .3s ease;
+}
+.note-dot:hover { background: var(--white-55); }
+.note-dot.is-active { width: 24px; background: #fff; }
+
+/* Indicator dots are round (override the global border-radius:0 reset) */
+.note-dot,
+.strm-dot { border-radius: 999px !important; }
+
+/* ── Work case-study hero: duotone image behind the title in the navy box ──
+   Placeholder = SummerQuest clouds. Per-page override: add
+   style="--cs-hero-bg:url('../img/work/your-asset.webp')" to the hero section.
+   Scoped to work detail heroes only (notes use .hero-note and are excluded). */
+.hero-article:not(.hero-note) { overflow: hidden; }
+.hero-article:not(.hero-note)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: var(--cs-hero-bg, url('../img/work/cs-hero-placeholder.webp'));
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  opacity: 0.85;
+}
+.hero-article:not(.hero-note)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(to top, rgba(15,15,60,0.72) 0%, rgba(15,15,60,0.22) 60%, rgba(15,15,60,0) 100%),
+    linear-gradient(to right, rgba(15,15,60,0.55) 0%, rgba(15,15,60,0.08) 65%, rgba(15,15,60,0) 100%);
+}
+
+/* ── Work home thumbnails: real duotone header images ── */
+.work-entry .we-thumb .img-treatment { position: relative; }
+.work-entry .we-thumb .we-thumb-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Streamer: tighten the gap between the filmstrip and the narrative below ── */
+.strm-film { padding-bottom: var(--s-5); }
+.strm-film + .cs-content { padding-top: var(--s-5); }
+.strm-film + .cs-content .cs-body > :first-child { margin-top: 0; }
+
+/* ── Work case-study heroes: taller so hero + first blocks sit above the fold ── */
+.hero-article:not(.hero-note) { min-height: clamp(400px, 62vh, 740px); }
+
+/* ── Bottom-locked scroll cue for standard work pages (dark, over white content) ── */
+.cs-scrollcue {
+  position: fixed;
+  bottom: var(--s-5);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-3);
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+.cs-scrollcue-label {
+  font-family: var(--font-body);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: var(--label-tracking);
+  text-transform: uppercase;
+  color: rgba(15,15,60,0.5);
+}
+.cs-scrollcue-line {
+  width: 1px;
+  height: 40px;
+  background: rgba(15,15,60,0.18);
+  position: relative;
+  overflow: hidden;
+}
+.cs-scrollcue-line::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: var(--navy);
+  transform: translateY(-100%);
+  animation: scroll-hint 2.4s cubic-bezier(.65, 0, .35, 1) infinite;
+}
+.cs-scrollcue.is-hidden { opacity: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .cs-scrollcue-line::after { animation: none; }
+}
+
+/* ── Work case studies: first content block starts at a consistent Y (matches SummerQuest) ── */
+.cs-scrollcue + .cs-content { padding-top: var(--s-4); }
+.strm-top { padding-top: var(--s-4); }
+
+/* ── About timeline: brand logos filling the circles ── */
+.tl-circle--logo {
+  background: #fff;
+  border-color: #e0e0ec;
+  overflow: hidden;
+  padding: 0;
+}
+.tl-circle--logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Work hero refinements: taller (closes the gap above the cue) + 2-line titles ── */
+.hero-article:not(.hero-note) { min-height: clamp(440px, 70vh, 880px); }
+.hero-article:not(.hero-note) h1 { max-width: 9.5em; }
+
+/* Streamer outcome reads as body text */
+.strm-top .cs-outcome p { font-size: 1rem; }
+
+/* ── About timeline: no stroke on logo circles (small or hover-large) ── */
+.tl-circle--logo,
+.tl-node:hover .tl-circle--logo { border: 0; }
+
+/* Disney+ / Hulu overlapping pair at the end of the timeline */
+.tl-pair { display: inline-flex; align-items: center; }
+.tl-pair .tl-circle { position: relative; }
+.tl-pair-a { z-index: 2; }   /* Disney+ — left, on top */
+.tl-pair-b { z-index: 1; margin-left: 4px; }  /* Hulu — right, behind */
+
+/* ── About: family photos fill their slots ── */
+.about-photos-row .ph-wrap .about-photo-img,
+.about-photo-stack .portrait-wrap .about-photo-img,
+.about-photo-stack .secondary-ph .about-photo-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Work case studies: meta divider hidden at top, revealed on scroll (with the cue) ── */
+html.cs-reveal .cs-content .cs-meta { border-bottom-color: transparent; transition: border-color 0.5s ease; }
+html.cs-reveal.cs-scrolled .cs-content .cs-meta { border-bottom-color: var(--divider); }
+
+/* Keep logo circles on a white background on hover (navy shows through transparent logos like GA) */
+.tl-node:hover .tl-circle--logo { background: #fff; }
+
+/* ── Note detail heroes: taller so the body sits below the fold (room for the scroll cue) ── */
+.hero-note { min-height: clamp(440px, 70vh, 880px); }
+
+/* ── Homepage "Live things, built by hand": anchor the label with a rule ── */
+.building-section .section-label {
+  border-bottom: 1px solid var(--divider);
+  padding-bottom: var(--s-6);   /* open: space between label and line */
+}
+.building-section .building-list { margin-top: 0; }
+.building-section .building-entry:first-child { padding-top: var(--s-3); }  /* close: line hugs first entry */
+
+/* ── About "How I X": top-align the heading with the paragraph's first line ── */
+.principle { align-items: start; }
+.principle-num { margin-bottom: var(--s-1); }
+.principle h3 { margin-top: 0; }
+
+/* Building entries: divider drawn inset so it aligns with the label rule; hover box still
+   extends past it, with a longer animation. */
+.building-section .building-entry {
+  position: relative;
+  border-bottom: none;
+  transition: background-color 0.35s ease;
+}
+.building-section .building-entry::after {
+  content: '';
+  position: absolute;
+  left: var(--s-4);
+  right: var(--s-4);
+  bottom: 0;
+  border-bottom: 1px solid var(--divider);
+}
+.building-section .building-entry:last-child::after { display: none; }
+
+/* ── SummerQuest TV strip: horizontally scrollable, 5 screens, TV-03 centered on load ── */
+.sq-tvstrip {
+  display: block;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 0;
+}
+.sq-tvstrip::-webkit-scrollbar { display: none; }
+.sq-tvtrack {
+  display: flex;
+  gap: 0;
+  width: max-content;
+  padding: var(--s-3) 24px;
+}
+.sq-tvtrack img {
+  height: clamp(360px, 52vw, 900px);
+  width: auto;
+  max-width: none;
+  flex-shrink: 0;
+  display: block;
+  margin-right: -14px;
+}
+.sq-tvtrack img:last-child { margin-right: 0; }
+
+/* ── SummerQuest TV strip: single composite, scrollable, layered BEHIND the copy ── */
+.sq-tvstrip { position: relative; z-index: 0; padding: var(--s-3) 0; }
+.sq-tvstrip-img {
+  height: clamp(360px, 52vw, 900px);
+  width: auto;
+  max-width: none;
+  display: block;
+}
+/* Copy sits above the strip (outcome above, body below) */
+.sq-content:not(.sq-body-section) { position: relative; z-index: 2; }
+.sq-body-section { position: relative; z-index: 1; }
+.sq-body-section > .container { z-index: 2; }
+
+/* Timeline node spacing: more room under the logo, tighter between company and year */
+.tl-node .tl-name { margin-top: 6px; }
+.tl-node .tl-year { margin-top: -5px; }
+
+/* About "How I lead": routing line to the notes that demonstrate it */
+.how-i-more {
+  margin-top: var(--s-6);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+.how-i-more a { color: var(--navy); text-decoration: underline; text-underline-offset: 2px; }
+.how-i-more a:hover { color: var(--pink); }
+
+/* Work intro: framing block above the project list */
+.work-intro { background: var(--white); padding: var(--s-9) 0 0; }
+.work-intro .container { border-bottom: 1px solid var(--divider); padding-bottom: var(--s-9); }
+.work-intro-text {
+  max-width: none;
+  font-size: var(--step-2);
+  line-height: 1.55;
+  color: var(--navy);
+}
+.work-intro-text a { color: var(--navy); text-decoration: underline; text-decoration-color: #c9c9da; text-underline-offset: 3px; }
+.work-intro-text a:hover { text-decoration-color: var(--pink); }
+
+/* "How I lead" routing line: roomy separators */
+.how-i-more .hil-sep { color: #b6b6cc; margin: 0 0.7em; }
+.how-i-more .hil-dot { color: #c4c4d6; margin: 0 0.7em; }
+
+/* Work intro lead-in */
+.work-intro-text .wi-lead { color: var(--pink); font-weight: 700; }
+
+/* ── Work thumbnails: rounded corners + duotone→colour cross-fade on hover (Option 2) ── */
+.work-entry .we-thumb,
+.work-entry .we-thumb .img-treatment { border-radius: 8px !important; overflow: hidden; }
+.work-entry .we-thumb .we-thumb-duo { z-index: 1; transition: opacity 0.5s ease; }
+.work-entry .we-thumb .we-thumb-color { z-index: 0; }
+.work-entry:hover .we-thumb .we-thumb-duo,
+.work-entry:focus-visible .we-thumb .we-thumb-duo { opacity: 0; }
+.work-entry .we-thumb { transition: transform 0.4s cubic-bezier(.2,.6,.2,1), box-shadow 0.4s ease; }
+.work-entry:hover .we-thumb { transform: translateY(-4px) scale(1.05); box-shadow: 0 16px 34px rgba(15,15,60,0.24); }
+.work-entry .we-thumb .img-overlay { z-index: 2; }
+.work-entry .we-thumb { align-self: start; }
+
+/* Work thumbnails: gentle 10% zoom on hover (paired with the duotone→colour fade) */
+.work-entry .we-thumb .we-thumb-img { transition: transform 0.55s cubic-bezier(.2,.6,.2,1); }
+.work-entry .we-thumb .we-thumb-duo { transition: opacity 0.5s ease, transform 0.55s cubic-bezier(.2,.6,.2,1); }
+.work-entry:hover .we-thumb .we-thumb-img,
+.work-entry:focus-visible .we-thumb .we-thumb-img { transform: scale(1.05); }
+
+/* ── Work hero: cursor spotlight reveals the colour image from the duotone ── */
+.hero-article:not(.hero-note) .cs-hero-color {
+  position: absolute;
+  inset: 0;
+  background-image: var(--cs-hero-color-bg, url('../img/work/cs-hero-placeholder-color.webp'));
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(ellipse var(--glow-rx, 440px) var(--glow-ry, 440px) at var(--mx, 50%) var(--my, 50%), #000 0%, rgba(0,0,0,0.5) 28%, transparent 100%);
+  mask-image: radial-gradient(ellipse var(--glow-rx, 440px) var(--glow-ry, 440px) at var(--mx, 50%) var(--my, 50%), #000 0%, rgba(0,0,0,0.5) 28%, transparent 100%);
+}
+.hero-article.cs-glow-active .cs-hero-color { opacity: 1; }
+
+
+/* ── Streamer filmstrip: continuous right-drifting marquee (replaces scroll parallax) ── */
+.strm-film { overflow: hidden; }
+.strm-film-track {
+  gap: 0;
+  padding: 0;
+  animation: strm-marquee 70s linear infinite;
+}
+.strm-film-track img { margin-right: 4px; }
+@keyframes strm-marquee {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .strm-film { overflow-x: auto; }
+  .strm-film-track { animation: none; }
+}
+
+/* ── Section heroes: cursor spotlight "lights up" the constellation network ── */
+.hero-page .hero-glow {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  -webkit-mask-image: radial-gradient(ellipse var(--glow-rx,440px) var(--glow-ry,440px) at var(--mx,50%) var(--my,50%), #000 0%, rgba(0,0,0,0.5) 28%, transparent 100%);
+  mask-image: radial-gradient(ellipse var(--glow-rx,440px) var(--glow-ry,440px) at var(--mx,50%) var(--my,50%), #000 0%, rgba(0,0,0,0.5) 28%, transparent 100%);
+}
+.hero-page.cs-glow-active .hero-glow { opacity: 1; }
+
+/* Section hero: WebGL warp canvas (progressive enhancement over .hero-photo) */
+.hero-page .hero-gl {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: block;
+  pointer-events: none;
+}

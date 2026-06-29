@@ -31,49 +31,54 @@
 <section class="hero hero-article hero-note">
   <div class="container hero-inner">
     <a class="note-back" data-hero-fade href="../notes.html"><span class="arr arr-left">←</span> Notes</a>
-    <span class="note-pillar-tag" data-hero-fade>Leadership · AI</span>
+    <div class="note-tags" data-hero-fade>
+      <span class="note-pillar-tag">Leadership · AI</span>
+      <span class="note-meta-tag">2026 &nbsp;·&nbsp; 8 min read</span>
+    </div>
     <h1>I'm not a stroke expert</h1>
-    <p class="note-sub" data-hero-fade>I built a clinical research tool in a weekend, in a field I'd never worked in. What it taught me about problem-solving, judgment, and who I actually hire.</p>
+    <p class="note-sub" data-hero-fade>I built a clinical research tool in a weekend, in a field I'd never worked in - and what it taught me about judgment, problem-solving, and who I hire.</p>
   </div>
   <div class="hero-scroll" aria-hidden="true">
     <span class="hero-scroll-label">Scroll</span>
     <span class="hero-scroll-line"></span>
   </div>
+  <a class="note-nav note-nav--prev" href="teaching.html" aria-label="Previous note: Teaching taught me to manage">
+    <span class="note-nav-arrow" aria-hidden="true">&larr;</span>
+    <span class="note-nav-label"><span class="note-nav-kicker">Previous</span><span class="note-nav-title">Teaching taught me to manage</span></span>
+  </a>
+  <a class="note-nav note-nav--next" href="two-opposite-pushes.html" aria-label="Next note: Two opposite pushes">
+    <span class="note-nav-arrow" aria-hidden="true">&rarr;</span>
+    <span class="note-nav-label"><span class="note-nav-kicker">Next</span><span class="note-nav-title">Two opposite pushes</span></span>
+  </a>
+  <nav class="note-dots" aria-label="All notes">
+    <a class="note-dot is-active" href="not-a-stroke-expert.html" aria-current="page" aria-label="I'm not a stroke expert"></a>
+    <a class="note-dot" href="two-opposite-pushes.html" aria-label="Two opposite pushes"></a>
+    <a class="note-dot" href="play-stay-messy.html" aria-label="Play, stay messy, share"></a>
+    <a class="note-dot" href="vision-is-a-floor.html" aria-label="Vision is a floor, not a ceiling"></a>
+    <a class="note-dot" href="it-was-never-the-org-chart.html" aria-label="It was never the org chart"></a>
+    <a class="note-dot" href="teaching.html" aria-label="Teaching taught me to manage"></a>
+  </nav>
 </section>
+
+<div class="cs-scrollcue" aria-hidden="true">
+  <span class="cs-scrollcue-label">Scroll</span>
+  <span class="cs-scrollcue-line"></span>
+</div>
+
 
 <section class="cs-content">
   <div class="container">
 
-  <!-- META -->
-  <div class="cs-meta">
-    <div class="cs-meta-item">
-      <label>Pillar</label>
-      <span>Leadership</span>
-    </div>
-    <div class="cs-meta-item">
-      <label>Year</label>
-      <span>2026</span>
-    </div>
-    <div class="cs-meta-item">
-      <label>Read time</label>
-      <span>8 min</span>
-    </div>
-    <div class="cs-meta-item">
-      <label>Also</label>
-      <span>AI · Making</span>
-    </div>
-  </div>
-
   <!-- BODY -->
-  <div class="note-body">
+  <div class="note-body" data-reveal-cs>
 
     <p>A friend of mine is a stroke nurse at Cedars-Sinai. Last year he published research showing that majority-Black and majority-Hispanic communities in LA County face significantly longer travel times to comprehensive stroke centers. When a stroke hits, those minutes are brain cells. He wanted to take the analysis further but didn't have a way to scale it.</p>
 
-    <p>On a Saturday around 7pm, I started building. By Sunday night there was a live tool scoring all 1,802 California ZIP codes on proximity to certified stroke care: a data pipeline pulling CMS hospital data, Census demographics, and Google Maps drive times, an interactive map, a methodology page, and a public dataset. James called it a year of work in 24 hours.</p>
+    <p>On a Saturday around 7pm, I started building. By Sunday night there was a live tool scoring all 1,802 California ZIP codes on proximity to certified stroke care: a data pipeline pulling CMS hospital data, Census demographics, and Google Maps drive times, an interactive map, a methodology page, and a public dataset. It was shocking how fast it came together.</p>
 
     <p>That's the part that sounds impressive. It's not the interesting part.</p>
 
-    <p>Here's the part that is. I'm not a stroke expert. I'm not an epidemiologist or a GIS analyst, and I'd never touched clinical data in my life. James is the clinician. He keeps telling people he's surprised how fast I picked up the subject matter, but that's not what happened. I didn't pick up the subject matter. I picked up the problem.</p>
+    <p>Here's the part that is. I'm not a stroke expert. I'm not an epidemiologist or a GIS analyst, and I'd never touched clinical data in my life. My partner on the project is the clinician. It would be easy to call what happened picking up the subject matter quickly - that's not it. I didn't pick up the subject matter. I picked up the problem.</p>
 
     <h2>What I got wrong, quickly</h2>
 
@@ -83,7 +88,7 @@
 
     <p><strong>I got fooled by a name.</strong> The dataset showed "Providence Queen of the Valley Medical Center" as a comprehensive stroke center. There is also an "Emanate Health Queen of the Valley Hospital" in West Covina. One is in Napa, 400 miles away. The data pipeline didn't know the difference, and for a while, neither did I. A ZIP code in the San Gabriel Valley was being told its nearest comprehensive stroke center was 37 minutes away when the real one was 4 minutes down the road, invisible because it wasn't in the source data.</p>
 
-    <p><strong>I shipped a scoring model that erased the story.</strong> When James gave clinical guidance on how to weight the scoring, I implemented it, rescored the state, and pushed it live. Then I looked at the map. It was green. Almost all of LA County scored 75 or above. The earlier version had shown a county full of orange and red, of disparity. My first instinct was that I had broken something.</p>
+    <p><strong>I shipped a scoring model that erased the story.</strong> When my partner gave clinical guidance on how to weight the scoring, I implemented it, rescored the state, and pushed it live. Then I looked at the map. It was green. Almost all of LA County scored 75 or above. The earlier version had shown a county full of orange and red, of disparity. My first instinct was that I had broken something.</p>
 
     <h2>The instinct that mattered</h2>
 
@@ -91,7 +96,7 @@
 
     <p>The model wasn't broken. LA County genuinely is dense with comprehensive stroke centers. Nearly every urban ZIP is within 15 minutes of one, so nearly every ZIP maxed out the score. The model was working exactly as designed.</p>
 
-    <p>Which is the actual finding. James's earlier research proved racial disparities in stroke access exist in LA County. Our proximity model scored the same county as nearly uniform high access. Same county, same hospitals, opposite headline. The resolution: proximity-based access scores systematically understate urban inequity, because supply density saturates the metric while the real barriers, symptom recognition, 911 utilization, within-hospital disparities, concentrate in the same communities the map paints green.</p>
+    <p>Which is the actual finding. My partner's earlier research proved racial disparities in stroke access exist in LA County. Our proximity model scored the same county as nearly uniform high access. Same county, same hospitals, opposite headline. The resolution: proximity-based access scores systematically understate urban inequity, because supply density saturates the metric while the real barriers, symptom recognition, 911 utilization, within-hospital disparities, concentrate in the same communities the map paints green.</p>
 
     <p>What looked like a bug for an evening became the methods contribution of the paper we're now drafting. The ceiling isn't a defect in our model. It's evidence that the field's standard approach fails in dense cities.</p>
 

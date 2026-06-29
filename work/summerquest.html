@@ -28,6 +28,7 @@
 
 
 <section class="hero hero-article sq-hero">
+  <div class="cs-hero-color" aria-hidden="true"></div>
   <div class="container hero-inner">
     <a class="cs-back" data-hero-fade href="../work.html"><span class="arr arr-left">←</span> Work</a>
     <h1>SummerQuest</h1>
@@ -38,6 +39,12 @@
     <span class="hero-scroll-line"></span>
   </div>
 </section>
+
+<div class="cs-scrollcue" aria-hidden="true">
+  <span class="cs-scrollcue-label">Scroll</span>
+  <span class="cs-scrollcue-line"></span>
+</div>
+
 
 <section class="cs-content sq-content">
   <div class="container">
@@ -63,7 +70,7 @@
   </div>
 
   <!-- ── OUTCOME (its own unit, directly under the meta bar) ─── -->
-  <div class="sq-outcome">
+  <div class="sq-outcome" data-reveal-cs>
     <span class="sq-outcome-label">Outcome</span>
     <p>Weeks in, two kids still check their stars every morning - on their own, without me prompting them. The build was never the test. Coming back the next day was.</p>
   </div>
@@ -75,14 +82,14 @@
 
   <!-- THREE TVs — full-bleed inside the white body section so the glow sits behind the text -->
   <!-- VIDEO SPOT (optional, capture later): a 5-10s loop of the animated map background could replace this strip. -->
-  <div class="sq-tvstrip" role="img" aria-label="SummerQuest running on the living-room TV">
-    <img src="../img/summerquest/tv-long.webp" alt="SummerQuest shown across three TV screens - the home map, team progress, and the summer calendar" loading="eager">
+  <div class="sq-tvstrip" data-reveal-cs aria-label="SummerQuest running on the living-room TV">
+    <img class="sq-tvstrip-img" src="../img/summerquest/tv-strip.webp" alt="SummerQuest running on the living-room TV" loading="eager">
   </div>
 
   <div class="container">
 
   <!-- ── BODY ─────────────────────────────── -->
-  <div class="cs-body">
+  <div class="cs-body" data-reveal-cs>
 
     <h2>The need</h2>
     <p>My kids needed a reason to stay in their own beds this summer. I needed to know what it actually takes to ship a tvOS app. This project solved both problems at once.</p>

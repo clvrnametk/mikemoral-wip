@@ -27,7 +27,8 @@
 </nav>
 
 
-<section class="hero hero-article">
+<section class="hero hero-article" style="--cs-hero-bg:url('../img/work/streamer-hero.webp');--cs-hero-color-bg:url('../img/work/streamer-hero-color.webp')">
+  <div class="cs-hero-color" aria-hidden="true"></div>
   <div class="container hero-inner">
     <a class="cs-back" data-hero-fade href="../work.html"><span class="arr arr-left">←</span> Work</a>
     <h1>The Streamer Project</h1>
@@ -39,54 +40,79 @@
   </div>
 </section>
 
-<section class="cs-content">
+<div class="cs-scrollcue" aria-hidden="true">
+  <span class="cs-scrollcue-label">Scroll</span>
+  <span class="cs-scrollcue-line"></span>
+</div>
+
+
+<!-- TOP: meta + full-width outcome + numbers, right under the hero -->
+<section class="cs-content strm-top">
   <div class="container">
 
-  <!-- ── META ─────────────────────────────── -->
-  <div class="cs-meta">
-    <div class="cs-meta-item">
-      <label>Year</label>
-      <span>2023</span>
-    </div>
-    <div class="cs-meta-item">
-      <label>Print time</label>
-      <span>1,225 hours</span>
-    </div>
-    <div class="cs-meta-item">
-      <label>Filament</label>
-      <span>64 lbs</span>
-    </div>
-    <div class="cs-meta-item">
-      <label>Recipients</label>
-      <span>100</span>
+  <!-- ── OUTCOME (full width; year folded into the label) ─── -->
+  <div class="cs-outcome cs-outcome--wide">
+    <label>2023 &nbsp;·&nbsp; Outcome</label>
+    <p>100 hand-made gifts across six brands, each designed, printed, painted, and packaged by hand and sealed in a blind bag with a signed card. Proof you can hold that culture is something you make.</p>
+  </div>
+
+  <!-- ── NUMBERS (on white, right after the outcome copy) ─── -->
+  <div class="strm-numbers" data-reveal-cs>
+    <div class="strm-stat-grid">
+      <div class="strm-stat"><span class="strm-stat-num" data-to="270">0</span><span class="strm-stat-label">rolls of tape</span></div>
+      <div class="strm-stat"><span class="strm-stat-num" data-to="100">0</span><span class="strm-stat-label">streamers</span></div>
+      <div class="strm-stat"><span class="strm-stat-num" data-to="1225">0</span><span class="strm-stat-label">printing hours</span></div>
+      <div class="strm-stat"><span class="strm-stat-num" data-to="64">0</span><span class="strm-stat-label">lbs of filament</span></div>
+      <div class="strm-stat"><span class="strm-stat-num" data-to="30">0</span><span class="strm-stat-label">days</span></div>
+      <div class="strm-stat"><span class="strm-stat-num" data-to="2">0</span><span class="strm-stat-label">custom jigs</span></div>
+      <div class="strm-stat"><span class="strm-stat-num" data-to="2">0</span><span class="strm-stat-label">spray-paint cans</span></div>
+      <div class="strm-stat"><span class="strm-stat-num" data-to="6">0</span><span class="strm-stat-label">failures, then fixes</span></div>
     </div>
   </div>
 
-  <!-- ── BODY ─────────────────────────────── -->
-  <div class="cs-body">
+  </div>
+</section>
 
-    <div class="cs-img-wrap">
-      <div class="img-ph" style="height:380px;"><div class="img-ph-bg"></div><span class="img-ph-label">[ Streamer figures — finished product ]</span><svg class="img-ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>
-    </div>
 
+<!-- PARALLAX FILMSTRIP — the grids scroll left as you scroll down -->
+<section class="strm-film" aria-label="The Streamer build, end to end">
+  <div class="strm-film-track">
+    <img src="../img/streamer/grid1.webp" alt="Finished Streamer figures and red printed parts on the bed" loading="eager" decoding="async">
+    <img src="../img/streamer/grid2.webp" alt="Disney+ badges, blind-bag packaging, and masking jigs" loading="eager" decoding="async">
+    <img src="../img/streamer/grid3.webp" alt="More of the Streamer build and packaging process" loading="eager" decoding="async">
+    <img src="../img/streamer/grid1.webp" alt="" aria-hidden="true" loading="eager" decoding="async">
+    <img src="../img/streamer/grid2.webp" alt="" aria-hidden="true" loading="eager" decoding="async">
+    <img src="../img/streamer/grid3.webp" alt="" aria-hidden="true" loading="eager" decoding="async">
+  </div>
+</section>
+
+
+<!-- NARRATIVE + CLOSING (all the copy together) -->
+<section class="cs-content">
+  <div class="container">
+  <div class="cs-body" data-reveal-cs>
     <h2>Every year I make something for my team. Not order something. Make something.</h2>
-    <p>The Streamer was a 3D-printed modular toy system. Figures I designed, printed, painted, and packaged entirely by hand. Each one sealed in a blind bag with a hand-signed card. 100 of them. Spanning Disney+, Hulu, ESPN, Marvel, Nat Geo, and Star Wars.</p>
-
-    <div class="pullquote">270 tapes. 90 streamers. 2 spray paint cans. 2 custom jigs. 30 days. 6 failures before it worked.</div>
-
-    <div class="cs-img-wrap">
-      <div class="img-ph" style="height:380px;"><div class="img-ph-bg"></div><span class="img-ph-label">[ Process — printing, painting, assembly, packaging ]</span><svg class="img-ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>
-    </div>
+    <p>The Streamer was a 3D-printed modular toy system - figures I designed, printed, painted, and packaged entirely by hand, spanning Disney+, Hulu, ESPN, Marvel, Nat Geo, and Star Wars.</p>
+    <p>Six brands, a hundred figures, one printer running almost around the clock. The first runs failed - warped parts, prints that pulled off the bed - so I built two custom jigs, dialed it in, and let it run. The failures were not the setback. They were the part where it started to work.</p>
+    <p>I designed the figures, the cards, and the packaging, secured the budget, and covered the balance myself. But I didn't run the line alone. Hansen Smith built it with me - he sharpened the cassette design, rigged a jig for painting the bags, and ran a third printer the production run couldn't have happened without. A month of late nights and a homemade assembly line, two people turning a pile of parts into a hundred finished gifts.</p>
 
     <h2>What it was really about</h2>
-    <p>The point was not the gift. The point was the message underneath it: we build things here. We make things. We do not just ship decks and attend standups.</p>
-    <p>Culture is not a value on a wall. It is what leaders do when no one is requiring them to do it. I have spent my own money and my own time building it, every year.</p>
-
-    <div class="cs-img-wrap">
-      <div class="img-ph" style="height:380px;"><div class="img-ph-bg"></div><span class="img-ph-label">[ Team photos / recipients with figures ]</span><svg class="img-ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>
-    </div>
-
+    <p>The point was never the gift. It was the message underneath it: we build things here. We make things. We do not just ship decks and attend standups.</p>
+    <p>Culture is not a value on a wall. It is what leaders do when no one is requiring them to do it. I have spent my own money and my own time building it, every year - and the people who build it with me are the proof it is real.</p>
+    <p>Then Hansen did something no one asked for: he made me a custom one of my own. Nobody else would have thought to. That's culture doing exactly what it's supposed to - you put making and generosity into a team, and it comes back around.</p>
   </div>
+  </div>
+</section>
+
+
+<!-- CANDID QUOTE BAND (bottom) — the printer running, behind the card's note -->
+<section class="cs-quoteband cs-quoteband--video" aria-label="A note from the gift">
+  <video class="cqb-video" src="../img/streamer/print.mp4" poster="../img/streamer/print-poster.webp" muted loop autoplay playsinline aria-hidden="true"></video>
+  <div class="cqb-scrim" aria-hidden="true"></div>
+  <div class="container cqb-inner">
+    <span class="cqb-rule" aria-hidden="true"></span>
+    <p class="cqb-quote">It was never meant to be some profound metaphor for team culture. But if you want to make it a symbol of the team's limitless potential, I certainly can't stop you.</p>
+    <span class="cqb-attr">From the card in every bag.</span>
   </div>
 </section>
 
