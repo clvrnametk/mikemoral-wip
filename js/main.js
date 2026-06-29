@@ -198,14 +198,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }, { passive: true });
       const render = () => {
         time += 0.016;
-        mx += (tmx - mx) * 0.06; my += (tmy - my) * 0.06;
+        mx += (tmx - mx) * 0.10; my += (tmy - my) * 0.10;
         act += (actT - act) * 0.08;
         const ca = canvas.width / canvas.height;
-        const R = 0.26 + Math.sin(time * 0.85) * 0.045;
+        const R = 0.18 + Math.sin(time * 0.7) * 0.02;
         gl.useProgram(prog);
         gl.uniform2f(uMouse, mx, my);
         gl.uniform1f(uCA, ca); gl.uniform1f(uTA, texAspect);
-        gl.uniform1f(uR, R); gl.uniform1f(uStr, 0.17 * act); gl.uniform1f(uBright, 0.4 * act);
+        gl.uniform1f(uR, R); gl.uniform1f(uStr, 0.11 * act); gl.uniform1f(uBright, 0.32 * act);
         gl.drawArrays(gl.TRIANGLES, 0, 3);
         rafId = requestAnimationFrame(render);
       };
