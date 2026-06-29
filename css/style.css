@@ -2119,15 +2119,35 @@ a:hover .arr-left,
   .site-nav.open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .site-nav.open .nav-toggle span:nth-child(2) { opacity: 0; }
   .site-nav.open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  /* Full-screen editorial menu overlay */
   .site-nav .nav-links {
-    position: absolute; top: var(--nav-h); left: 0; right: 0;
-    flex-direction: column; align-items: stretch; gap: 0;
-    background: var(--navy); padding: var(--s-3) 24px var(--s-5);
-    border-top: 1px solid var(--white-12);
-    display: none;
+    position: fixed; top: var(--nav-h); left: 0; right: 0; bottom: 0;
+    flex-direction: column; align-items: flex-start; justify-content: center;
+    gap: var(--s-2);
+    background: var(--navy);
+    padding: 0 32px var(--s-9);
+    opacity: 0; visibility: hidden; transform: translateY(-6px);
+    transition: opacity .3s ease, transform .4s cubic-bezier(.2,.7,.2,1), visibility .3s;
+    pointer-events: none;
   }
-  .site-nav.open .nav-links { display: flex; }
-  .site-nav .nav-links a { display: block; width: 100%; padding: 12px 0; font-size: 1.0625rem; }
+  .site-nav.open { background: var(--navy); }
+  .site-nav.open .nav-links { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; }
+  .site-nav .nav-links a {
+    font-family: var(--font-display); font-weight: 700;
+    font-size: clamp(2rem, 11vw, 3.25rem); line-height: 1.1;
+    color: #fff; width: auto; padding: 6px 0; border-bottom: 0;
+    opacity: 0; transform: translateY(14px);
+    transition: opacity .45s ease, transform .55s cubic-bezier(.2,.7,.2,1), color .2s ease;
+  }
+  .site-nav .nav-links a.active { color: var(--pink); border-bottom: 0; }
+  .site-nav.open .nav-links a { opacity: 1; transform: translateY(0); }
+  .site-nav.open .nav-links li:nth-child(1) a { transition-delay: .06s; }
+  .site-nav.open .nav-links li:nth-child(2) a { transition-delay: .12s; }
+  .site-nav.open .nav-links li:nth-child(3) a { transition-delay: .18s; }
+  .site-nav.open .nav-links li:nth-child(4) a { transition-delay: .24s; }
+}
+@media (max-width: 768px) and (prefers-reduced-motion: reduce) {
+  .site-nav .nav-links, .site-nav .nav-links a { transition: none; transform: none; }
 }
 
 /* SummerQuest TV strip: shorter + scrollable on phones */
