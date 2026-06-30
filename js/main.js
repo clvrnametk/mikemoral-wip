@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateNav = () => {
       const p = Math.min(window.scrollY / 60, 1);
       nav.style.backgroundColor = 'rgba(15, 15, 60, ' + p + ')';
+      nav.classList.toggle('scrolled', window.scrollY > 20);
     };
     updateNav();
     window.addEventListener('scroll', updateNav, { passive: true });

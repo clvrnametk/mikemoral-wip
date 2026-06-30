@@ -24,8 +24,8 @@
   <meta name="twitter:title" content="Play, stay messy, share - mikemoral.es">
   <meta name="twitter:description" content="I'm not an AI expert - I'm learning it alongside my team. What I know is how to teach. Why bringing an organization forward starts with permission to play, stay messy, and make mistakes.">
   <meta name="twitter:image" content="https://mikemoral.es/og-image.png">
-  <link rel="stylesheet" href="../css/fonts.css?v=20260629o">
-  <link rel="stylesheet" href="../css/style.css?v=20260629o">
+  <link rel="stylesheet" href="../css/fonts.css?v=20260629n">
+  <link rel="stylesheet" href="../css/style.css?v=20260629n">
   <link rel="icon" type="image/png" href="/favicon.png">
 </head>
 <body>
@@ -172,6 +172,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="../js/main.js?v=20260629o"></script>
+<script src="../js/main.js?v=20260629n"></script>
 </body>
 </html>

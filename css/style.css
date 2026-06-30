@@ -148,7 +148,10 @@ img { display: block; max-width: 100%; }
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: padding .25s ease;
 }
+/* Shrink the bar once scrolling starts, so the solid navy strip stays compact */
+.site-nav.scrolled { padding-top: 12px; padding-bottom: 12px; }
 
 .nav-logo {
   display: flex;
