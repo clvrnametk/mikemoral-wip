@@ -24,8 +24,8 @@
   <meta name="twitter:title" content="About - mikemoral.es">
   <meta name="twitter:description" content="Mike Morales - VP of Product Design at Disney+ and Hulu. A builder of products, organizations, teams, and physical things.">
   <meta name="twitter:image" content="https://mikemoral.es/og-image.png">
-  <link rel="stylesheet" href="css/fonts.css?v=20260629p">
-  <link rel="stylesheet" href="css/style.css?v=20260629p">
+  <link rel="stylesheet" href="css/fonts.css?v=20260629o">
+  <link rel="stylesheet" href="css/style.css?v=20260629o">
   <!-- Font Awesome Pro Kit (Classic Solid/Light/Thin + Duotone) -->
   <script src="https://kit.fontawesome.com/8240221c83.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" href="/favicon_bw.png">
@@ -324,7 +324,6 @@
         <p class="footer-tagline">Builder. Product thinker.<br>Brooklyn Made.</p>
       </div>
       <div class="footer-contact">
-        <a href="/about.html#hiring">Currently hiring <span class="arr">→</span></a>
         <a href="https://www.linkedin.com/in/michaelmorales1/" target="_blank" rel="noopener">LinkedIn <span class="arr">→</span></a>
         <a href="mailto:mike.morales.ny@gmail.com">Contact <span class="arr">→</span></a>
       </div>
@@ -337,6 +336,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="js/main.js?v=20260629p"></script>
+<script src="js/main.js?v=20260629o"></script>
 </body>
 </html>

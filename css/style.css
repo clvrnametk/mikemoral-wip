@@ -2319,6 +2319,35 @@ a:hover .arr-left,
   }
 }
 
+/* ── About: Currently hiring (reuses the .piece list style as links) ── */
+.hiring-section {
+  background: var(--bg);
+  border-top: 1px solid var(--divider);
+  padding: var(--s-7) 0;
+}
+.hiring-section .pieces-title { margin-bottom: var(--s-3); }
+.hire-intro { color: var(--text); max-width: 60ch; margin: 0 0 var(--s-6); }
+.hire-list { list-style: none; margin: 0; padding: 0; counter-reset: piece; }
+a.piece.hire {
+  text-decoration: none; color: inherit;
+  align-items: start;
+  transition: background .2s ease;
+}
+a.piece.hire:hover { background: rgba(225, 0, 135, 0.04); }
+a.piece.hire:hover h3 { color: var(--pink); }
+.hire-main h3 { transition: color .2s ease; }
+.hire-loc {
+  display: block; margin-top: 5px;
+  font-family: var(--font-body); font-weight: 400;
+  font-size: var(--step--1); color: #6f6f82;
+}
+.hire-desc { display: flex; align-items: baseline; gap: var(--s-4); justify-content: space-between; }
+.hire-desc .arr { color: var(--pink); flex: 0 0 auto; transition: transform .2s ease; }
+a.piece.hire:hover .arr { transform: translateX(3px); }
+@media (max-width: 768px) {
+  a.piece.hire { padding: var(--s-5) 0; }
+}
+
 /* ── Case-study body lists + coverage ────── */
 .cs-body ul {
   list-style: none;
