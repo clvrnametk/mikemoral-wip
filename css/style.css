@@ -144,7 +144,7 @@ img { display: block; max-width: 100%; }
   z-index: 500;
   min-height: var(--nav-h);
   background: rgba(15, 15, 60, 0);
-  padding: 20px 48px;
+  padding: 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;

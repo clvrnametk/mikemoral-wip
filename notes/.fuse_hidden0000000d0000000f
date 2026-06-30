@@ -24,8 +24,8 @@
   <meta name="twitter:title" content="It was never the org chart - mikemoral.es">
   <meta name="twitter:description" content="Asked to keep an eighty-engineer program afloat with no formal authority, I earned the scope by taking ownership of what mattered. On why impact follows accountability, not the reporting line.">
   <meta name="twitter:image" content="https://mikemoral.es/og-image.png">
-  <link rel="stylesheet" href="../css/fonts.css?v=20260629n">
-  <link rel="stylesheet" href="../css/style.css?v=20260629n">
+  <link rel="stylesheet" href="../css/fonts.css?v=20260629m">
+  <link rel="stylesheet" href="../css/style.css?v=20260629m">
   <link rel="icon" type="image/png" href="/favicon.png">
 </head>
 <body>
@@ -158,6 +158,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="../js/main.js?v=20260629n"></script>
+<script src="../js/main.js?v=20260629m"></script>
 </body>
 </html>

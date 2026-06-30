@@ -24,8 +24,8 @@
   <meta name="twitter:title" content="The Streamer Project - mikemoral.es">
   <meta name="twitter:description" content="Every year I make something for my team. Not order something. Make something. 270 tapes, 90 streamers, 1,225 hours of print time. Culture is something you make.">
   <meta name="twitter:image" content="https://mikemoral.es/og-image.png">
-  <link rel="stylesheet" href="../css/fonts.css?v=20260629n">
-  <link rel="stylesheet" href="../css/style.css?v=20260629n">
+  <link rel="stylesheet" href="../css/fonts.css?v=20260629m">
+  <link rel="stylesheet" href="../css/style.css?v=20260629m">
   <link rel="icon" type="image/png" href="/favicon.png">
 </head>
 <body>
@@ -184,6 +184,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="../js/main.js?v=20260629n"></script>
+<script src="../js/main.js?v=20260629m"></script>
 </body>
 </html>
