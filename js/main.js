@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
       else if (href.indexOf('#hiring') > -1) gaEvent('hiring_link_click', { source: 'footer' });
       return;
     }
+    if (link.matches('.home-hiring-link')){ gaEvent('hiring_link_click', { source: 'home' }); return; }
     if (link.matches('.cs-next, .cs-nextnav-link')){ gaEvent('next_project', { to: href }); return; }
     if (link.matches('.note-entry')){ gaEvent('note_open', { note: href.replace(/^.*notes\//,'').replace('.html','') }); return; }
     if (link.matches('.work-entry')){ gaEvent('work_open', { project: href.replace(/^.*work\//,'').replace('.html','') }); return; }
