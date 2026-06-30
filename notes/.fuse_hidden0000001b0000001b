@@ -24,8 +24,8 @@
   <meta name="twitter:title" content="Vision is a floor, not a ceiling - mikemoral.es">
   <meta name="twitter:description" content="A vision's job isn't to be admired or obeyed. It's to point a direction clear enough that the teams who build it make it better than you drew. If the end state only matches the deck, you led it wrong.">
   <meta name="twitter:image" content="https://mikemoral.es/og-image.png">
-  <link rel="stylesheet" href="../css/fonts.css?v=20260629q">
-  <link rel="stylesheet" href="../css/style.css?v=20260629q">
+  <link rel="stylesheet" href="../css/fonts.css?v=20260629p">
+  <link rel="stylesheet" href="../css/style.css?v=20260629p">
   <link rel="icon" type="image/png" href="/favicon_bw.png">
 </head>
 <body>
@@ -151,6 +151,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="../js/main.js?v=20260629q"></script>
+<script src="../js/main.js?v=20260629p"></script>
 </body>
 </html>

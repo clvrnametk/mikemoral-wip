@@ -26,6 +26,28 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', updateNav, { passive: true });
   }
 
+  /* ── GA4 custom event tracking (no-ops when gtag is absent / non-prod) ── */
+  function gaEvent(name, params){ try { if (typeof window.gtag === 'function') window.gtag('event', name, params || {}); } catch (e) {} }
+  document.addEventListener('click', function(e){
+    const link = e.target.closest('a');
+    if (!link) return;
+    const href = link.getAttribute('href') || '';
+    const hire = link.closest('.hire');
+    if (hire){ const r = hire.querySelector('h3'); gaEvent('apply_click', { role: (r ? r.textContent : '').trim().slice(0,100) }); return; }
+    if (link.closest('.footer-contact')){
+      if (href.indexOf('mailto:') === 0) gaEvent('contact_click', { method: 'email' });
+      else if (href.indexOf('linkedin.com') > -1) gaEvent('contact_click', { method: 'linkedin' });
+      else if (href.indexOf('#hiring') > -1) gaEvent('hiring_link_click', { source: 'footer' });
+      return;
+    }
+    if (link.matches('.cs-next, .cs-nextnav-link')){ gaEvent('next_project', { to: href }); return; }
+    if (link.matches('.note-entry')){ gaEvent('note_open', { note: href.replace(/^.*notes\//,'').replace('.html','') }); return; }
+    if (link.matches('.work-entry')){ gaEvent('work_open', { project: href.replace(/^.*work\//,'').replace('.html','') }); return; }
+    if (link.matches('.btn-outline') && /about me/i.test(link.textContent)){ gaEvent('more_about_me', {}); return; }
+    if (link.matches('.btn') && /see the work/i.test(link.textContent)){ gaEvent('home_cta', { to: 'work' }); return; }
+    if (link.matches('.btn') && /read the notes/i.test(link.textContent)){ gaEvent('home_cta', { to: 'notes' }); return; }
+  }, true);
+
   /* ── Notes filter buttons (visual toggle only) ──────────── */
   document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', () => {
