@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#0f0f3c">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Analytics (GA4) — production host only -->
+  <script>
+    if (location.hostname === 'mikemoral.es' || location.hostname === 'www.mikemoral.es') {
+      var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id=G-Q8NCYQ8FJ8'; document.head.appendChild(s);
+      window.dataLayer=window.dataLayer||[]; function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date()); gtag('config','G-Q8NCYQ8FJ8');
+    }
+  </script>
+  <title>mikemoral.es - Mike Morales</title>
+  <meta name="description" content="VP of Product Design at Disney+ and Hulu. Focused on making better calls, learning faster, and building organizations where strong people do the best work of their careers.">
+  <meta property="og:title" content="mikemoral.es - Mike Morales">
+  <meta property="og:description" content="VP of Product Design at Disney+ and Hulu. Focused on making better calls, learning faster, and building organizations where strong people do the best work of their careers.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mikemoral.es">
+  <meta property="og:image" content="https://mikemoral.es/og-image.png">
+  <link rel="canonical" href="https://mikemoral.es">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="mikemoral.es - Mike Morales">
+  <meta name="twitter:description" content="VP of Product Design at Disney+ and Hulu. Focused on making better calls, learning faster, and building organizations where strong people do the best work of their careers.">
+  <meta name="twitter:image" content="https://mikemoral.es/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mike Morales",
+    "url": "https://mikemoral.es",
+    "image": "https://mikemoral.es/og-image.png",
+    "jobTitle": "VP of Product Design",
+    "worksFor": { "@type": "Organization", "name": "Disney+ and Hulu" },
+    "sameAs": ["https://www.linkedin.com/in/michaelmorales1/"],
+    "description": "VP of Product Design at Disney+ and Hulu. A builder of products, organizations, teams, and physical things."
+  }
+  </script>
+  <link rel="stylesheet" href="css/fonts.css?v=20260629i">
+  <link rel="stylesheet" href="css/style.css?v=20260629i">
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+
+<div id="preloader" aria-hidden="true">
+  <span id="preloader-count">0</span><span class="preloader-pct">%</span>
+</div>
+
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html"><img src="img/MM_icon_block.svg" alt="MM" class="nav-logo-img"></a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="work.html">Work</a></li>
+    <li><a href="notes.html">Notes</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero hero-home hero-home--bgtest">
+  <div class="hero-bg-layer" aria-hidden="true"></div>
+  <canvas class="hero-gl" data-tex="img/home-net.jpg" aria-hidden="true"></canvas>
+  <svg class="hero-topo" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+    <path d="M-100,200 C200,150 400,300 700,220 S1100,100 1540,180"/>
+    <path d="M-100,340 C150,280 350,420 650,360 S1050,240 1540,310"/>
+    <path d="M-100,460 C250,400 500,520 780,470 S1200,380 1540,440"/>
+    <path d="M-100,560 C300,510 550,610 850,570 S1250,490 1540,550"/>
+    <path d="M-100,650 C200,610 480,700 760,660 S1150,590 1540,640"/>
+    <path d="M-100,740 C350,700 600,780 900,750 S1300,680 1540,730"/>
+    <path d="M100,80  C350,40  600,160 900,100 S1300,20  1540,90"/>
+    <path d="M-100,140 C100,100 300,200 580,150 S950,60  1300,130"/>
+    <g class="topo-route">
+      <path class="route-line" d="M1380,760 C1320,560 1240,400 1150,280"/>
+      <path class="route-line" d="M1150,280 C900,180 480,360 250,560"/>
+      <circle class="route-node" cx="1380" cy="760" r="4.5"/>
+      <circle class="route-node" cx="1150" cy="280" r="4.5"/>
+      <circle class="route-node" cx="250" cy="560" r="4.5"/>
+    </g>
+  </svg>
+
+  <div class="hero-canvas">
+    <div class="hc-id">
+      <span class="hc-name">Mike Morales</span>
+      <span class="hc-label hc-label-role">VP of Product Design · Disney+ and Hulu</span>
+    </div>
+    <h1 class="hc-title"><span class="hc-build">I <span class="hc-accent">build</span></span> <span class="hc-things">things<span class="hc-period">.</span></span></h1>
+    <p class="hc-sub">Products. Organizations. Teams. Sometimes actual physical objects.</p>
+    <span class="hc-label hc-label-city">Caracas · Brooklyn · LA</span>
+    <div class="hc-cta">
+      <a class="btn btn-outline" href="about.html">More about me <span class="arr">→</span></a>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="hero-scroll-label">Scroll</span>
+    <span class="hero-scroll-line"></span>
+  </div>
+</section>
+
+
+<!-- INTRO -->
+<section class="home-intro home-intro--bg">
+  <div class="hi-bg" aria-hidden="true"></div>
+  <div class="hi-scrim" aria-hidden="true"></div>
+  <div class="container hi-inner" data-reveal>
+    <span class="hi-rule" aria-hidden="true"></span>
+    <p class="home-intro-kicker">VP of Product Design at Disney+ and Hulu</p>
+    <p class="home-intro-statement">Focused on making better calls, learning faster, and building organizations where strong people do the best work of their careers.</p>
+  </div>
+</section>
+
+
+<!-- START HERE - FEATURED PAIRING -->
+<section class="featured-pairing-section">
+  <div class="container" data-reveal>
+    <p class="section-label">Featured</p>
+    <div class="featured-pairing-grid">
+
+      <a class="featured-card" href="notes/two-opposite-pushes.html">
+        <span class="fc-arrow" aria-hidden="true">→</span>
+        <p class="fc-pillar">Note · Leadership · AI · 2026</p>
+        <h3>Two opposite pushes</h3>
+        <p class="fc-deck">On transforming a design organization into AI-native builders, and why the coaching runs in both directions at once.</p>
+      </a>
+
+      <a class="featured-card" href="notes/not-a-stroke-expert.html">
+        <span class="fc-arrow" aria-hidden="true">→</span>
+        <p class="fc-pillar">Note · Leadership · AI · 2026</p>
+        <h3>I'm not a stroke expert</h3>
+        <p class="fc-deck">Building a clinical research tool in a weekend, in a field I'd never worked in, and why problem-solving travels further than expertise.</p>
+      </a>
+
+    </div>
+
+    <div class="featured-third">
+      <div class="ft-inner">
+        <a href="https://stroke-access-score.vercel.app" target="_blank" rel="noopener">See it live <span class="arr">→</span></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- BUILDING -->
+<section class="building-section">
+  <div class="container" data-reveal>
+    <p class="section-label">Live things, built by hand</p>
+    <div class="building-list">
+
+      <a class="building-entry" href="https://stroke-access-score.vercel.app" target="_blank" rel="noopener">
+        <div class="be-main">
+          <p class="be-pillar">Live · Web</p>
+          <div class="building-entry-name">Stroke Access Score</div>
+          <div class="building-entry-desc">A research tool scoring all 1,802 California ZIP codes on proximity to certified stroke care. Built with James Beavis RN BSN SCRN, Cedars-Sinai. Methods paper in progress.</div>
+        </div>
+        <span class="building-entry-link">See it live <span class="arr">→</span></span>
+      </a>
+
+      <a class="building-entry" href="work/summerquest.html">
+        <div class="be-main">
+          <p class="be-pillar">Work · Apple TV</p>
+          <div class="building-entry-name">SummerQuest</div>
+          <div class="building-entry-desc">A cooperative family reward system built for Apple TV. tvOS · SwiftUI · Firebase · Claude Code. First build to TestFlight in one day. Full featured product in five. The test of a thesis about AI and the distance between idea and product.</div>
+        </div>
+        <span class="building-entry-link">Read the build <span class="arr">→</span></span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- INDEX LINKS -->
+<section class="index-links-section">
+  <div class="container" data-reveal>
+    <div class="index-links-grid">
+
+      <div class="index-link-block">
+        <h3>Work</h3>
+        <p>Case studies across consumer product, design leadership, and organizational design.</p>
+        <a class="btn" href="work.html">See the work <span class="arr">→</span></a>
+      </div>
+
+      <div class="index-link-block">
+        <h3>Notes</h3>
+        <p>Thinking on product strategy, design leadership, and making better calls. Written when there is something worth saying.</p>
+        <a class="btn" href="notes.html">Read the notes <span class="arr">→</span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-site-name">mikemoral.es</p>
+        <p class="footer-tagline">Builder. Product thinker.<br>Brooklyn Made.</p>
+      </div>
+      <div class="footer-contact">
+        <a href="https://www.linkedin.com/in/michaelmorales1/" target="_blank" rel="noopener">LinkedIn <span class="arr">→</span></a>
+        <a href="mailto:mike.morales.ny@gmail.com">Contact <span class="arr">→</span></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mike Morales</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="js/main.js?v=20260629i"></script>
+</body>
+</html>

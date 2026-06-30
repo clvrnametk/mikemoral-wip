@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#0f0f3c">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Analytics (GA4) — production host only -->
+  <script>
+    if (location.hostname === 'mikemoral.es' || location.hostname === 'www.mikemoral.es') {
+      var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id=G-Q8NCYQ8FJ8'; document.head.appendChild(s);
+      window.dataLayer=window.dataLayer||[]; function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date()); gtag('config','G-Q8NCYQ8FJ8');
+    }
+  </script>
+  <title>Work - mikemoral.es</title>
+  <meta name="description" content="Case studies across consumer product, design leadership, and organizational design.">
+  <meta property="og:title" content="Work - mikemoral.es">
+  <meta property="og:description" content="Case studies across consumer product, design leadership, and organizational design.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mikemoral.es/work.html">
+  <meta property="og:image" content="https://mikemoral.es/og-image.png">
+  <link rel="canonical" href="https://mikemoral.es/work.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Work - mikemoral.es">
+  <meta name="twitter:description" content="Case studies across consumer product, design leadership, and organizational design.">
+  <meta name="twitter:image" content="https://mikemoral.es/og-image.png">
+  <link rel="stylesheet" href="css/fonts.css?v=20260629g">
+  <link rel="stylesheet" href="css/style.css?v=20260629g">
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html"><img src="img/MM_icon_block.svg" alt="MM" class="nav-logo-img"></a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="work.html" class="active">Work</a></li>
+    <li><a href="notes.html">Notes</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+
+<!-- WORK HERO -->
+<section class="hero hero-page">
+  <picture class="hero-photo" aria-hidden="true">
+    <source media="(max-width: 768px)" srcset="img/hero_W-mobile.webp" type="image/webp">
+    <img src="img/hero_W.webp" alt="" loading="eager">
+  </picture>
+  <div class="hero-glow" aria-hidden="true" style="background-image:url('img/hero_W-glow.webp')"></div>
+  <canvas class="hero-gl" data-tex="img/hero_W-net.jpg" aria-hidden="true"></canvas>
+  <div class="container hero-inner">
+    <h1>Work</h1>
+    <p class="hero-sub" data-hero-fade>Outcomes over process. A handful of projects I'd put my name on.</p>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="hero-scroll-label">Scroll</span>
+    <span class="hero-scroll-line"></span>
+  </div>
+</section>
+
+
+<!-- WORK INTRO -->
+<section class="work-intro">
+  <div class="container" data-reveal>
+    <p class="work-intro-text">These are outcomes I'm proud of. But what I care about most isn't only what shipped. It's what got built around it: the teams, the culture, and the craft raised a level in the people who did the work. The thinking behind how I lead that work is on the <a href="about.html">About page</a>.</p>
+  </div>
+</section>
+
+
+<!-- WORK LIST -->
+<section class="work-content-section">
+<div class="container work-list">
+
+  <a class="work-entry" href="work/future-vision.html">
+    <div class="we-thumb">
+      <div class="img-treatment ar-3x2">
+        <img class="we-thumb-img we-thumb-color" src="img/work/future-vision-hero-color.webp" alt="" loading="lazy" aria-hidden="true">
+        <img class="we-thumb-img we-thumb-duo" src="img/work/future-vision-hero.webp" alt="What should Disney+ become?" loading="lazy">
+        <div class="img-overlay">
+          <div class="img-overlay-tag">Disney+ · Hulu · Strategy</div>
+        </div>
+      </div>
+    </div>
+    <div class="work-entry-meta">
+      <div class="tag">Disney+ · Hulu &nbsp;·&nbsp; Vision → Product</div>
+      <h3>What should Disney+ become?</h3>
+      <p>I conceived and ran a five-day sprint across Product, Design, Engineering, and Research to set one direction - then drove the work that shipped it: a new navigation with a For You tab, a Live hub, and a video-forward home. Changing what Disney+ means to a household while a hundred million people were using it.</p>
+      <p class="outcome">~60 people · 5 days · Conceived and drove end to end · Shipped</p>
+    </div>
+  </a>
+
+  <a class="work-entry" href="work/streamer.html">
+    <div class="we-thumb">
+      <div class="img-treatment ar-3x2">
+        <img class="we-thumb-img we-thumb-color" src="img/work/streamer-hero-color.webp" alt="" loading="lazy" aria-hidden="true">
+        <img class="we-thumb-img we-thumb-duo" src="img/work/streamer-hero.webp" alt="The Streamer Project" loading="lazy">
+        <div class="img-overlay">
+          <div class="img-overlay-tag">Culture · Making · 2023</div>
+        </div>
+      </div>
+    </div>
+    <div class="work-entry-meta">
+      <div class="tag">Culture · Making &nbsp;·&nbsp; 2023</div>
+      <h3>The Streamer Project</h3>
+      <p>270 tapes. 90 streamers. 2 spray paint cans. 30 days. 6 failures. 1,225 hours of print time. 64 pounds of filament. 100 hand-made gifts. Culture is something you make. Not something you buy.</p>
+      <p class="outcome">100 recipients across Disney+, Hulu, ESPN, Marvel, Nat Geo, Star Wars</p>
+    </div>
+  </a>
+
+  <a class="work-entry" href="work/summerquest.html">
+    <div class="we-thumb">
+      <div class="img-treatment ar-3x2">
+        <img class="we-thumb-img we-thumb-color" src="img/work/cs-hero-placeholder-color.webp" alt="" loading="lazy" aria-hidden="true">
+        <img class="we-thumb-img we-thumb-duo" src="img/work/cs-hero-placeholder.webp" alt="SummerQuest" loading="lazy">
+        <div class="img-overlay">
+          <div class="img-overlay-tag">Personal build · AI-native · 2026</div>
+        </div>
+      </div>
+    </div>
+    <div class="work-entry-meta">
+      <div class="tag">Personal build · AI-native &nbsp;·&nbsp; 2026</div>
+      <h3>SummerQuest</h3>
+      <p>A cooperative family reward system built for Apple TV. No engineering team. No sprint planning. A product brief written in conversation and Claude Code. First build to TestFlight in one day. Full featured product in five.</p>
+      <p class="outcome">First build: one day · Full product: five days · Eight milestone cities · Two kids · Zero complaints</p>
+    </div>
+  </a>
+
+  <a class="work-entry" href="work/reserve.html">
+    <div class="we-thumb">
+      <div class="img-treatment ar-3x2">
+        <img class="we-thumb-img we-thumb-color" src="img/work/reserve-hero-color.webp" alt="" loading="lazy" aria-hidden="true">
+        <img class="we-thumb-img we-thumb-duo" src="img/work/reserve-hero.webp" alt="Where the pattern started" loading="lazy">
+        <div class="img-overlay">
+          <div class="img-overlay-tag">Reserve · 2014–2017</div>
+        </div>
+      </div>
+    </div>
+    <div class="work-entry-meta">
+      <div class="tag">Reserve &nbsp;·&nbsp; 2014–2017</div>
+      <h3>Where the pattern started</h3>
+      <p>Joined the week of launch as a product team of one. Two years later: a multi-platform consumer ecosystem, a B2B system built on a seating algorithm we learned by playing Tetris with real operators, and a $10M Series B.</p>
+      <p class="outcome">Team of 1 → full product org · iOS · Android · Web · B2B · $10M Series B</p>
+    </div>
+  </a>
+
+</div>
+</section>
+
+
+<!-- PIECES TO COME -->
+<section class="pieces-section">
+  <div class="container">
+    <p class="section-label">Pieces to come</p>
+    <h2 class="pieces-title">More of the story, still being written.</h2>
+    <ul class="pieces-list">
+      <li class="piece">
+        <h3>The player</h3>
+        <p>Where watching actually happens - and what it takes to get it right.</p>
+      </li>
+      <li class="piece">
+        <h3>How a product celebrates</h3>
+        <p>From everyday moments to May the 4th - when the app shows up for a fandom.</p>
+      </li>
+      <li class="piece">
+        <h3>The craft of browse</h3>
+        <p>Why moving from small images to big, cinematic artwork changed how people discover.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- KEEP EXPLORING -->
+<section class="more-links-section">
+  <div class="container" data-reveal>
+    <p class="section-label">Keep exploring</p>
+    <div class="more-links">
+      <a class="more-link" href="notes.html"><span class="more-link-title">Notes</span><span class="more-link-desc">Thinking on leadership, product, and making better calls.</span><span class="arr">→</span></a>
+      <a class="more-link" href="about.html"><span class="more-link-title">About</span><span class="more-link-desc">The person behind the work, and how I lead.</span><span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-site-name">mikemoral.es</p>
+        <p class="footer-tagline">Builder. Product thinker.<br>Brooklyn Made.</p>
+      </div>
+      <div class="footer-contact">
+        <a href="https://www.linkedin.com/in/michaelmorales1/" target="_blank" rel="noopener">LinkedIn <span class="arr">→</span></a>
+        <a href="mailto:mike.morales.ny@gmail.com">Contact <span class="arr">→</span></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mike Morales</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="js/main.js?v=20260629g"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#0f0f3c">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Analytics (GA4) — production host only -->
+  <script>
+    if (location.hostname === 'mikemoral.es' || location.hostname === 'www.mikemoral.es') {
+      var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id=G-Q8NCYQ8FJ8'; document.head.appendChild(s);
+      window.dataLayer=window.dataLayer||[]; function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date()); gtag('config','G-Q8NCYQ8FJ8');
+    }
+  </script>
+  <title>SummerQuest - mikemoral.es</title>
+  <meta name="description" content="A cooperative family reward system built for Apple TV. First build to TestFlight in one day. Full featured product in five. The test of a thesis.">
+  <meta property="og:title" content="SummerQuest - mikemoral.es">
+  <meta property="og:description" content="A cooperative family reward system built for Apple TV. First build to TestFlight in one day. Full featured product in five. The test of a thesis.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mikemoral.es/work/summerquest.html">
+  <meta property="og:image" content="https://mikemoral.es/og-image.png">
+  <link rel="canonical" href="https://mikemoral.es/work/summerquest.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SummerQuest - mikemoral.es">
+  <meta name="twitter:description" content="A cooperative family reward system built for Apple TV. First build to TestFlight in one day. Full featured product in five. The test of a thesis.">
+  <meta name="twitter:image" content="https://mikemoral.es/og-image.png">
+  <link rel="stylesheet" href="../css/fonts.css?v=20260629h">
+  <link rel="stylesheet" href="../css/style.css?v=20260629h">
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-logo" href="../index.html"><img src="../img/MM_icon_block.svg" alt="MM" class="nav-logo-img"></a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../work.html" class="active">Work</a></li>
+    <li><a href="../notes.html">Notes</a></li>
+    <li><a href="../about.html">About</a></li>
+  </ul>
+</nav>
+
+
+<section class="hero hero-article sq-hero">
+  <div class="cs-hero-color" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <a class="cs-back" data-hero-fade href="../work.html"><span class="arr arr-left">←</span> Work</a>
+    <h1>SummerQuest</h1>
+    <div class="cs-hero-foot">
+      <p class="cs-sub" data-hero-fade>A cooperative family reward system for Apple TV. First build to TestFlight in one day. Full featured product in five.</p>
+      <a class="cs-next" data-hero-fade href="reserve.html"><span class="cs-next-label">Next</span><span class="cs-next-title">Where the pattern started <span class="arr">→</span></span></a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="hero-scroll-label">Scroll</span>
+    <span class="hero-scroll-line"></span>
+  </div>
+</section>
+
+<div class="cs-scrollcue" aria-hidden="true">
+  <span class="cs-scrollcue-label">Scroll</span>
+  <span class="cs-scrollcue-line"></span>
+</div>
+
+
+<section class="cs-content sq-content">
+  <div class="container">
+
+  <!-- ── META ─────────────────────────────── -->
+  <div class="cs-meta">
+    <div class="cs-meta-item">
+      <label>Year</label>
+      <span>2026</span>
+    </div>
+    <div class="cs-meta-item">
+      <label>Type</label>
+      <span>Personal build · AI-native</span>
+    </div>
+    <div class="cs-meta-item">
+      <label>Stack</label>
+      <span>tvOS · SwiftUI · Firebase · Claude Code</span>
+    </div>
+    <div class="cs-meta-item">
+      <label>Status</label>
+      <span>Live on TestFlight · in daily use</span>
+    </div>
+  </div>
+
+  <!-- ── OUTCOME (its own unit, directly under the meta bar) ─── -->
+  <div class="sq-outcome" data-reveal-cs>
+    <span class="sq-outcome-label">Outcome</span>
+    <p>Weeks in, two kids still check their stars every morning - on their own, without me prompting them. The build was never the test. Coming back the next day was.</p>
+  </div>
+
+  </div>
+</section>
+
+<section class="cs-content sq-content sq-body-section">
+
+  <!-- THREE TVs — full-bleed inside the white body section so the glow sits behind the text -->
+  <!-- VIDEO SPOT (optional, capture later): a 5-10s loop of the animated map background could replace this strip. -->
+  <div class="sq-tvstrip" data-reveal-cs aria-label="SummerQuest running on the living-room TV">
+    <img class="sq-tvstrip-img" src="../img/summerquest/tv-strip.webp" alt="SummerQuest running on the living-room TV" loading="eager">
+  </div>
+
+  <div class="container">
+
+  <!-- ── BODY ─────────────────────────────── -->
+  <div class="cs-body" data-reveal-cs>
+
+    <h2>The need</h2>
+    <p>My kids needed a reason to stay in their own beds this summer. I needed to know what it actually takes to ship a tvOS app. This project solved both problems at once.</p>
+
+    <p>SummerQuest is a cooperative family reward system built for Apple TV. Every morning, two kids answer two questions about how they slept. Stars are awarded individually and as a team. Milestones unlock real rewards across a ten-week summer.</p>
+
+    <p>The experience runs on a single TV in the living room and an Apple Remote. No phones. No parent facilitation on a good morning. The system runs itself.</p>
+
+    <div class="pullquote">Eight milestone cities. Ten weeks. One remote. The system runs itself.</div>
+
+    <h2>Why this exists on my work page</h2>
+    <p>I have been making the case inside my organization that AI compresses the distance between an idea and a working product. I wanted to know if that was true from the inside.</p>
+
+    <p>This was the test. No engineering team. No sprint planning. No handoff. A product brief written in conversation, a set of architecture decisions, and Claude Code. The first version was on a device and in TestFlight in a single day. The full product took five.</p>
+
+    <h2>How I built it</h2>
+    <p>Started with a product brief written in conversation, not a doc. Made architecture decisions before opening Xcode. Built a context system so every Claude Code session started with full project knowledge rather than re-explanation. Deferred design until the core loop was validated with real kids.</p>
+
+    <p>The first day was brief to TestFlight. The next four built the real product: a scalable data structure, a fully featured progress timeline with animated milestone cities, daily quest logic with dual check-in flows for each kid, and a looping video map background with ambient audio. The star model was rebuilt entirely after the first test session. One day to something playable. Five days to something worth running all summer.</p>
+
+    <p>The design system was documented in a single source-of-truth file that every session read before making visual changes. Frosted glass panels over a full-bleed animated map background — the same panel architecture Disney+ uses on tvOS. Isometric city assets generated in Midjourney. Eight milestone platforms — Base Camp through Dream Park — each with its own color world.</p>
+
+    <h2>What the first test session dismantled</h2>
+    <p>The first build went to the couch. Two kids, one remote, and about four minutes of feedback from my eight-year-old dismantled two of the most load-bearing decisions from the brief.</p>
+
+    <p><strong>The stayed-all-night star was causing overnight anxiety.</strong> The original model awarded bonus stars for sleeping through the night. The real effect: one of them woke up twice to check if he had made it to morning. That is not the app's job. Sleep is now binary — started in your own bed, one star. The night is yours.</p>
+
+    <p><strong>The panel was built for a parent, not a kid at 7am.</strong> The original layout opened with team progress: name, city, progress bar. Useful as a dashboard. Not useful for an eight-year-old before breakfast. The rebuilt panel opens with three questions: did you sleep in your bed? Are you keeping healthy? What chores are left? Three cards, one purpose.</p>
+
+    <p>Both changes were obvious in retrospect. Neither showed up in planning.</p>
+
+    <h2>What I learned</h2>
+    <p>Documenting decisions before building is more valuable than documenting after. The context files written before touching code did more to keep the project coherent than any single technical choice.</p>
+
+    <p>The hardest part was not the code. It was knowing what not to build first. And tvOS is genuinely harder than web — tighter constraints, longer feedback loops, fewer guardrails in the tooling. The first-day build was real. So was the work that came after it.</p>
+
+    <div class="pullquote">A working build in one day. A reliable, fully featured product in five. That ratio is the argument.</div>
+
+  </div>
+  </div>
+</section>
+
+
+<!-- QUOTE BAND — the kids using it (duotone, like the home sprint image) -->
+<!-- VIDEO SPOT (optional, capture later): a quiet 5-10s muted clip of a kid checking in / a star landing could replace this still. -->
+<section class="cs-quoteband" aria-label="The kids using SummerQuest">
+  <div class="cqb-bg" aria-hidden="true"></div>
+  <div class="cqb-scrim" aria-hidden="true"></div>
+  <div class="container cqb-inner">
+    <span class="cqb-rule" aria-hidden="true"></span>
+    <p class="cqb-quote">The test was never shipping it. It was whether they would come back the next morning. Weeks later, they still do.</p>
+    <span class="cqb-attr">SummerQuest, every morning, running itself.</span>
+  </div>
+</section>
+
+
+<!-- THE EIGHT CITIES -->
+<section class="sq-cities">
+  <div class="container">
+    <div class="sq-cities-head">
+      <h2>The eight cities</h2>
+      <p>Each milestone is its own world, in order from the first reward to the last. Every city forces its dominant color through the whole scene so it reads from across the room.</p>
+    </div>
+    <div class="sq-city-grid">
+      <div class="sq-city">
+        <img src="../img/summerquest/city-01-sweet-village.webp" alt="Sweet Village - pastel ice-cream world" loading="lazy">
+        <span class="sq-city-name"><span class="n">1</span>Sweet Village</span>
+      </div>
+      <div class="sq-city">
+        <img src="../img/summerquest/city-02-toy-town.webp" alt="Toy Town - bright primary-color toy shops" loading="lazy">
+        <span class="sq-city-name"><span class="n">2</span>Toy Town</span>
+      </div>
+      <div class="sq-city">
+        <img src="../img/summerquest/city-03-cinema-city.webp" alt="Cinema City - movie marquees and lights" loading="lazy">
+        <span class="sq-city-name"><span class="n">3</span>Cinema City</span>
+      </div>
+      <div class="sq-city">
+        <img src="../img/summerquest/city-04-arcade-alley.webp" alt="Arcade Alley - neon arcade world" loading="lazy">
+        <span class="sq-city-name"><span class="n">4</span>Arcade Alley</span>
+      </div>
+      <div class="sq-city">
+        <img src="../img/summerquest/city-05-splash-kingdom.webp" alt="Splash Kingdom - water park world" loading="lazy">
+        <span class="sq-city-name"><span class="n">5</span>Splash Kingdom</span>
+      </div>
+      <div class="sq-city">
+        <img src="../img/summerquest/city-06-discovery-lab.webp" alt="Discovery Lab - science and invention world" loading="lazy">
+        <span class="sq-city-name"><span class="n">6</span>Discovery Lab</span>
+      </div>
+      <div class="sq-city">
+        <img src="../img/summerquest/city-07-castle-heights.webp" alt="Castle Heights - towers and treasure" loading="lazy">
+        <span class="sq-city-name"><span class="n">7</span>Castle Heights</span>
+      </div>
+      <div class="sq-city">
+        <img src="../img/summerquest/city-08-dream-park.webp" alt="Dream Park - theme park finale with fireworks" loading="lazy">
+        <span class="sq-city-name"><span class="n">8</span>Dream Park</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- RELATED -->
+<section class="cs-content">
+  <div class="container">
+    <div class="related-section">
+      <p class="section-label">Related</p>
+      <div class="related-links">
+        <a class="related-link" href="../notes/not-a-stroke-expert.html">
+          <span class="rl-type">Note</span>
+          <span class="rl-title">I'm not a stroke expert</span>
+        </a>
+        <a class="related-link" href="../notes/two-opposite-pushes.html">
+          <span class="rl-type">Note</span>
+          <span class="rl-title">Two opposite pushes</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── FOOTER ─────────────────────────────── -->
+<!-- NEXT PROJECT -->
+<section class="cs-nextnav">
+  <div class="container">
+    <a class="cs-nextnav-link" href="reserve.html"><span class="cs-next-label">Next project</span><span class="cs-next-title">Where the pattern started <span class="arr">→</span></span></a>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-site-name">mikemoral.es</p>
+        <p class="footer-tagline">Builder. Product thinker.<br>Brooklyn Made.</p>
+      </div>
+      <div class="footer-contact">
+        <a href="https://www.linkedin.com/in/michaelmorales1/" target="_blank" rel="noopener">LinkedIn <span class="arr">→</span></a>
+        <a href="mailto:mike.morales.ny@gmail.com">Contact <span class="arr">→</span></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mike Morales</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="../js/main.js?v=20260629h"></script>
+</body>
+</html>

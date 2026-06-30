@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#0f0f3c">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Analytics (GA4) — production host only -->
+  <script>
+    if (location.hostname === 'mikemoral.es' || location.hostname === 'www.mikemoral.es') {
+      var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id=G-Q8NCYQ8FJ8'; document.head.appendChild(s);
+      window.dataLayer=window.dataLayer||[]; function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date()); gtag('config','G-Q8NCYQ8FJ8');
+    }
+  </script>
+  <title>About - mikemoral.es</title>
+  <meta name="description" content="Mike Morales - VP of Product Design at Disney+ and Hulu. A builder of products, organizations, teams, and physical things.">
+  <meta property="og:title" content="About - mikemoral.es">
+  <meta property="og:description" content="Mike Morales - VP of Product Design at Disney+ and Hulu. A builder of products, organizations, teams, and physical things.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mikemoral.es/about.html">
+  <meta property="og:image" content="https://mikemoral.es/og-image.png">
+  <link rel="canonical" href="https://mikemoral.es/about.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About - mikemoral.es">
+  <meta name="twitter:description" content="Mike Morales - VP of Product Design at Disney+ and Hulu. A builder of products, organizations, teams, and physical things.">
+  <meta name="twitter:image" content="https://mikemoral.es/og-image.png">
+  <link rel="stylesheet" href="css/fonts.css?v=20260629e">
+  <link rel="stylesheet" href="css/style.css?v=20260629e">
+  <!-- Font Awesome Pro Kit (Classic Solid/Light/Thin + Duotone) -->
+  <script src="https://kit.fontawesome.com/8240221c83.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html"><img src="img/MM_icon_block.svg" alt="MM" class="nav-logo-img"></a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="work.html">Work</a></li>
+    <li><a href="notes.html">Notes</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+  </ul>
+</nav>
+
+
+<!-- ── ABOUT HERO ─────────────────────────── -->
+<section class="hero hero-page hero-about">
+  <picture class="hero-photo" aria-hidden="true">
+    <source media="(max-width: 768px)" srcset="img/hero_M-mobile.webp" type="image/webp">
+    <img src="img/hero_M.webp" alt="" loading="eager">
+  </picture>
+  <div class="hero-glow" aria-hidden="true" style="background-image:url('img/hero_M-glow.webp')"></div>
+  <canvas class="hero-gl" data-tex="img/hero_M-net.jpg" aria-hidden="true"></canvas>
+  <div class="container hero-inner">
+    <h1 data-split="true"><span class="w">Brooklyn</span><br><span class="w hero-about-accent">Made.</span></h1>
+    <p class="hero-sub" data-hero-fade>Born in Caracas.<br class="mob-br"> Raised in Queens.<br class="mob-br"> Vibing in LA.</p>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="hero-scroll-label">Scroll</span>
+    <span class="hero-scroll-line"></span>
+  </div>
+</section>
+
+
+<!-- ── ABOUT BODY ─────────────────────────── -->
+<section class="about-body-section">
+  <div class="container" data-reveal>
+    <div class="about-grid">
+
+      <div class="about-text">
+        <p>I was born in Caracas, Venezuela, and came to the United States when I was three, a citizen by thirteen. My family worked hard to build something here: cleaning houses, working restaurants, making an honest living.</p>
+
+        <p>In college I worked in a warehouse. Hard, unglamorous manual labor. Early mornings, heavy loads, the kind of work you feel in your body at the end of the day. What stayed with me wasn't the work. It was who showed up to do it.</p>
+
+        <p>I learned early that the right two or three people, working without backup, can move mountains. Making something happen with no resources is not that different from making something happen with a great team and real stakes. You find the people who know how. You get to work. You figure it out.</p>
+
+        <p>I started as a graphic designer in print, editorial, and early web at The New Yorker, Wired, and Men's Vogue, where I learned what it means to have standards. Then I moved into products: MakerBot, Reserve, ClassPass, Google. There I learned the hardest design problems aren't visual; they're systems, organizational, and decision problems. That realization is what eventually pulled me toward building organizations and better products.</p>
+
+        <p>I have always loved making things. Letterpress prints. Furniture. 3D printed figures that end up in someone's hands. A deck can hide a weak idea behind a good story. A physical object can't. It's proof you actually did the work.</p>
+
+        <div class="about-photos-row">
+          <div class="ph-wrap">
+            <img class="about-photo-img" src="img/about/photos/family1.webp" alt="Mike with his family" loading="lazy">
+          </div>
+          <div class="ph-wrap">
+            <img class="about-photo-img" src="img/about/photos/family2.webp" alt="Mike with the kids" loading="lazy">
+          </div>
+        </div>
+
+        <p>At Disney I built something. VP of Product Design across Disney+ and Hulu, leading design for the experiences subscribers encounter every day: discovery, personalization, browsing, and playback. A design organization of 44 people, across both platforms, for hundreds of millions of subscribers worldwide.</p>
+
+        <p>Before Disney, I taught full-time at General Assembly. Ten-week immersive UX programs, five days a week. It forced me off the product and onto the person. I learned that teaching is not about talking. It is about creating the conditions where someone else can grow. That shifted how I think about management. The job is not to build empires. It is to build people. Some of my best hires came from that classroom.</p>
+
+        <p>The work I find most interesting is not the interfaces we ship. It is the conditions that allow us to ship better interfaces, repeatedly, over time. Hiring the right people. Building the right culture. Making sure everyone has the information they need to make good decisions.</p>
+
+        <p>I care about people. Not as a talking point. As a practice. Sometimes that looks like a barbecue. Sometimes it looks like a conversation nobody wants to have. The point is never the gesture. The point is that people know they are valued.</p>
+
+        <p>I live in LA with my wife Mindy, my kids Ryder and Keirin, and our dog Moon. New York still has my heart. I am not going soft. I am just working on not calling 58 degrees a cold front.</p>
+      </div>
+
+      <div class="about-photo-stack">
+        <div class="portrait-wrap">
+          <img class="about-photo-img" src="img/about/photos/portrait.webp" alt="Mike Morales" loading="lazy">
+        </div>
+        <div class="secondary-ph">
+          <img class="about-photo-img" src="img/about/photos/family3.webp" alt="The two boys" loading="lazy">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ── HOW I LEAD ─────────────────────────── -->
+<section class="how-i-section">
+  <div class="container" data-reveal>
+    <p class="section-label">How I lead</p>
+    <div class="principle-list">
+      <div class="principle">
+        <div>
+          <i class="fa-light fa-arrow-trend-up principle-icon" aria-hidden="true"></i>
+          <h3>My job is to make you better.</h3>
+        </div>
+        <p>For this role, for the next one, for whatever comes after that. Most organizations treat people as resources. I think about the person in front of me: what they are trying to build, where they want to go, what is in the way.</p>
+      </div>
+      <div class="principle">
+        <div>
+          <i class="fa-light fa-comment principle-icon" aria-hidden="true"></i>
+          <h3>I tell my team this directly.</h3>
+        </div>
+        <p>I have their back whatever they choose to do. If they grow and move on, that is a win. If the work here is good enough that they stay, that is also a win. I am not trying to retain people. I am trying to make them better.</p>
+      </div>
+      <div class="principle">
+        <div>
+          <i class="fa-light fa-seedling principle-icon" aria-hidden="true"></i>
+          <h3>People don't grow from being managed.</h3>
+        </div>
+        <p>They grow from being trusted, challenged, and given real ownership. That is what I learned from teaching adults who were reinventing themselves. It changed how I run a team.</p>
+      </div>
+      <div class="principle">
+        <div>
+          <i class="fa-light fa-hand-holding-heart principle-icon" aria-hidden="true"></i>
+          <h3>I bet on people before they bet on themselves.</h3>
+        </div>
+        <p>The best work usually comes from someone who wasn't sure they were ready. My job is to see it first, hand them the real thing, and stay close enough to catch them if it wobbles. Confidence follows; it rarely leads.</p>
+      </div>
+      <div class="principle">
+        <div>
+          <i class="fa-light fa-door-open principle-icon" aria-hidden="true"></i>
+          <h3>Push, then get out of the way.</h3>
+        </div>
+        <p>I push when someone needs it and step back the moment they don't, so the team does the work and owns the win. In the room, the best idea wins, not the most senior one. Titles set who decides, not who gets heard.</p>
+      </div>
+    </div>
+    <p class="how-i-more">More on how I think about this <span class="hil-sep">//</span> <a href="notes/two-opposite-pushes.html">leading a team through change</a> <span class="hil-dot">&bull;</span> <a href="notes/vision-is-a-floor.html">vision as a floor</a> <span class="hil-dot">&bull;</span> <a href="notes/it-was-never-the-org-chart.html">why it was never the org chart</a></p>
+  </div>
+</section>
+
+
+<!-- ── HOW I WORK ─────────────────────────── -->
+<section class="how-i-section">
+  <div class="container" data-reveal>
+    <p class="section-label">How I work</p>
+    <div class="principle-list">
+      <div class="principle">
+        <div>
+          <i class="fa-light fa-stethoscope principle-icon" aria-hidden="true"></i>
+          <h3>Diagnose before prescribing.</h3>
+        </div>
+        <p>Most solutions fail because the problem was never properly understood. I spend more time asking questions than proposing answers.</p>
+      </div>
+      <div class="principle">
+        <div>
+          <i class="fa-light fa-bullseye principle-icon" aria-hidden="true"></i>
+          <h3>Better calls, not more calls.</h3>
+        </div>
+        <p>Speed counts, but the real skill is timing: knowing when there's enough to commit, and when to push back because we're not ready yet. A clear "not yet" beats a fast maybe.</p>
+      </div>
+      <div class="principle">
+        <div>
+          <i class="fa-light fa-screwdriver-wrench principle-icon" aria-hidden="true"></i>
+          <h3>Never ask anyone to do something I wouldn't do myself.</h3>
+        </div>
+        <p>That includes the work that doesn't show up on a resume. The late nights, the hard conversations, the hand-signed cards.</p>
+      </div>
+      <div class="principle">
+        <div>
+          <i class="fa-light fa-eye principle-icon" aria-hidden="true"></i>
+          <h3>Transparent in the moments most executives aren't.</h3>
+        </div>
+        <p>Most leaders go quiet when the conversation gets hard. I don't. You'll get the truth, told with respect, when it counts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── CAREER TIMELINE ────────────────────── -->
+<section class="career-section">
+  <div class="container" data-reveal>
+    <p class="section-label">This is the way</p>
+
+    <div class="tl-era-row">
+      <div class="tl-node">
+        <div class="tl-circle tl-circle--logo"><img src="img/about/pratt_icon.png" alt="Pratt"></div>
+        <div class="tl-name">Pratt</div>
+        <div class="tl-year">2003 · BFA</div>
+      </div>
+      <div class="tl-node">
+        <div class="tl-circle tl-circle--logo"><img src="img/about/fwx.png" alt="Food &amp; Wine"></div>
+        <div class="tl-name">Food &amp; Wine</div>
+        <div class="tl-year">2005</div>
+      </div>
+      <div class="tl-node">
+        <div class="tl-circle tl-circle--logo"><img src="img/about/mens_vouge.png" alt="Men&#39;s Vogue"></div>
+        <div class="tl-name">Men's Vogue</div>
+        <div class="tl-year">2008</div>
+      </div>
+      <div class="tl-node">
+        <div class="tl-circle tl-circle--logo"><img src="img/about/TNY.png" alt="The New Yorker"></div>
+        <div class="tl-name">The New Yorker</div>
+        <div class="tl-year">2008</div>
+      </div>
+      <div class="tl-node">
+        <div class="tl-circle tl-circle--logo"><img src="img/about/wired.png" alt="Wired"></div>
+        <div class="tl-name">Wired</div>
+        <div class="tl-year">2010</div>
+      </div>
+      <div class="tl-node">
+        <div class="tl-circle tl-circle--logo"><img src="img/about/makerbot.png" alt="MakerBot"></div>
+        <div class="tl-name">MakerBot</div>
+        <div class="tl-year">2012</div>
+      </div>
+    </div>
+
+    <div class="tl-era-row" style="margin-top:48px;">
+      <div class="tl-node">
+        <div class="tl-circle tl-circle--logo"><img src="img/about/reserve.png" alt="Reserve"></div>
+        <div class="tl-name">Reserve</div>
+        <div class="tl-year">2014</div>
+      </div>
+      <div class="tl-node">
+        <div class="tl-circle tl-circle--logo"><img src="img/about/general-assembly.png" alt="General Assembly"></div>
+        <div class="tl-name">General Assembly</div>
+        <div class="tl-year">2017 · Instructor</div>
+      </div>
+      <div class="tl-node">
+        <div class="tl-circle tl-circle--logo"><img src="img/about/todaytix.png" alt="TodayTix"></div>
+        <div class="tl-name">TodayTix</div>
+        <div class="tl-year">2017</div>
+      </div>
+      <div class="tl-node">
+        <div class="tl-circle tl-circle--logo"><img src="img/about/classpass.png" alt="ClassPass"></div>
+        <div class="tl-name">ClassPass</div>
+        <div class="tl-year">2018</div>
+      </div>
+      <div class="tl-node">
+        <div class="tl-circle tl-circle--logo"><img src="img/about/google.png" alt="Google"></div>
+        <div class="tl-name">Google</div>
+        <div class="tl-year">2019</div>
+      </div>
+      <div class="tl-node">
+        <div class="tl-pair">
+          <div class="tl-circle tl-circle--logo tl-pair-a"><img src="img/about/disney_plus.png" alt="Disney+"></div>
+          <div class="tl-circle tl-circle--logo tl-pair-b"><img src="img/about/hulu.png" alt="Hulu"></div>
+        </div>
+        <div class="tl-name">Disney+ &amp; Hulu</div>
+        <div class="tl-year">2022 · Present</div>
+      </div>
+    </div>
+
+    <div class="tl-career-bottom">
+      <span>Editorial → Hardware → Hospitality → Fitness → Search → Entertainment</span>
+      <a href="https://www.linkedin.com/in/michaelmorales1/" target="_blank" rel="noopener">Full career at LinkedIn <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+
+<!-- KEEP EXPLORING -->
+<section class="more-links-section">
+  <div class="container" data-reveal>
+    <p class="section-label">Keep exploring</p>
+    <div class="more-links">
+      <a class="more-link" href="work.html"><span class="more-link-title">Work</span><span class="more-link-desc">Case studies across consumer product, design leadership, and org design.</span><span class="arr">→</span></a>
+      <a class="more-link" href="notes.html"><span class="more-link-title">Notes</span><span class="more-link-desc">Thinking on leadership, product, and making better calls.</span><span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── FOOTER ─────────────────────────────── -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-site-name">mikemoral.es</p>
+        <p class="footer-tagline">Builder. Product thinker.<br>Brooklyn Made.</p>
+      </div>
+      <div class="footer-contact">
+        <a href="https://www.linkedin.com/in/michaelmorales1/" target="_blank" rel="noopener">LinkedIn <span class="arr">→</span></a>
+        <a href="mailto:mike.morales.ny@gmail.com">Contact <span class="arr">→</span></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mike Morales</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="js/main.js?v=20260629e"></script>
+</body>
+</html>

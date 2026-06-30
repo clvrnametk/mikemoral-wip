@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Analytics (GA4) — production host only -->
+  <script>
+    if (location.hostname === 'mikemoral.es' || location.hostname === 'www.mikemoral.es') {
+      var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id=G-Q8NCYQ8FJ8'; document.head.appendChild(s);
+      window.dataLayer=window.dataLayer||[]; function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date()); gtag('config','G-Q8NCYQ8FJ8');
+    }
+  </script>
+  <title>Two opposite pushes - mikemoral.es</title>
+  <meta name="description" content="On transforming a design organization into AI-native builders, and why the coaching runs in both directions at once.">
+  <meta property="og:title" content="Two opposite pushes - mikemoral.es">
+  <meta property="og:description" content="On transforming a design organization into AI-native builders, and why the coaching runs in both directions at once.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mikemoral.es/notes/two-opposite-pushes.html">
+  <meta property="og:image" content="https://mikemoral.es/og-image.png">
+  <link rel="canonical" href="https://mikemoral.es/notes/two-opposite-pushes.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Two opposite pushes - mikemoral.es">
+  <meta name="twitter:description" content="On transforming a design organization into AI-native builders, and why the coaching runs in both directions at once.">
+  <meta name="twitter:image" content="https://mikemoral.es/og-image.png">
+  <link rel="stylesheet" href="../css/fonts.css?v=20260629c">
+  <link rel="stylesheet" href="../css/style.css?v=20260629c">
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-logo" href="../index.html"><img src="../img/MM_icon_block.svg" alt="MM" class="nav-logo-img"></a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../work.html">Work</a></li>
+    <li><a href="../notes.html" class="active">Notes</a></li>
+    <li><a href="../about.html">About</a></li>
+  </ul>
+</nav>
+
+
+<!-- NOTE HERO -->
+<section class="hero hero-article hero-note hero-note--art" style="--cs-hero-bg:url('../img/notes/two-opposite-pushes-hero.webp');--cs-hero-color-bg:url('../img/notes/two-opposite-pushes-hero-color.webp');--cs-hero-bg-m:url('../img/notes/two-opposite-pushes-hero-m.webp');--cs-hero-color-bg-m:url('../img/notes/two-opposite-pushes-hero-color-m.webp')">
+  <div class="cs-hero-color" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <a class="note-back" data-hero-fade href="../notes.html"><span class="arr arr-left">←</span> Notes</a>
+    <div class="note-tags" data-hero-fade>
+      <span class="note-pillar-tag">Leadership</span>
+      <span class="note-meta-tag">2025 &nbsp;·&nbsp; 3 min read</span>
+    </div>
+    <h1>Two opposite pushes</h1>
+    <p class="note-sub" data-hero-fade>On turning a design organization into AI-native builders - and why leading that change means coaching two opposite instincts at the very same time.</p>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="hero-scroll-label">Scroll</span>
+    <span class="hero-scroll-line"></span>
+  </div>
+  <a class="note-nav note-nav--prev" href="not-a-stroke-expert.html" aria-label="Previous note: I'm not a stroke expert">
+    <span class="note-nav-arrow" aria-hidden="true">&larr;</span>
+    <span class="note-nav-label"><span class="note-nav-kicker">Previous</span><span class="note-nav-title">I'm not a stroke expert</span></span>
+  </a>
+  <a class="note-nav note-nav--next" href="play-stay-messy.html" aria-label="Next note: Play, stay messy, share">
+    <span class="note-nav-arrow" aria-hidden="true">&rarr;</span>
+    <span class="note-nav-label"><span class="note-nav-kicker">Next</span><span class="note-nav-title">Play, stay messy, share</span></span>
+  </a>
+  <nav class="note-dots" aria-label="All notes">
+    <a class="note-dot" href="not-a-stroke-expert.html" aria-label="I'm not a stroke expert"></a>
+    <a class="note-dot is-active" href="two-opposite-pushes.html" aria-current="page" aria-label="Two opposite pushes"></a>
+    <a class="note-dot" href="play-stay-messy.html" aria-label="Play, stay messy, share"></a>
+    <a class="note-dot" href="vision-is-a-floor.html" aria-label="Vision is a floor, not a ceiling"></a>
+    <a class="note-dot" href="it-was-never-the-org-chart.html" aria-label="It was never the org chart"></a>
+    <a class="note-dot" href="teaching.html" aria-label="Teaching taught me to manage"></a>
+  </nav>
+</section>
+
+<div class="cs-scrollcue" aria-hidden="true">
+  <span class="cs-scrollcue-label">Scroll</span>
+  <span class="cs-scrollcue-line"></span>
+</div>
+
+
+<section class="cs-content">
+  <div class="container">
+
+  <!-- BODY -->
+  <div class="note-body" data-reveal-cs>
+
+    <p>I lead a large design organization, and I'm in the middle of turning it into a team of AI-native builders. The hard part isn't the tools. Tools are learnable in weeks. The hard part is that I have to push my team in two contradictory directions at the same time, and the coaching depends entirely on who is in front of me.</p>
+
+    <h2>The young designers</h2>
+
+    <p>My younger designers are fast. AI made them faster. They can produce twenty directions before lunch, prototype three of them by end of day, and have something clickable in front of a PM by morning.</p>
+
+    <p>What they can't always tell you is what problem any of it solves.</p>
+
+    <p>Speed without problem framing is just expensive thrashing. They get deep into the mess and can't find their way out, because they never built the muscle of stopping to ask the boring questions. What are we actually trying to solve? Whose problem is it? Which data source is authoritative? What would change our mind?</p>
+
+    <p>For them, my coaching sounds almost old-fashioned. Slow down. Diagnose before you prescribe. Write the problem statement before the prompt. Frame first, then sprint. The traditional methods they skipped are exactly what would let their speed compound instead of churn.</p>
+
+    <h2>The principals</h2>
+
+    <p>My seasoned principals have the opposite gap. They know process cold because they earned it across fifteen years of shipping. They can frame a problem in their sleep. And when the ground shifts under them, process is exactly what they reach for. Workshop it. Brief it. Align on it. Schedule the readout.</p>
+
+    <p>Here's what changed: most of that process was designed for a world where execution was expensive. When building a prototype took an engineer and three weeks, it made sense to spend two weeks making sure you were building the right thing. When the prototype takes an afternoon, that same rigor becomes overhead. The cheapest way to answer most questions now is to build the thing and look at it.</p>
+
+    <p>For them, the coaching is the reverse. Throw half of it out. Build before the brief. Trust the gut you spent a career tuning, because that gut is now the scarcest asset in the room. Get into the mess on purpose. It's uncomfortable, and the discomfort is the point.</p>
+
+    <h2>The same destination</h2>
+
+    <p>The paradox resolves when you see what I'm actually asking of each group. I'm not telling the juniors to become process people or the principals to become hackers. I'm telling each group to develop the thing the other has natively.</p>
+
+    <p>The juniors have speed and need judgment. The principals have judgment and need to reattach it to speed. The destination is the same builder: someone who can frame a problem sharply in the morning and have a working answer by evening, knowing exactly which corners they cut and why.</p>
+
+    <p>I wrote recently about <a href="not-a-stroke-expert.html">building a clinical research tool in a weekend</a> and getting important things wrong along the way. I lived both failure modes in that one project. I moved so fast I trusted a bad data source and got fooled by a hospital name. And the moment that saved the project was a slow one: stopping, staring at a map that looked too green, and refusing to ship past my own doubt. Speed got me to the insight. Judgment is what recognized it.</p>
+
+    <h2>Why this is the job now</h2>
+
+    <p>The bottleneck in product organizations has moved. For my whole career, execution was the constraint. Headcount, sprint capacity, engineering queues. Every process we built was a way of rationing expensive execution.</p>
+
+    <p>Execution is no longer scarce. Judgment is. Knowing which problem matters, which anomaly is a bug versus a finding, when to ship and when to freeze. AI didn't create that skill gap. It exposed it, by stripping away all the execution work that used to hide it.</p>
+
+    <p>So I coach one designer to slow down in the morning and push a principal to speed up in the afternoon, sometimes in the same crit. It's the trickiest needle I've had to thread as a leader. It's also the clearest signal I can give my team about what the next version of this discipline looks like: not faster designers or more rigorous ones, but people who can hold both and know which one the moment calls for.</p>
+
+    <hr class="note-rule">
+
+    <p class="note-disclaimer">This piece pairs with <a href="not-a-stroke-expert.html">"I'm not a stroke expert,"</a> a case study in living both failure modes inside one project.</p>
+
+  </div>
+
+  <!-- RELATED -->
+  <div class="related-section">
+    <p class="section-label">Related</p>
+    <div class="related-links">
+      <a class="related-link" href="not-a-stroke-expert.html">
+        <span class="rl-type">Note</span>
+        <span class="rl-title">I'm not a stroke expert</span>
+      </a>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-site-name">mikemoral.es</p>
+        <p class="footer-tagline">Builder. Product thinker.<br>Brooklyn Made.</p>
+      </div>
+      <div class="footer-contact">
+        <a href="https://www.linkedin.com/in/michaelmorales1/" target="_blank" rel="noopener">LinkedIn <span class="arr">→</span></a>
+        <a href="mailto:mike.morales.ny@gmail.com">Contact <span class="arr">→</span></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mike Morales</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="../js/main.js?v=20260629c"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#0f0f3c">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Analytics (GA4) — production host only -->
+  <script>
+    if (location.hostname === 'mikemoral.es' || location.hostname === 'www.mikemoral.es') {
+      var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id=G-Q8NCYQ8FJ8'; document.head.appendChild(s);
+      window.dataLayer=window.dataLayer||[]; function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date()); gtag('config','G-Q8NCYQ8FJ8');
+    }
+  </script>
+  <title>The Streamer Project - mikemoral.es</title>
+  <meta name="description" content="Every year I make something for my team. Not order something. Make something. 270 tapes, 90 streamers, 1,225 hours of print time. Culture is something you make.">
+  <meta property="og:title" content="The Streamer Project - mikemoral.es">
+  <meta property="og:description" content="Every year I make something for my team. Not order something. Make something. 270 tapes, 90 streamers, 1,225 hours of print time. Culture is something you make.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mikemoral.es/work/streamer.html">
+  <meta property="og:image" content="https://mikemoral.es/og-image.png">
+  <link rel="canonical" href="https://mikemoral.es/work/streamer.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Streamer Project - mikemoral.es">
+  <meta name="twitter:description" content="Every year I make something for my team. Not order something. Make something. 270 tapes, 90 streamers, 1,225 hours of print time. Culture is something you make.">
+  <meta name="twitter:image" content="https://mikemoral.es/og-image.png">
+  <link rel="stylesheet" href="../css/fonts.css?v=20260629e">
+  <link rel="stylesheet" href="../css/style.css?v=20260629e">
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-logo" href="../index.html"><img src="../img/MM_icon_block.svg" alt="MM" class="nav-logo-img"></a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../work.html" class="active">Work</a></li>
+    <li><a href="../notes.html">Notes</a></li>
+    <li><a href="../about.html">About</a></li>
+  </ul>
+</nav>
+
+
+<section class="hero hero-article" style="--cs-hero-bg:url('../img/work/streamer-hero.webp');--cs-hero-color-bg:url('../img/work/streamer-hero-color.webp')">
+  <div class="cs-hero-color" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <a class="cs-back" data-hero-fade href="../work.html"><span class="arr arr-left">←</span> Work</a>
+    <h1>The Streamer Project</h1>
+    <div class="cs-hero-foot">
+      <p class="cs-sub" data-hero-fade>1,225 hours of print time. 64 pounds of filament. 100 hand-made gifts. Culture is something you make.</p>
+      <a class="cs-next" data-hero-fade href="summerquest.html"><span class="cs-next-label">Next</span><span class="cs-next-title">SummerQuest <span class="arr">→</span></span></a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="hero-scroll-label">Scroll</span>
+    <span class="hero-scroll-line"></span>
+  </div>
+</section>
+
+<div class="cs-scrollcue" aria-hidden="true">
+  <span class="cs-scrollcue-label">Scroll</span>
+  <span class="cs-scrollcue-line"></span>
+</div>
+
+
+<!-- TOP: meta + full-width outcome + numbers, right under the hero -->
+<section class="cs-content strm-top">
+  <div class="container">
+
+  <!-- ── OUTCOME (full width; year folded into the label) ─── -->
+  <div class="cs-outcome cs-outcome--wide">
+    <label>2023 &nbsp;·&nbsp; Outcome</label>
+    <p>100 hand-made gifts across six brands, each designed, printed, painted, and packaged by hand and sealed in a blind bag with a signed card. Proof you can hold that culture is something you make.</p>
+  </div>
+
+  <!-- ── NUMBERS (on white, right after the outcome copy) ─── -->
+  <div class="strm-numbers" data-reveal-cs>
+    <div class="strm-stat-grid">
+      <div class="strm-stat"><span class="strm-stat-num" data-to="270">0</span><span class="strm-stat-label">rolls of tape</span></div>
+      <div class="strm-stat"><span class="strm-stat-num" data-to="100">0</span><span class="strm-stat-label">streamers</span></div>
+      <div class="strm-stat"><span class="strm-stat-num" data-to="1225">0</span><span class="strm-stat-label">printing hours</span></div>
+      <div class="strm-stat"><span class="strm-stat-num" data-to="64">0</span><span class="strm-stat-label">lbs of filament</span></div>
+      <div class="strm-stat"><span class="strm-stat-num" data-to="30">0</span><span class="strm-stat-label">days</span></div>
+      <div class="strm-stat"><span class="strm-stat-num" data-to="2">0</span><span class="strm-stat-label">custom jigs</span></div>
+      <div class="strm-stat"><span class="strm-stat-num" data-to="2">0</span><span class="strm-stat-label">spray-paint cans</span></div>
+      <div class="strm-stat"><span class="strm-stat-num" data-to="6">0</span><span class="strm-stat-label">failures, then fixes</span></div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+
+<!-- PARALLAX FILMSTRIP — the grids scroll left as you scroll down -->
+<section class="strm-film" aria-label="The Streamer build, end to end">
+  <div class="strm-film-track">
+    <img src="../img/streamer/grid1.webp" alt="Finished Streamer figures and red printed parts on the bed" loading="eager" decoding="async">
+    <img src="../img/streamer/grid2.webp" alt="Disney+ badges, blind-bag packaging, and masking jigs" loading="eager" decoding="async">
+    <img src="../img/streamer/grid3.webp" alt="More of the Streamer build and packaging process" loading="eager" decoding="async">
+    <img src="../img/streamer/grid1.webp" alt="" aria-hidden="true" loading="eager" decoding="async">
+    <img src="../img/streamer/grid2.webp" alt="" aria-hidden="true" loading="eager" decoding="async">
+    <img src="../img/streamer/grid3.webp" alt="" aria-hidden="true" loading="eager" decoding="async">
+  </div>
+</section>
+
+
+<!-- NARRATIVE + CLOSING (all the copy together) -->
+<section class="cs-content">
+  <div class="container">
+  <div class="cs-body" data-reveal-cs>
+    <h2>Every year I make something for my team. Not order something. Make something.</h2>
+    <p>The Streamer was a 3D-printed modular toy system - figures I designed, printed, painted, and packaged entirely by hand, spanning Disney+, Hulu, ESPN, Marvel, Nat Geo, and Star Wars.</p>
+    <p>Six brands, a hundred figures, one printer running almost around the clock. The first runs failed - warped parts, prints that pulled off the bed - so I built two custom jigs, dialed it in, and let it run. The failures were not the setback. They were the part where it started to work.</p>
+    <p>I designed the figures, the cards, and the packaging, secured the budget, and covered the balance myself. But I didn't run the line alone. Hansen Smith built it with me - he sharpened the cassette design, rigged a jig for painting the bags, and ran a third printer the production run couldn't have happened without. A month of late nights and a homemade assembly line, two people turning a pile of parts into a hundred finished gifts.</p>
+
+    <h2>What it was really about</h2>
+    <p>The point was never the gift. It was the message underneath it: we build things here. We make things. We do not just ship decks and attend standups.</p>
+    <p>Culture is not a value on a wall. It is what leaders do when no one is requiring them to do it. I have spent my own money and my own time building it, every year - and the people who build it with me are the proof it is real.</p>
+    <p>Then Hansen did something no one asked for: he made me a custom one of my own. Nobody else would have thought to. That's culture doing exactly what it's supposed to - you put making and generosity into a team, and it comes back around.</p>
+  </div>
+  </div>
+</section>
+
+
+<!-- CANDID QUOTE BAND (bottom) — the printer running, behind the card's note -->
+<section class="cs-quoteband cs-quoteband--video" aria-label="A note from the gift">
+  <video class="cqb-video" src="../img/streamer/print.mp4" poster="../img/streamer/print-poster.webp" muted loop autoplay playsinline aria-hidden="true"></video>
+  <div class="cqb-scrim" aria-hidden="true"></div>
+  <div class="container cqb-inner">
+    <span class="cqb-rule" aria-hidden="true"></span>
+    <p class="cqb-quote">It was never meant to be some profound metaphor for team culture. But if you want to make it a symbol of the team's limitless potential, I certainly can't stop you.</p>
+    <span class="cqb-attr">From the card in every bag.</span>
+  </div>
+</section>
+
+
+<!-- RELATED -->
+<section class="cs-content">
+  <div class="container">
+    <div class="related-section">
+      <p class="section-label">Related</p>
+      <div class="related-links">
+        <a class="related-link" href="../notes/teaching.html">
+          <span class="rl-type">Note</span>
+          <span class="rl-title">Teaching taught me to manage</span>
+        </a>
+        <a class="related-link" href="../notes/play-stay-messy.html">
+          <span class="rl-type">Note</span>
+          <span class="rl-title">Play, stay messy, share</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── FOOTER ─────────────────────────────── -->
+<!-- NEXT PROJECT -->
+<section class="cs-nextnav">
+  <div class="container">
+    <a class="cs-nextnav-link" href="summerquest.html"><span class="cs-next-label">Next project</span><span class="cs-next-title">SummerQuest <span class="arr">→</span></span></a>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-site-name">mikemoral.es</p>
+        <p class="footer-tagline">Builder. Product thinker.<br>Brooklyn Made.</p>
+      </div>
+      <div class="footer-contact">
+        <a href="https://www.linkedin.com/in/michaelmorales1/" target="_blank" rel="noopener">LinkedIn <span class="arr">→</span></a>
+        <a href="mailto:mike.morales.ny@gmail.com">Contact <span class="arr">→</span></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mike Morales</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="../js/main.js?v=20260629e"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#0f0f3c">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Analytics (GA4) — production host only -->
+  <script>
+    if (location.hostname === 'mikemoral.es' || location.hostname === 'www.mikemoral.es') {
+      var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id=G-Q8NCYQ8FJ8'; document.head.appendChild(s);
+      window.dataLayer=window.dataLayer||[]; function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date()); gtag('config','G-Q8NCYQ8FJ8');
+    }
+  </script>
+  <title>It was never the org chart - mikemoral.es</title>
+  <meta name="description" content="Asked to keep an eighty-engineer program afloat with no formal authority, I earned the scope by taking ownership of what mattered. On why impact follows accountability, not the reporting line.">
+  <meta property="og:title" content="It was never the org chart - mikemoral.es">
+  <meta property="og:description" content="Asked to keep an eighty-engineer program afloat with no formal authority, I earned the scope by taking ownership of what mattered. On why impact follows accountability, not the reporting line.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mikemoral.es/notes/it-was-never-the-org-chart.html">
+  <meta property="og:image" content="https://mikemoral.es/og-image.png">
+  <link rel="canonical" href="https://mikemoral.es/notes/it-was-never-the-org-chart.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="It was never the org chart - mikemoral.es">
+  <meta name="twitter:description" content="Asked to keep an eighty-engineer program afloat with no formal authority, I earned the scope by taking ownership of what mattered. On why impact follows accountability, not the reporting line.">
+  <meta name="twitter:image" content="https://mikemoral.es/og-image.png">
+  <link rel="stylesheet" href="../css/fonts.css?v=20260629d">
+  <link rel="stylesheet" href="../css/style.css?v=20260629d">
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-logo" href="../index.html"><img src="../img/MM_icon_block.svg" alt="MM" class="nav-logo-img"></a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../work.html">Work</a></li>
+    <li><a href="../notes.html" class="active">Notes</a></li>
+    <li><a href="../about.html">About</a></li>
+  </ul>
+</nav>
+
+
+<!-- NOTE HERO -->
+<section class="hero hero-article hero-note hero-note--art" style="--cs-hero-bg:url('../img/notes/it-was-never-the-org-chart-hero.webp');--cs-hero-color-bg:url('../img/notes/it-was-never-the-org-chart-hero-color.webp');--cs-hero-bg-m:url('../img/notes/it-was-never-the-org-chart-hero-m.webp');--cs-hero-color-bg-m:url('../img/notes/it-was-never-the-org-chart-hero-color-m.webp')">
+  <div class="cs-hero-color" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <a class="note-back" data-hero-fade href="../notes.html"><span class="arr arr-left">←</span> Notes</a>
+    <div class="note-tags" data-hero-fade>
+      <span class="note-pillar-tag">Leadership</span>
+      <span class="note-meta-tag">2021 &nbsp;·&nbsp; 2 min read</span>
+    </div>
+    <h1>It was never the org chart</h1>
+    <p class="note-sub" data-hero-fade>When the leader of an eighty-engineer program left, I was asked to hold the wheel for a while. Eight weeks later, they quietly stopped looking.</p>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="hero-scroll-label">Scroll</span>
+    <span class="hero-scroll-line"></span>
+  </div>
+  <a class="note-nav note-nav--prev" href="vision-is-a-floor.html" aria-label="Previous note: Vision is a floor, not a ceiling">
+    <span class="note-nav-arrow" aria-hidden="true">&larr;</span>
+    <span class="note-nav-label"><span class="note-nav-kicker">Previous</span><span class="note-nav-title">Vision is a floor, not a ceiling</span></span>
+  </a>
+  <a class="note-nav note-nav--next" href="teaching.html" aria-label="Next note: Teaching taught me to manage">
+    <span class="note-nav-arrow" aria-hidden="true">&rarr;</span>
+    <span class="note-nav-label"><span class="note-nav-kicker">Next</span><span class="note-nav-title">Teaching taught me to manage</span></span>
+  </a>
+  <nav class="note-dots" aria-label="All notes">
+    <a class="note-dot" href="not-a-stroke-expert.html" aria-label="I'm not a stroke expert"></a>
+    <a class="note-dot" href="two-opposite-pushes.html" aria-label="Two opposite pushes"></a>
+    <a class="note-dot" href="play-stay-messy.html" aria-label="Play, stay messy, share"></a>
+    <a class="note-dot" href="vision-is-a-floor.html" aria-label="Vision is a floor, not a ceiling"></a>
+    <a class="note-dot is-active" href="it-was-never-the-org-chart.html" aria-current="page" aria-label="It was never the org chart"></a>
+    <a class="note-dot" href="teaching.html" aria-label="Teaching taught me to manage"></a>
+  </nav>
+</section>
+
+<div class="cs-scrollcue" aria-hidden="true">
+  <span class="cs-scrollcue-label">Scroll</span>
+  <span class="cs-scrollcue-line"></span>
+</div>
+
+
+<section class="cs-content">
+  <div class="container">
+
+  <!-- BODY -->
+  <div class="note-body" data-reveal-cs>
+
+    <p>In 2019 I left the startup world for Google. I had spent years building products and teams from zero, and I wanted to learn what building looked like at the scale of billions. I joined Search as an individual contributor, by choice. I wanted my hands on the work.</p>
+
+    <p>Six months in, the leader running our program left.</p>
+
+    <p>The program was not small. More than eighty engineers. Ten workstreams. Six product areas across three surfaces. A design team full of people with years more context than I had. There was no roadmap. There was barely any documentation explaining how the pieces fit together.</p>
+
+    <p>Leadership asked me to keep it afloat while they searched for a permanent replacement.</p>
+
+    <p>I have thought a lot about that phrase since. Keep it afloat. It is the assignment you give someone when the bar is survival. I had no formal authority over anyone in the room. What I had was a diagnosis.</p>
+
+    <p>The program did not have a leadership problem. It had a clarity problem. Nobody could say what the most important work was, so everything was important, which meant nothing was.</p>
+
+    <p>So I did what I had always done at startups, just with more zeros attached. We built the program's first real roadmap. We cut more than half the work on it, because most of it was activity, not progress. I fought for design to have a seat in annual planning instead of receiving the output of it. We made the work visible, set a cadence, and let people see what was actually happening for the first time.</p>
+
+    <p>Eight weeks later, leadership stopped looking for a replacement.</p>
+
+    <p>What followed was the pattern that has defined my career. Scope kept arriving before authority did. I went from stabilizing one program to driving search innovation projects, leading teams through influence first and managing them later, because the trust always showed up before the org chart caught up. By the time I left for Disney, I was running search innovation teams and had just taken on the Google app on Android.</p>
+
+    <p>None of that was given to me because of a role. Organizations do not hand you their most ambiguous, high-stakes problems because of what your title says. They hand them to you because of what happened the last time they did.</p>
+
+    <p>The startup years taught me to build products and teams from nothing. Google taught me that the same building works inside one of the most complex organizations on earth, with or without the formal authority, because the underlying problem is almost always the same.</p>
+
+    <p>Most struggling efforts are not failing because people are incapable.</p>
+
+    <p>They are failing because nobody has made it clear what matters.</p>
+
+    <p>Clarity is the job. Everything else is the org chart.</p>
+
+  </div>
+
+  <!-- RELATED -->
+  <div class="related-section">
+    <p class="section-label">Related</p>
+    <div class="related-links">
+      <a class="related-link" href="vision-is-a-floor.html">
+        <span class="rl-type">Note</span>
+        <span class="rl-title">Vision is a floor, not a ceiling</span>
+      </a>
+      <a class="related-link" href="../work/reserve.html">
+        <span class="rl-type">Work</span>
+        <span class="rl-title">Where the pattern started</span>
+      </a>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-site-name">mikemoral.es</p>
+        <p class="footer-tagline">Builder. Product thinker.<br>Brooklyn Made.</p>
+      </div>
+      <div class="footer-contact">
+        <a href="https://www.linkedin.com/in/michaelmorales1/" target="_blank" rel="noopener">LinkedIn <span class="arr">→</span></a>
+        <a href="mailto:mike.morales.ny@gmail.com">Contact <span class="arr">→</span></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mike Morales</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="../js/main.js?v=20260629d"></script>
+</body>
+</html>

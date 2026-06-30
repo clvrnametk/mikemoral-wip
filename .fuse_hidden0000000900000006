@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#0f0f3c">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Analytics (GA4) — production host only -->
+  <script>
+    if (location.hostname === 'mikemoral.es' || location.hostname === 'www.mikemoral.es') {
+      var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id=G-Q8NCYQ8FJ8'; document.head.appendChild(s);
+      window.dataLayer=window.dataLayer||[]; function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date()); gtag('config','G-Q8NCYQ8FJ8');
+    }
+  </script>
+  <title>Notes - mikemoral.es</title>
+  <meta name="description" content="Thinking on product strategy, design leadership, making better calls, and consumer product. Written when there is something worth saying.">
+  <meta property="og:title" content="Notes - mikemoral.es">
+  <meta property="og:description" content="Thinking on product strategy, design leadership, making better calls, and consumer product. Written when there is something worth saying.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mikemoral.es/notes.html">
+  <meta property="og:image" content="https://mikemoral.es/og-image.png">
+  <link rel="canonical" href="https://mikemoral.es/notes.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Notes - mikemoral.es">
+  <meta name="twitter:description" content="Thinking on product strategy, design leadership, making better calls, and consumer product. Written when there is something worth saying.">
+  <meta name="twitter:image" content="https://mikemoral.es/og-image.png">
+  <link rel="stylesheet" href="css/fonts.css?v=20260629g">
+  <link rel="stylesheet" href="css/style.css?v=20260629g">
+  <!-- Font Awesome Pro Kit (card read-time clock icon) -->
+  <script src="https://kit.fontawesome.com/8240221c83.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html"><img src="img/MM_icon_block.svg" alt="MM" class="nav-logo-img"></a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="work.html">Work</a></li>
+    <li><a href="notes.html" class="active">Notes</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+
+<!-- NOTES HERO -->
+<section class="hero hero-page">
+  <picture class="hero-photo" aria-hidden="true">
+    <source media="(max-width: 768px)" srcset="img/hero_N-mobile.webp" type="image/webp">
+    <img src="img/hero_N.webp" alt="" loading="eager">
+  </picture>
+  <div class="hero-glow" aria-hidden="true" style="background-image:url('img/hero_N-glow.webp')"></div>
+  <canvas class="hero-gl" data-tex="img/hero_N-net.jpg" aria-hidden="true"></canvas>
+  <div class="container hero-inner">
+    <h1>Notes</h1>
+    <p class="hero-sub" data-hero-fade>Product strategy, design leadership, and consumer product. Written when there's something worth saying.</p>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="hero-scroll-label">Scroll</span>
+    <span class="hero-scroll-line"></span>
+  </div>
+</section>
+
+
+<!-- NOTES LIST -->
+<section class="notes-content-section">
+<div class="container">
+  <p class="notes-intro-text" data-reveal>I don't publish to keep up a feed. These are the ideas I lead by, the ones that show up again and again in how I work, and most of them were learned the hard way. Execution keeps getting cheaper. Judgment is what's left. The work these notes shaped is in <a href="work.html">Work</a>.</p>
+  <div class="notes-list">
+
+    <a class="note-entry" href="notes/not-a-stroke-expert.html">
+      <div class="note-pillar">Leadership · AI</div>
+      <h3>I'm not a stroke expert</h3>
+      <p>I built a clinical research tool in a weekend, in a field I'd never worked in - and what it taught me about judgment, problem-solving, and who I hire.</p>
+      <div class="note-foot"><span class="note-meta"><span class="note-year">2026</span><span class="note-sep">&bull;</span><span class="note-time"><i class="fa-light fa-clock" aria-hidden="true"></i> 5 min</span></span><span class="note-read">Read <span class="arr">&rarr;</span></span></div>
+    </a>
+
+    <a class="note-entry" href="notes/two-opposite-pushes.html">
+      <div class="note-pillar">Leadership</div>
+      <h3>Two opposite pushes</h3>
+      <p>On turning a design organization into AI-native builders - and why leading that change means coaching two opposite instincts at the very same time.</p>
+      <div class="note-foot"><span class="note-meta"><span class="note-year">2025</span><span class="note-sep">&bull;</span><span class="note-time"><i class="fa-light fa-clock" aria-hidden="true"></i> 3 min</span></span><span class="note-read">Read <span class="arr">&rarr;</span></span></div>
+    </a>
+
+    <a class="note-entry" href="notes/play-stay-messy.html">
+      <div class="note-pillar">Leadership · AI</div>
+      <h3>Play, stay messy, share</h3>
+      <p>I'm not an AI expert; I'm learning alongside my team. What I know is teaching - and why moving an org forward starts with permission to play.</p>
+      <div class="note-foot"><span class="note-meta"><span class="note-year">2025</span><span class="note-sep">&bull;</span><span class="note-time"><i class="fa-light fa-clock" aria-hidden="true"></i> 4 min</span></span><span class="note-read">Read <span class="arr">&rarr;</span></span></div>
+    </a>
+
+    <a class="note-entry" href="notes/vision-is-a-floor.html">
+      <div class="note-pillar">Leadership · Product</div>
+      <h3>Vision is a floor, not a ceiling</h3>
+      <p>A vision isn't meant to be admired or obeyed. It's a direction clear enough that the teams who build it can make it better than you ever drew.</p>
+      <div class="note-foot"><span class="note-meta"><span class="note-year">2024</span><span class="note-sep">&bull;</span><span class="note-time"><i class="fa-light fa-clock" aria-hidden="true"></i> 2 min</span></span><span class="note-read">Read <span class="arr">&rarr;</span></span></div>
+    </a>
+
+    <a class="note-entry" href="notes/it-was-never-the-org-chart.html">
+      <div class="note-pillar">Leadership</div>
+      <h3>It was never the org chart</h3>
+      <p>When the leader of an eighty-engineer program left, I was asked to hold the wheel for a while. Eight weeks later, they quietly stopped looking.</p>
+      <div class="note-foot"><span class="note-meta"><span class="note-year">2021</span><span class="note-sep">&bull;</span><span class="note-time"><i class="fa-light fa-clock" aria-hidden="true"></i> 2 min</span></span><span class="note-read">Read <span class="arr">&rarr;</span></span></div>
+    </a>
+
+    <a class="note-entry" href="notes/teaching.html">
+      <div class="note-pillar">Leadership</div>
+      <h3>Teaching taught me to manage</h3>
+      <p>I didn't become a better manager by getting promoted. I became one standing in front of a classroom, years before I ever had the title.</p>
+      <div class="note-foot"><span class="note-meta"><span class="note-year">2017</span><span class="note-sep">&bull;</span><span class="note-time"><i class="fa-light fa-clock" aria-hidden="true"></i> 3 min</span></span><span class="note-read">Read <span class="arr">&rarr;</span></span></div>
+    </a>
+
+  </div>
+</div>
+</section>
+
+
+<!-- KEEP EXPLORING -->
+<section class="more-links-section">
+  <div class="container" data-reveal>
+    <p class="section-label">Keep exploring</p>
+    <div class="more-links">
+      <a class="more-link" href="work.html"><span class="more-link-title">Work</span><span class="more-link-desc">Case studies across consumer product, design leadership, and org design.</span><span class="arr">→</span></a>
+      <a class="more-link" href="about.html"><span class="more-link-title">About</span><span class="more-link-desc">The person behind the work, and how I lead.</span><span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-site-name">mikemoral.es</p>
+        <p class="footer-tagline">Builder. Product thinker.<br>Brooklyn Made.</p>
+      </div>
+      <div class="footer-contact">
+        <a href="https://www.linkedin.com/in/michaelmorales1/" target="_blank" rel="noopener">LinkedIn <span class="arr">→</span></a>
+        <a href="mailto:mike.morales.ny@gmail.com">Contact <span class="arr">→</span></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mike Morales</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="js/main.js?v=20260629g"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#0f0f3c">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Analytics (GA4) — production host only -->
+  <script>
+    if (location.hostname === 'mikemoral.es' || location.hostname === 'www.mikemoral.es') {
+      var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id=G-Q8NCYQ8FJ8'; document.head.appendChild(s);
+      window.dataLayer=window.dataLayer||[]; function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date()); gtag('config','G-Q8NCYQ8FJ8');
+    }
+  </script>
+  <title>I'm not a stroke expert - mikemoral.es</title>
+  <meta name="description" content="I built a clinical research tool in a weekend, in a field I'd never worked in. Why problem-solving travels further than domain expertise, and what that means for who I hire.">
+  <meta property="og:title" content="I'm not a stroke expert - mikemoral.es">
+  <meta property="og:description" content="I built a clinical research tool in a weekend, in a field I'd never worked in. Why problem-solving travels further than domain expertise, and what that means for who I hire.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mikemoral.es/notes/not-a-stroke-expert.html">
+  <meta property="og:image" content="https://mikemoral.es/og-image.png">
+  <link rel="canonical" href="https://mikemoral.es/notes/not-a-stroke-expert.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="I'm not a stroke expert - mikemoral.es">
+  <meta name="twitter:description" content="I built a clinical research tool in a weekend, in a field I'd never worked in. Why problem-solving travels further than domain expertise, and what that means for who I hire.">
+  <meta name="twitter:image" content="https://mikemoral.es/og-image.png">
+  <link rel="stylesheet" href="../css/fonts.css?v=20260629g">
+  <link rel="stylesheet" href="../css/style.css?v=20260629g">
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-logo" href="../index.html"><img src="../img/MM_icon_block.svg" alt="MM" class="nav-logo-img"></a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../work.html">Work</a></li>
+    <li><a href="../notes.html" class="active">Notes</a></li>
+    <li><a href="../about.html">About</a></li>
+  </ul>
+</nav>
+
+
+<!-- NOTE HERO -->
+<section class="hero hero-article hero-note hero-note--art" style="--cs-hero-bg:url('../img/notes/not-a-stroke-expert-hero.webp');--cs-hero-color-bg:url('../img/notes/not-a-stroke-expert-hero-color.webp');--cs-hero-bg-m:url('../img/notes/not-a-stroke-expert-hero-m.webp');--cs-hero-color-bg-m:url('../img/notes/not-a-stroke-expert-hero-color-m.webp')">
+  <div class="cs-hero-color" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <a class="note-back" data-hero-fade href="../notes.html"><span class="arr arr-left">←</span> Notes</a>
+    <div class="note-tags" data-hero-fade>
+      <span class="note-pillar-tag">Leadership · AI</span>
+      <span class="note-meta-tag">2026 &nbsp;·&nbsp; 5 min read</span>
+    </div>
+    <h1>I'm not a stroke expert</h1>
+    <p class="note-sub" data-hero-fade>I built a clinical research tool in a weekend, in a field I'd never worked in - and what it taught me about judgment, problem-solving, and who I hire.</p>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="hero-scroll-label">Scroll</span>
+    <span class="hero-scroll-line"></span>
+  </div>
+  <a class="note-nav note-nav--prev" href="teaching.html" aria-label="Previous note: Teaching taught me to manage">
+    <span class="note-nav-arrow" aria-hidden="true">&larr;</span>
+    <span class="note-nav-label"><span class="note-nav-kicker">Previous</span><span class="note-nav-title">Teaching taught me to manage</span></span>
+  </a>
+  <a class="note-nav note-nav--next" href="two-opposite-pushes.html" aria-label="Next note: Two opposite pushes">
+    <span class="note-nav-arrow" aria-hidden="true">&rarr;</span>
+    <span class="note-nav-label"><span class="note-nav-kicker">Next</span><span class="note-nav-title">Two opposite pushes</span></span>
+  </a>
+  <nav class="note-dots" aria-label="All notes">
+    <a class="note-dot is-active" href="not-a-stroke-expert.html" aria-current="page" aria-label="I'm not a stroke expert"></a>
+    <a class="note-dot" href="two-opposite-pushes.html" aria-label="Two opposite pushes"></a>
+    <a class="note-dot" href="play-stay-messy.html" aria-label="Play, stay messy, share"></a>
+    <a class="note-dot" href="vision-is-a-floor.html" aria-label="Vision is a floor, not a ceiling"></a>
+    <a class="note-dot" href="it-was-never-the-org-chart.html" aria-label="It was never the org chart"></a>
+    <a class="note-dot" href="teaching.html" aria-label="Teaching taught me to manage"></a>
+  </nav>
+</section>
+
+<div class="cs-scrollcue" aria-hidden="true">
+  <span class="cs-scrollcue-label">Scroll</span>
+  <span class="cs-scrollcue-line"></span>
+</div>
+
+
+<section class="cs-content">
+  <div class="container">
+
+  <!-- BODY -->
+  <div class="note-body" data-reveal-cs>
+
+    <p>A friend of mine is a stroke nurse at Cedars-Sinai. Last year he published research showing that majority-Black and majority-Hispanic communities in LA County face significantly longer travel times to comprehensive stroke centers. When a stroke hits, those minutes are brain cells. He wanted to take the analysis further but didn't have a way to scale it.</p>
+
+    <p>On a Saturday around 7pm, I started building. By Sunday night there was a live tool scoring all 1,802 California ZIP codes on proximity to certified stroke care: a data pipeline pulling CMS hospital data, Census demographics, and Google Maps drive times, an interactive map, a methodology page, and a public dataset. It was shocking how fast it came together.</p>
+
+    <p>That's the part that sounds impressive. It's not the interesting part.</p>
+
+    <p>Here's the part that is. I'm not a stroke expert. I'm not an epidemiologist or a GIS analyst, and I'd never touched clinical data in my life. My partner on the project is the clinician. It would be easy to call what happened picking up the subject matter quickly - that's not it. I didn't pick up the subject matter. I picked up the problem.</p>
+
+    <h2>What I got wrong, quickly</h2>
+
+    <p>I had never built a backend. Never worked directly with an API. The speed came from AI doing the execution while I did the directing. But here's what actually happened inside that speed:</p>
+
+    <p><strong>I trusted the wrong data source.</strong> The CMS dataset I started with classified hospitals using a quality-rating proxy. It looked authoritative. It was wrong in ways that mattered. When we checked it against the LA County EMS directory, the actual authority on which hospitals are certified stroke destinations, we found 63 hospitals with certifications that didn't exist, 5 hospitals listed that weren't certified at all, and 8 certified hospitals missing entirely.</p>
+
+    <p><strong>I got fooled by a name.</strong> The dataset showed "Providence Queen of the Valley Medical Center" as a comprehensive stroke center. There is also an "Emanate Health Queen of the Valley Hospital" in West Covina. One is in Napa, 400 miles away. The data pipeline didn't know the difference, and for a while, neither did I. A ZIP code in the San Gabriel Valley was being told its nearest comprehensive stroke center was 37 minutes away when the real one was 4 minutes down the road, invisible because it wasn't in the source data.</p>
+
+    <p><strong>I shipped a scoring model that erased the story.</strong> When my partner gave clinical guidance on how to weight the scoring, I implemented it, rescored the state, and pushed it live. Then I looked at the map. It was green. Almost all of LA County scored 75 or above. The earlier version had shown a county full of orange and red, of disparity. My first instinct was that I had broken something.</p>
+
+    <h2>The instinct that mattered</h2>
+
+    <p>That instinct, "this map is too green," is a design instinct. Something about the artifact didn't match the truth I knew was underneath it. I stopped, pulled the distributions, and traced the scoring logic ZIP by ZIP.</p>
+
+    <p>The model wasn't broken. LA County genuinely is dense with comprehensive stroke centers. Nearly every urban ZIP is within 15 minutes of one, so nearly every ZIP maxed out the score. The model was working exactly as designed.</p>
+
+    <p>Which is the actual finding. My partner's earlier research proved racial disparities in stroke access exist in LA County. Our proximity model scored the same county as nearly uniform high access. Same county, same hospitals, opposite headline. The resolution: proximity-based access scores systematically understate urban inequity, because supply density saturates the metric while the real barriers, symptom recognition, 911 utilization, within-hospital disparities, concentrate in the same communities the map paints green.</p>
+
+    <p>What looked like a bug for an evening became the methods contribution of the paper we're now drafting. The ceiling isn't a defect in our model. It's evidence that the field's standard approach fails in dense cities.</p>
+
+    <p>I froze the scoring model that night. It doesn't change again until clinical review is done. Some decisions are data engineering. That one is clinical judgment, and knowing the difference is the job.</p>
+
+    <h2>What this taught me about leading designers</h2>
+
+    <p>I lead a large design organization, and I'm in the middle of transforming it into a team of AI-native builders. This project clarified something I'd been circling for months: I have to coach in <a href="two-opposite-pushes.html">two opposite directions</a> at once.</p>
+
+    <p>My younger designers iterate fast. AI has made them faster. But speed without problem framing is just expensive thrashing, and they can't yet find their own way out of the mess. They get the Queen of the Valley name collision and don't notice. For them, my coaching sounds traditional: slow down. Define the problem. Ask what data source is actually authoritative. Diagnose before you prescribe.</p>
+
+    <p>My seasoned principals have the opposite gap. They know process deeply, and process is exactly what they reach for when the ground shifts. For them, the coaching is the reverse: throw half of it out. Trust the gut you spent fifteen years tuning. Build the thing before the brief. Get into the mess on purpose, because the mess is where you learn that the map is too green.</p>
+
+    <p>Same destination, <a href="two-opposite-pushes.html">opposite pushes</a>. Threading that needle is the hardest leadership problem I've had in years, and the most important one.</p>
+
+    <p>What I know from this weekend: the bottleneck has moved. Execution is no longer the constraint. Judgment is. Knowing which data source to trust, which anomaly is a bug versus a finding, when to ship and when to freeze. That was always the real job. AI just stripped away everything that was hiding it.</p>
+
+    <h2>Why this is how I hire</h2>
+
+    <p>It's also how I think about who to bring onto a team. I don't hire for expertise in whatever we happen to be building this quarter. Subjects change. The next ambiguous problem won't look like the last one, and the person who memorized the current domain is rarely the one who navigates the next.</p>
+
+    <p>I look for the opposite: people who are experts in problems and ambiguity. Drop them into a field they've never seen and they find the real question underneath it, recognize which patterns from everywhere else apply, and know which instinct the moment calls for. Domain knowledge is rentable. Judgment in ambiguity is the thing that travels, and it's the thing I hire for.</p>
+
+    <hr class="note-rule">
+
+    <p class="note-disclaimer">The Stroke Access Score is a research collaboration with James Beavis RN BSN SCRN. The scoring model is under clinical review and the tool is not for clinical use. A methods paper is in progress.</p>
+
+  </div>
+
+  <!-- RELATED -->
+  <div class="related-section">
+    <p class="section-label">Related</p>
+    <div class="related-links">
+      <a class="related-link" href="two-opposite-pushes.html">
+        <span class="rl-type">Note</span>
+        <span class="rl-title">Two opposite pushes</span>
+      </a>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-site-name">mikemoral.es</p>
+        <p class="footer-tagline">Builder. Product thinker.<br>Brooklyn Made.</p>
+      </div>
+      <div class="footer-contact">
+        <a href="https://www.linkedin.com/in/michaelmorales1/" target="_blank" rel="noopener">LinkedIn <span class="arr">→</span></a>
+        <a href="mailto:mike.morales.ny@gmail.com">Contact <span class="arr">→</span></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mike Morales</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="../js/main.js?v=20260629g"></script>
+</body>
+</html>

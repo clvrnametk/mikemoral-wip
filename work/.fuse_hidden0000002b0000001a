@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#0f0f3c">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Analytics (GA4) — production host only -->
+  <script>
+    if (location.hostname === 'mikemoral.es' || location.hostname === 'www.mikemoral.es') {
+      var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id=G-Q8NCYQ8FJ8'; document.head.appendChild(s);
+      window.dataLayer=window.dataLayer||[]; function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date()); gtag('config','G-Q8NCYQ8FJ8');
+    }
+  </script>
+  <title>What should Disney+ become? - mikemoral.es</title>
+  <meta name="description" content="I conceived and ran a five-day sprint to define what Disney+ should become - then drove the work that shipped: a new navigation with a For You tab, a Live hub, and a video-forward home. Changing what Disney+ means to a household while a hundred million people were using it.">
+  <meta property="og:title" content="What should Disney+ become? - mikemoral.es">
+  <meta property="og:description" content="I conceived and ran a five-day sprint to define what Disney+ should become - then drove the work that shipped: a new navigation with a For You tab, a Live hub, and a video-forward home. Changing what Disney+ means to a household while a hundred million people were using it.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mikemoral.es/work/future-vision.html">
+  <meta property="og:image" content="https://mikemoral.es/og-image.png">
+  <link rel="canonical" href="https://mikemoral.es/work/future-vision.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What should Disney+ become? - mikemoral.es">
+  <meta name="twitter:description" content="I conceived and ran a five-day sprint to define what Disney+ should become - then drove the work that shipped: a new navigation with a For You tab, a Live hub, and a video-forward home. Changing what Disney+ means to a household while a hundred million people were using it.">
+  <meta name="twitter:image" content="https://mikemoral.es/og-image.png">
+  <link rel="stylesheet" href="../css/fonts.css?v=20260629c">
+  <link rel="stylesheet" href="../css/style.css?v=20260629c">
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-logo" href="../index.html"><img src="../img/MM_icon_block.svg" alt="MM" class="nav-logo-img"></a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../work.html" class="active">Work</a></li>
+    <li><a href="../notes.html">Notes</a></li>
+    <li><a href="../about.html">About</a></li>
+  </ul>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero hero-article" style="--cs-hero-bg:url('../img/work/future-vision-hero.webp');--cs-hero-color-bg:url('../img/work/future-vision-hero-color.webp')">
+  <div class="cs-hero-color" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <a class="cs-back" data-hero-fade href="../work.html"><span class="arr arr-left">←</span> Work</a>
+    <h1>What should Disney+ become?</h1>
+    <div class="cs-hero-foot">
+      <p class="cs-sub" data-hero-fade>A five-day sprint to define what Disney+ should become - and the redesign that shipped across the app from it.</p>
+      <a class="cs-next" data-hero-fade href="streamer.html"><span class="cs-next-label">Next</span><span class="cs-next-title">The Streamer Project <span class="arr">→</span></span></a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="hero-scroll-label">Scroll</span>
+    <span class="hero-scroll-line"></span>
+  </div>
+</section>
+
+<div class="cs-scrollcue" aria-hidden="true">
+  <span class="cs-scrollcue-label">Scroll</span>
+  <span class="cs-scrollcue-line"></span>
+</div>
+
+
+<section class="cs-content">
+  <div class="container">
+
+  <!-- META -->
+  <div class="cs-meta">
+    <div class="cs-meta-item">
+      <label>Company</label>
+      <span>Disney+ · Hulu</span>
+    </div>
+    <div class="cs-meta-item">
+      <label>My role</label>
+      <span>Conceived and drove end to end</span>
+    </div>
+    <div class="cs-meta-item">
+      <label>Format</label>
+      <span>~60 people · 5 days · in person</span>
+    </div>
+    <div class="cs-meta-item">
+      <label>Shipped</label>
+      <span>New nav · For You · Live hub · Video-forward home</span>
+    </div>
+  </div>
+
+  <!-- OUTCOME (under the meta bar, as its own unit) -->
+  <div class="cs-outcome" data-reveal-cs>
+    <label>Outcome</label>
+    <p>I conceived and ran a five-day sprint to define what Disney+ should become, then drove the work that shipped. The direction became the redesign Disney rolled out across the app - still shaping it today.</p>
+  </div>
+
+  <!-- BODY -->
+  <div class="cs-body" data-reveal-cs>
+
+    <h2>The situation</h2>
+
+    <p>Disney+ launched into one of the strongest debuts in streaming, and it earned a clear place in people's lives: the family-friendly destination you open when you already know what you want to watch. "I'm going to watch Loki." Open, play, done.</p>
+
+    <p>That clarity was also the ceiling. A product people only open once they've already decided is a product people open less and less. Meanwhile the business was consolidating - Hulu moving in, sports and news in the mix - and one app now had to hold three of the strongest catalogs in the world without turning into a junk drawer. The strategic question was simple to say and hard to answer: what should Disney+ become?</p>
+
+    <h2>The bet - a sprint, not a deck</h2>
+
+    <p>The usual move is a vision deck. A small senior group goes offsite, makes something beautiful, and hands it down to an organization that had no part in building it. Those decks get applauded and then ignored, because a vision people didn't build is a vision people don't execute.</p>
+
+    <p>So I built it differently. I conceived the sprint, planned it, and orchestrated five days for roughly sixty people across Product, Design, Engineering, and Research, with one job: define a cohesive direction the organization could actually execute against. We grounded it in a real family's day, hour by hour, instead of a feature list, and set out to lead the category rather than chase it.</p>
+
+    <p>You don't move something this big alone, and I didn't. It took real research to anchor us in how a household actually spends its day, and it took buy-in from product leadership to clear the way and let us run. My job was to get sixty people pulling in the same direction and keep them there long enough for it to become real. That is the hard part. The ideas were never the constraint; turning a room full of opinions into one direction the company could build against was the whole job.</p>
+
+    <p>I was deliberate about one thing in particular: the sprint set direction, it didn't hand anyone a finished answer. Once we had alignment, the real work belonged to the teams who would build it, and I didn't want them leaving the room as order-takers running a script. What we made together was a starting point for creative owners, not a ceiling.</p>
+
+    <p>Most sprints end as a deck. This one ended up transforming the product. What came out of that week became the brief for the redesign - and I drove the execution team that built it from there.</p>
+
+    <h2>What shipped</h2>
+
+    <p>A direction only counts if it ships. The through-line was moving Disney+ from a place you open when you already know what you want to a place you open across the day - to catch a game, see what happened in the news, put something on while you cook, settle the kids, or just because you're bored.</p>
+
+    <p>You can't reposition a product with a campaign. What an app means is decided by what happens every time someone opens it - what shows up first, how things are organized, whether a sports fan, a prestige-drama viewer, and a six-year-old can each find their version without getting in each other's way. That direction became the redesign Disney has been rolling out across the app:</p>
+
+    <div class="cs-shipped">
+    <div class="ship-item">
+      <h3>New navigation &amp; "For You"</h3>
+      <p>A new top navigation with a "For You" homebase and dedicated destinations for Disney+, Hulu, and ESPN - three catalogs that coexist without flattening into one mush.</p>
+    </div>
+    <div class="ship-item">
+      <h3>A Live hub</h3>
+      <p>Live news, sports, events, and 24/7 streams one tap away - because a household that watches sports doesn't think of the game as an add-on.</p>
+    </div>
+    <div class="ship-item">
+      <h3>A video-forward home</h3>
+      <p>A video hero and a dynamic brand row, so discovery is something you experience rather than read.</p>
+    </div>
+    <div class="ship-item">
+      <h3>Cinematic art &amp; badging</h3>
+      <p>So what's new and worth watching is obvious at a glance.</p>
+    </div>
+    <div class="ship-item">
+      <h3>Deeper Hulu integration</h3>
+      <p>The redesign carried Hulu's brand and catalog further across the app.</p>
+    </div>
+    </div>
+
+    <p>The navigation change was the bet that tested the whole thesis - major navigation changes are where streaming products go to lose engagement. We made the bet anyway, and it shipped.</p>
+
+    <h2>What changed</h2>
+
+    <p>Disney+ now reaches for the whole household instead of a segment of it - sports, general entertainment, and family viewing in one experience that holds three catalogs without losing coherence. The aim shifted from winning the one moment you already knew what you wanted to earning a place across your day. And the organization shifted from reacting to one-off requests toward executing against a shared direction: investments started connecting to each other, and teams could explain not just what they were building but why it belonged.</p>
+
+    <h2>What persists</h2>
+
+    <p>The navigation model and the foundations underneath it are now the rails the next experiences get built on. That's the part I care about most: features get replaced, foundations compound. The direction set in that room is still shaping the platform.</p>
+
+    <p>A vision like this works as a guiding star, not a detailed plan - a general direction the organization moves toward and improves on, release by release. That was the point, and it proved out: teams didn't just execute what came out of the sprint, they made it better. The end state was guided by what we set and ended up well beyond it. That is the whole reason to build it this way.</p>
+
+    <p>The lesson isn't that vision matters - everyone knows vision matters. It's that clarity scales, and that the hardest problems are rarely design problems. This one looked like an app redesign. It was an identity decision, made one product call at a time.</p>
+
+    <p class="cs-coverage"><span class="cs-coverage-label">Coverage</span> <span class="hil-sep">//</span> <a href="https://www.disneyplus.com/explore/articles/disney-plus-app-redesign-new-features" target="_blank" rel="noopener">Disney+</a> <span class="hil-dot">&bull;</span> <a href="https://variety.com/2025/digital/news/disney-plus-hulu-replace-star-global-app-phaseout-1236537103/" target="_blank" rel="noopener">Variety</a> <span class="hil-dot">&bull;</span> <a href="https://www.hollywoodreporter.com/business/business-news/disney-plus-homepage-refresh-hulu-expansion-1236391770/" target="_blank" rel="noopener">The Hollywood Reporter</a> <span class="hil-dot">&bull;</span> <a href="https://www.engadget.com/entertainment/streaming/disney-design-and-navigation-changes-are-on-the-way-165513106.html" target="_blank" rel="noopener">Engadget</a></p>
+
+  </div>
+
+  <!-- RELATED -->
+  <div class="related-section">
+    <p class="section-label">Related</p>
+    <div class="related-links">
+      <a class="related-link" href="../notes/vision-is-a-floor.html">
+        <span class="rl-type">Note</span>
+        <span class="rl-title">Vision is a floor, not a ceiling</span>
+      </a>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<!-- NEXT PROJECT -->
+<section class="cs-nextnav">
+  <div class="container">
+    <a class="cs-nextnav-link" href="streamer.html"><span class="cs-next-label">Next project</span><span class="cs-next-title">The Streamer Project <span class="arr">→</span></span></a>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-site-name">mikemoral.es</p>
+        <p class="footer-tagline">Builder. Product thinker.<br>Brooklyn Made.</p>
+      </div>
+      <div class="footer-contact">
+        <a href="https://www.linkedin.com/in/michaelmorales1/" target="_blank" rel="noopener">LinkedIn <span class="arr">→</span></a>
+        <a href="mailto:mike.morales.ny@gmail.com">Contact <span class="arr">→</span></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mike Morales</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="../js/main.js?v=20260629c"></script>
+</body>
+</html>
